@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "files.autoSave": "off",
+  "javascript.autoClosingTags": true,
+  "html.autoClosingTags": true,
+  "editor.lineHeight": 24,
+  "editor.wordWrap": "on"
+}
