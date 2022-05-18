@@ -9,11 +9,11 @@
   <br />
   <br />
   
-  <img src="./readme-images/project-logo.png" />
+  <!-- <img src="./readme-images/project-logo.png" /> -->
 
-  <h2 align="center">Casmart - eCommerce website</h2>
+  <h2 align="center">Fashion Ecommerce website</h2>
 
-Casmart is fully responsive ecommerce website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
+Fashion Ecommerce is fully responsive ecommerce website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
 
 <a href="#"><strong>➥ Live Demo</strong></a>
 
