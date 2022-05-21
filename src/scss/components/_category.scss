@@ -1,0 +1,57 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+
+
+/*-----------------------------------*\
+ * #CATETORY
+\*-----------------------------------*/
+
+.category { 
+  padding-top: 0; 
+
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  li {
+    @include responsive(xs) {
+      width: calc(50% - 15px);
+    }
+  }
+  
+}
+
+.category-item {
+  width: 100%;
+  position: relative;
+}
+
+.category-banner {
+  background: var(--cultured);
+  aspect-ratio: 2 / 2.35;
+  overflow: hidden;
+}
+
+.category-banner img {
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-2);
+}
+
+.category-item:hover .category-banner img { transform: scale(1.05); }
+
+.category-item .btn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  padding-inline: 30px;
+}
+
