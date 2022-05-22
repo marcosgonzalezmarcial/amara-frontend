@@ -14,7 +14,7 @@
   @if $breakpoint == lg  {
     @media (min-width: 992px) { @content }
   }
-  @if $breakpoint == lg  {
+  @if $breakpoint == xl  {
     @media (min-width: 1200px) { @content }
   }
 }

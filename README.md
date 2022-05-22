@@ -6,6 +6,8 @@
   [![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee)
   [![YouTube Video Views](https://img.shields.io/youtube/views/_NcyQawah6w?style=social)](https://youtu.be/_NcyQawah6w) -->
 
+<!-- technologies used: Sass - Javascript - Html - Css - Emmet - Parcel - Mobile-first -->
+
   <br />
   <br />
   

@@ -6,7 +6,9 @@
  * #NEWSLATTER
 \*-----------------------------------*/
 
-.newsletter { padding-bottom: 120px; }
+.newsletter { 
+  padding-bottom: 120px; 
+}
 
 .newsletter-card {
   background-color: var(--cultured);
@@ -24,6 +26,9 @@
   .card-form {
     @include responsive(md) {
       position: relative;
+    }
+    @include responsive(lg) {
+      max-width: 650px;
     }
   }
 }

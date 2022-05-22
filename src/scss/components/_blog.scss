@@ -15,9 +15,12 @@
   align-items: flex-start;
   gap: 30px;
 
-  li {
+  & > li {
     @include responsive(md){
       width: calc(50% - 15px);
+    }
+    @include responsive(lg){
+      width: calc(33.33% - 20px);
     }
   }
 }

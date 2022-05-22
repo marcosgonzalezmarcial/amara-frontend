@@ -1,5 +1,6 @@
 @use 'abstracts/variables' as *;
 @use 'abstracts/mixins' as *;
+
 /*-----------------------------------*\
  * #RESET
 \*-----------------------------------*/
@@ -40,7 +41,9 @@ input {
 
 img { height: auto; }
 
-ion-icon { pointer-events: none; }
+ion-icon { 
+  pointer-events: none; 
+}
 
 html {
   font-family: var(--ff-jost);
@@ -51,8 +54,37 @@ html {
 body {
   background: var(--white);
   padding-block: 70px;
+
+  @include responsive(lg){
+    padding-block: 0;
+  }
 }
 
+/*-----------------------------------*\
+ * #MEDIA QUARIES
+\*-----------------------------------*/
+
+/**
+ * CUSTOM PROPERTY
+ */
+
+ :root {
+  @include responsive(xs){
+    --fs-1: 3rem;
+    --fs-2: 2rem;
+  }
+  @include responsive(sm){
+    --fs-1: 3.75rem;
+    --fs-2: 2.375rem;
+    --fs-3: 2.25rem;
+  }
+  @include responsive(lg){
+    --fs-1: 5rem;
+  }
+  @include responsive(xl){
+    --fs-1: 6.25rem;
+  }
+}
 
 /*-----------------------------------*\
  * #REUSED STYLE
@@ -67,6 +99,12 @@ body {
   }
   @include responsive(md){
     max-width: 700px;
+  }
+  @include responsive(lg){
+    max-width: 950px;
+  }
+  @include responsive(xl){
+    max-width: 1150px;
   }
 }
 
@@ -143,7 +181,9 @@ h3 > a { color: inherit; }
   --border-color: var(--eerie-black);
 }
 
-.section { padding-block: var(--section-padding); }
+.section { 
+  padding-block: var(--section-padding); 
+}
 
 .w-100 { width: 100%; }
 

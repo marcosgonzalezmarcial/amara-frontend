@@ -15,13 +15,15 @@
   display: flex;
   align-items: center;
   
-  // @include responsive(md){
-  //   background-position: center;
-  //   // min-height: 800px;
-  // }
+  @include responsive(md){
+    background-position: center;
+    // min-height: 800px;
+  }
 }
 
-.hero .container { width: 100%; }
+.hero .container { 
+  width: 100%; 
+}
 
 .hero-subtitle {
   color: var(--eerie-black);
@@ -33,6 +35,7 @@
 .hero-title {
   margin-bottom: 35px;
   max-width: 12ch;
+
 }
 
 
