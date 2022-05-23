@@ -1,12 +1,11 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 /*-----------------------------------*\
  * #HEADER
 \*-----------------------------------*/
 
-.header-search { 
-  
-  display: none; 
+.header-search {
+  display: none;
 
   @include responsive(lg) {
     display: block;
@@ -15,7 +14,6 @@
   }
 
   & .input-field {
-
     &:focus {
       @include responsive(lg) {
         outline: 1px solid var(--eerie-black);
@@ -29,7 +27,7 @@
       transition: var(--transition-1);
     }
     @include responsive(xl) {
-      width: 350px; 
+      width: 350px;
     }
   }
   & .search-btn {
@@ -47,7 +45,6 @@
       // }
     }
   }
-
 }
 
 .header {
@@ -63,13 +60,13 @@
   &.active {
     position: fixed;
     box-shadow: 0 2px 20px hsla(0, 0%, 0%, 0.1);
-    
-    @include responsive(lg){
+
+    @include responsive(lg) {
       position: relative;
       box-shadow: none;
     }
     & .navbar {
-      @include responsive(lg){
+      @include responsive(lg) {
         position: fixed;
         top: 0;
         box-shadow: 0 2px 20px hsla(0, 0%, 0%, 0.1);
@@ -77,7 +74,7 @@
     }
   }
 
-  @include responsive(lg){
+  @include responsive(lg) {
     position: relative;
     padding-block: 15px;
     border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
@@ -89,19 +86,18 @@
     justify-content: space-between;
     align-items: center;
 
-    @include responsive(lg){
+    @include responsive(lg) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       align-items: center;
     }
   }
-  
+
   & .logo {
-    @include responsive(lg){
+    @include responsive(lg) {
       margin-inline: auto;
     }
   }
-
 }
 
 .nav-open-btn {
@@ -123,8 +119,8 @@
   transform-origin: right;
 }
 
-.nav-open-btn:is(:hover, :focus) span:nth-child(2) { 
-  transform: scaleX(1); 
+.nav-open-btn:is(:hover, :focus) span:nth-child(2) {
+  transform: scaleX(1);
 }
 
 .header-actions {
@@ -141,14 +137,13 @@
   box-shadow: 0 -2px 20px hsla(0, 0%, 0%, 0.1);
   z-index: 1;
 
-  @include responsive(lg){
+  @include responsive(lg) {
     all: unset;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 15px;
   }
-
 }
 
 .header-action-btn {
@@ -170,8 +165,8 @@
 }
 
 .header-action-btn:is(:hover, :focus) .header-action-label {
-   color: var(--eerie-black); 
-  }
+  color: var(--eerie-black);
+}
 
 .header-action-btn .btn-badge {
   position: absolute;
@@ -188,8 +183,8 @@
   border-radius: 50%;
 }
 
-.header-action-btn .btn-badge.green { 
-  --background: var(--middle-blue-green); 
+.header-action-btn .btn-badge.green {
+  --background: var(--middle-blue-green);
 }
 
 .navbar {
@@ -205,7 +200,7 @@
   visibility: hidden;
   transition: 0.25s var(--cubic-out);
 
-  @include responsive(lg){
+  @include responsive(lg) {
     all: unset;
     position: absolute;
     top: calc(100% + 1px);
@@ -213,7 +208,6 @@
     width: 100%;
     background: var(--white);
   }
-
 }
 
 .navbar.active {
@@ -229,12 +223,11 @@
   margin-bottom: 60px;
 }
 
-.nav-close-btn ion-icon { 
-  font-size: 23px; 
+.nav-close-btn ion-icon {
+  font-size: 23px;
 }
 
 .navbar-link {
-
   padding-block: 10px;
   color: var(--eerie-black);
 
@@ -247,25 +240,22 @@
       color: var(--middle-blue-green);
     }
   }
-
 }
 
 .navbar-list {
-
-  & > li:not(:last-child){
+  & > li:not(:last-child) {
     border-bottom: 1px solid var(--cultured);
-    @include responsive(lg){
+    @include responsive(lg) {
       border-bottom: none;
     }
   }
-  
-  @include responsive(lg){
+
+  @include responsive(lg) {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
   }
-   
 }
 
 .overlay {
@@ -283,12 +273,11 @@
   pointer-events: all;
 }
 
-
 @media (min-width: 992px) {
   .nav-open-btn,
   .header-action-btn:nth-child(2),
   .navbar-top,
-  .overlay { 
-    display: none; 
+  .overlay {
+    display: none;
   }
 }
