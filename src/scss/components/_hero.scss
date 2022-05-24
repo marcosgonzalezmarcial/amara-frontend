@@ -5,11 +5,8 @@
 \*-----------------------------------*/
 
 .hero {
-  background: url("../../assets/images/hero-bg-img.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-  background-attachment: fixed;
+  background: url("../../assets/images/hero-bg-img.jpg") no-repeat fixed
+    center/cover;
   width: 100%;
   min-height: calc(100vh - 146px);
   padding-block: var(--section-padding);
@@ -17,8 +14,7 @@
   align-items: center;
 
   @include responsive(md) {
-    background-position: center;
-    // min-height: 800px;
+    background-size: contain;
   }
 }
 

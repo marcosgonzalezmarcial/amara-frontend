@@ -52,15 +52,16 @@
   top: 0;
   left: 0;
   background: var(--soft-gray);
-  background: var(--white);
+  // background: var(--white);
   width: 100%;
   padding-block: 20px;
   z-index: 4;
   transition: var(--transition-1);
+  box-shadow: 0 2px 15px hsla(0, 0%, 0%, 0.1);
 
   &.active {
     position: fixed;
-    box-shadow: 0 2px 20px hsla(0, 0%, 0%, 0.1);
+    box-shadow: 0 2px 15px hsla(0, 0%, 0%, 0.1);
 
     @include responsive(lg) {
       position: relative;
@@ -81,6 +82,7 @@
     padding-block: 15px;
     border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
     margin-bottom: 67px;
+    background: var(--white);
   }
 
   & .container {
