@@ -1,32 +1,33 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
+@use "../abstracts/mixins" as *;
 
 /*-----------------------------------*\
  * #HERO
 \*-----------------------------------*/
 
 .hero {
+  background: url("../../assets/images/hero-bg-img.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
+  background-size: auto;
+  background-position: center;
+  background-attachment: fixed;
   width: 100%;
-  min-height: 80vh;
+  min-height: calc(100vh - 146px);
   padding-block: var(--section-padding);
   display: flex;
   align-items: center;
-  
-  @include responsive(md){
+
+  @include responsive(md) {
     background-position: center;
     // min-height: 800px;
   }
 }
 
-.hero .container { 
-  width: 100%; 
+.hero .container {
+  width: 100%;
 }
 
 .hero-subtitle {
-  color: var(--eerie-black);
+  color: var(--black);
   font-size: var(--fs-4);
   font-weight: var(--fw-600);
   margin-bottom: 20px;
@@ -35,9 +36,5 @@
 .hero-title {
   margin-bottom: 35px;
   max-width: 12ch;
-
+  color: var(--black);
 }
-
-
-
-
