@@ -23,9 +23,14 @@ for (let i = 0; i < navElemArr.length; i++) {
  */
 
 const header = document.querySelector("[data-header]");
+const headerActions = document.querySelector(".header-actions");
 
 window.addEventListener("scroll", function () {
-  window.scrollY >= 200
-    ? header.classList.add("active")
-    : header.classList.remove("active");
+  if (window.scrollY >= 100) {
+    header.classList.add("active");
+    headerActions.classList.add("active");
+  } else {
+    header.classList.remove("active");
+    headerActions.classList.remove("active");
+  }
 });
