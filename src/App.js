@@ -19,14 +19,14 @@ for (let i = 0; i < navElemArr.length; i++) {
 }
 
 /**
- * add active class on header when scrolled 200px from top
+ * add active class on header when scrolled 50px from top
  */
 
 const header = document.querySelector("[data-header]");
 const headerActions = document.querySelector(".header-actions");
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY >= 100) {
+  if (window.scrollY >= 90) {
     header.classList.add("active");
     headerActions.classList.add("active");
   } else {

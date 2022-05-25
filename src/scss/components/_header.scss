@@ -42,10 +42,10 @@
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  background: var(--soft-gray);
+  background: var(--cultured);
   width: 100%;
   padding-block: 20px;
   z-index: 4;
@@ -64,8 +64,8 @@
       @include responsive(lg) {
         position: fixed;
         top: 0;
-        box-shadow: 0 2px 20px hsla(0, 0%, 0%, 20%);
-        background-color: var(--soft-gray);
+        box-shadow: 0 2px 10px hsla(0, 0%, 0%, 20%);
+        background-color: var(--cultured);
       }
     }
   }
@@ -121,7 +121,7 @@
 }
 
 .header-actions {
-  background: var(--soft-gray);
+  background: var(--cultured);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -143,7 +143,7 @@
   }
 
   &.active {
-    background: var(--soft-gray);
+    background: var(--cultured);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -212,6 +212,12 @@
   visibility: hidden;
   transition: 0.25s var(--cubic-out);
 
+  // &.active {
+  //   visibility: visible;
+  //   transform: translateX(-300px);
+  //   transition: 0.5s var(--cubic-in);
+  // }
+
   @include responsive(lg) {
     all: unset;
     position: absolute;
@@ -220,12 +226,6 @@
     width: 100%;
     background: var(--white);
   }
-}
-
-.navbar.active {
-  visibility: visible;
-  transform: translateX(-300px);
-  transition: 0.5s var(--cubic-in);
 }
 
 .navbar-top {
@@ -278,11 +278,11 @@
   pointer-events: none;
   transition: var(--transition-1);
   z-index: 2;
-}
 
-.overlay.active {
-  opacity: 0.7;
-  pointer-events: all;
+  &.active {
+    opacity: 0.7;
+    pointer-events: all;
+  }
 }
 
 @media (min-width: 992px) {

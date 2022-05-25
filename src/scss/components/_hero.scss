@@ -5,16 +5,19 @@
 \*-----------------------------------*/
 
 .hero {
-  background: url("https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/assets/images/hero-bg-img.jpg")
-    no-repeat fixed center/cover;
+  background: url("../assets/images/hero-bg-img.jpg") no-repeat center/cover;
   width: 100%;
   min-height: calc(100vh - 146px);
   padding-block: var(--section-padding);
   display: flex;
   align-items: center;
 
+  &-content {
+    padding-inline-start: 20px;
+  }
+
   @include responsive(md) {
-    background-size: contain;
+    background-size: 1120px;
   }
 }
 
