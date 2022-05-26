@@ -1,0 +1,23 @@
+.arrow {
+  position: fixed;
+  top: 88px;
+  width: 10px; 
+  height: 10px; 
+  border: none;
+  background-color: none;
+  // high z-index to position the triangle on top of the navbar
+  z-index: 1000;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: all 500ms linear;
+  transition-property: opacity, border-left-color, border-top-color, background-color;
+  left: var(--navbar-left);
+
+}
+.arrow-up {
+  opacity: 1;
+  background-color: var(--white);
+  border: 1px solid grey;
+  border-right-color: var(--white);
+  border-bottom-color: var(--white);
+}

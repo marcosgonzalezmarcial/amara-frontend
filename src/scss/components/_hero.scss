@@ -5,7 +5,7 @@
 \*-----------------------------------*/
 
 .hero {
-  background: url("../assets/images/hero-bg-img.jpg") no-repeat center/cover;
+  background: url("https://raw.githubusercontent.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/hero-bg-img.jpg") no-repeat center/contain;
   width: 100%;
   min-height: calc(100vh - 146px);
   padding-block: var(--section-padding);

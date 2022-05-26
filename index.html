@@ -36,6 +36,14 @@
     <header class="header" data-header>
       <div class="container">
         <div class="overlay" data-overlay></div>
+        <div class="shopping-bag">
+          <h2>your bag</h2>
+          <div class="shopping-bag-content"></div>
+          <div class="shopping-bag-footer">
+            <h3>your total : €<span class="shopping-bag-total">0</span></h3>
+            <button class="clear-shopping-bag banner-btn">clear bag</button>
+          </div>
+        </div>
 
         <div class="header-search">
           <input
@@ -73,6 +81,14 @@
           </button>
 
           <button class="header-action-btn">
+            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+            <p class="header-action-label">Favoritos</p>
+
+            <div class="btn-badge" aria-hidden="true">2</div>
+          </button>
+
+          <button class="header-action-btn">
             <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
 
             <p class="header-action-label">Carrito</p>
@@ -80,13 +96,7 @@
             <div class="btn-badge green" aria-hidden="true">3</div>
           </button>
 
-          <button class="header-action-btn">
-            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
 
-            <p class="header-action-label">Favoritos</p>
-
-            <div class="btn-badge" aria-hidden="true">2</div>
-          </button>
         </div>
 
         <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">

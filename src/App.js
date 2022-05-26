@@ -1,8 +1,10 @@
-// "use strict";
+import { triangleBorder } from "../src/components/triangleBorder";
 
 /**
  * navbar toggle
  */
+
+triangleBorder();
 
 const overlay = document.querySelector("[data-overlay]");
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
@@ -25,6 +27,8 @@ for (let i = 0; i < navElemArr.length; i++) {
 const header = document.querySelector("[data-header]");
 const headerActions = document.querySelector(".header-actions");
 
+header.appendChild(triangleBorder());
+
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 90) {
     header.classList.add("active");
@@ -34,3 +38,9 @@ window.addEventListener("scroll", function () {
     headerActions.classList.remove("active");
   }
 });
+
+const bagPosL = document
+  .querySelector("button.header-action-btn ion-icon[name='cart-outline']")
+  .getBoundingClientRect().left;
+
+document.documentElement.style.setProperty("--navbar-left", `${bagPosL + 7}px`);

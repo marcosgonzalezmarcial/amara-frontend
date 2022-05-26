@@ -1,0 +1,38 @@
+.shopping-bag {
+  position: fixed;
+  top: 94px;
+  // width: 100%;
+  width: 375px;
+  right: 0.5rem;
+  padding: 1.5rem;
+  z-index: 1;
+  transform: translateY(-175%);
+  // transition: $mainTransition;
+  border: 1px solid grey;
+  transition-duration: 425ms;
+  transition-property: transform;
+  overflow-y: auto;
+  box-sizing: border-box;
+  pointer-events: fill;
+  height: auto;
+  border: 1px solid grey;
+  background: var(--white);
+  @media (max-width: 375px) {
+    & {
+      width: 100%;
+      right: 0;
+    }
+  }
+}
+
+
+
+
+.show-bag {
+  transform: translateY(0%);
+}
+
+.close-bag {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
