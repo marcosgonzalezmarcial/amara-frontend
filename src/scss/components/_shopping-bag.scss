@@ -2,14 +2,14 @@
   position: fixed;
   top: 94px;
   // width: 100%;
-  width: 375px;
-  right: 0.5rem;
+  width: 25%;
+  right: 0%;
   padding: 1.5rem;
   z-index: 1;
-  transform: translateY(-175%);
-  // transition: $mainTransition;
+  transform: translateX(100%);
+  min-height: 100%;
   border: 1px solid grey;
-  transition-duration: 425ms;
+  transition-duration: 325ms;
   transition-property: transform;
   overflow-y: auto;
   box-sizing: border-box;
@@ -20,7 +20,6 @@
   @media (max-width: 375px) {
     & {
       width: 100%;
-      right: 0;
     }
   }
 }
@@ -29,7 +28,7 @@
 
 
 .show-bag {
-  transform: translateY(0%);
+  transform: translateX(0%);
 }
 
 .close-bag {

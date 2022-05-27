@@ -1,15 +1,16 @@
 export const triangleBorder = () => {
-  const triangleBorder = `<div class="arrow arrow-up"></div>`;
+  const triangleBorder = `<div class="arrow"></div>`;
 
-  const bagPos = document
-    .querySelector("button.header-action-btn ion-icon[name='cart-outline']")
-    .getBoundingClientRect().left;
-
-  console.log(bagPos);
+  let triangleBorderEl = document.querySelector(
+    "button.header-action-btn ion-icon[name='cart-outline']"
+  );
 
   // repositioning the element according to width size
   const repositionTriangleBorder = () => {
-    document.documentElement.style.setProperty("--navbar-left", `${bagPos}px`);
+    document.documentElement.style.setProperty(
+      "--triangle-border-left",
+      `${triangleBorderEl.getBoundingClientRect().left + 7}px`
+    );
   };
   window.onresize = repositionTriangleBorder;
 
