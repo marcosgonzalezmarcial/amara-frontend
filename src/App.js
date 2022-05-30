@@ -50,9 +50,9 @@ for (let i = 0; i < navElemArr.length; i++) {
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 90) {
     header.classList.add("active");
-    headerActions.classList.add("active");
+    // headerActions.classList.add("active");
   } else {
     header.classList.remove("active");
-    headerActions.classList.remove("active");
+    // headerActions.classList.remove("active");
   }
 });

@@ -5,7 +5,7 @@
 \*-----------------------------------*/
 
 .hero {
-  background: url("https://raw.githubusercontent.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/hero-bg-img.jpg") no-repeat center/contain;
+  background: url("https://raw.githubusercontent.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/hero-bg-img.jpg") no-repeat center/cover;
   width: 100%;
   min-height: calc(100vh - 146px);
   padding-block: var(--section-padding);
@@ -15,10 +15,15 @@
   &-content {
     padding-inline-start: 20px;
   }
+  
+  @include responsive(sm) {
+    background-size: 950px;
+  }
 
   @include responsive(md) {
-    background-size: 1120px;
+    background-size: 1170px;
   }
+  
 }
 
 .hero .container {

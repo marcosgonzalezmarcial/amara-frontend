@@ -104,7 +104,7 @@ body {
     max-width: 950px;
   }
   @include responsive(xl){
-    max-width: 1150px;
+    max-width: 1200px;
   }
 }
 
@@ -185,7 +185,9 @@ h3 > a { color: inherit; }
   padding-block: var(--section-padding); 
 }
 
-.w-100 { width: 100%; }
+.w-100 { 
+  width: 100%; 
+}
 
 .section-title {
   text-align: center;

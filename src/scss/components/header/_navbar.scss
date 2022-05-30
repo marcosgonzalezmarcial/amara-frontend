@@ -1,0 +1,133 @@
+@use "../../abstracts/mixins" as *;
+
+.navbar {
+  background: var(--white);
+  position: fixed;
+  top: 0;
+  right: -300px;
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  padding: 30px 25px;
+  z-index: 3;
+  visibility: hidden;
+  transition: 0.25s var(--cubic-out);
+
+  // showing the side-banvbar dynamiclly
+  &.active {
+    visibility: visible;
+    transform: translateX(-300px);
+    transition: 0.5s var(--cubic-in);
+  }
+
+  @include responsive(lg) {
+    all: unset;
+    // position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    width: 100%;
+    background: var(--white);
+  }
+}
+
+// 
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.nav-close-btn ion-icon {
+  font-size: 23px;
+}
+
+.navbar-link {
+  padding-block: 10px;
+  color: var(--eerie-black);
+
+  // view on large screens (above 992px)
+  @include responsive(lg) {
+    font-size: var(--fs-8);
+    font-weight: var(--fw-500);
+    padding-block: 20px;
+
+    &:is(:hover, :focus) {
+      color: var(--middle-blue-green);
+    }
+  }
+}
+
+
+.navbar-list {
+  & > li:not(:last-child) {
+    border-bottom: 1px solid var(--cultured);
+    @include responsive(lg) {
+      border-bottom: none;
+    }
+  }
+
+  @include responsive(lg) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+// Overlay 
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--black);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-1);
+  z-index: 2;
+
+  &.active {
+    opacity: 0.7;
+    pointer-events: all;
+  }
+}
+
+.nav-open-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+
+  span {
+    width: 20px;
+    height: 2px;
+    background: var(--black);
+    transition: var(--transition-1);
+  }
+
+}
+
+// .nav-open-btn span {
+//   width: 20px;
+//   height: 2px;
+//   background: var(--black);
+//   transition: var(--transition-1);
+// }
+
+.nav-open-btn span:nth-child(2) {
+  transform: scaleX(0.5);
+  transform-origin: right;
+}
+
+.nav-open-btn:is(:hover, :focus) span:nth-child(2) {
+  transform: scaleX(1);
+}
+
+
+@media (min-width: 992px) {
+  .nav-open-btn,
+  // .header-action-btn:nth-child(2),
+  .navbar-top,
+  .overlay {
+    display: none;
+  }
+}
