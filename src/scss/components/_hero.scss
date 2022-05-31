@@ -5,7 +5,7 @@
 \*-----------------------------------*/
 
 .hero {
-  background: url("https://raw.githubusercontent.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/hero-bg-img.jpg") no-repeat center/cover;
+  background: url("https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/hero-bg-img.jpg") no-repeat center/cover;
   width: 100%;
   min-height: calc(100vh - 146px);
   padding-block: var(--section-padding);
@@ -16,19 +16,21 @@
     padding-inline-start: 20px;
   }
   
-  @include responsive(sm) {
-    background-size: 950px;
-  }
+  // @include responsive(sm) {
+  //   background-size: 950px;
+  // }
 
-  @include responsive(md) {
-    background-size: 1170px;
+  // @include responsive(md) {
+  //   background-size: 1170px;
+  // }
+
+  .container {
+    width: 100%;
   }
   
 }
 
-.hero .container {
-  width: 100%;
-}
+
 
 .hero-subtitle {
   color: var(--black);

@@ -1,13 +1,14 @@
+@use '../abstracts/mixins' as *;
+
 .shopping-bag {
   position: fixed;
-  top: 82px;
-  // width: 100%;
-  width: 25%;
+  top: 74px;
+  width: 100%;
   right: 0%;
   padding: 1.5rem;
   z-index: 1;
   transform: translateX(100%);
-  min-height: 100%;
+  min-height: calc(100% - 163px);
   border: 1px solid grey;
   transition-duration: 325ms;
   transition-property: transform;
@@ -17,11 +18,23 @@
   height: auto;
   border: 1px solid grey;
   background: var(--white);
-  @media (max-width: 375px) {
-    & {
-      width: 100%;
-    }
+  
+  @include responsive(sm) {
+    width: 50%;
   }
+  @include responsive(md) {
+    // top: 104px;
+    // width: 50%;
+    max-width: 450px;
+  }
+  @include responsive(lg) {
+    top: 104px;
+    min-height: 100%;
+  }
+  @include responsive(xl) {
+    top: 83px;
+  }
+  
 }
 
 
