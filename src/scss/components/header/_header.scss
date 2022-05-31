@@ -45,35 +45,35 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: var(--cultured);
+  background: var(--white);
   width: 100%;
   padding-block: 20px;
   z-index: 4;
   transition: var(--transition-1);
-  // box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.1);
 
-  &.active {
-    position: fixed;
-    // padding-block: 7px;
-    box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.1);
+  // &.active {
+  //   position: fixed;
+  //   // padding-block: 7px;
+  //   box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.1);
 
-    // @include responsive(lg) {
-    //   position: relative;
-    //   box-shadow: none;
-    // }
+  //   // @include responsive(lg) {
+  //   //   position: relative;
+  //   //   box-shadow: none;
+  //   // }
 
-    // & .navbar {
-    //   @include responsive(lg) {
-    //     position: fixed;
-    //     top: 0;
-    //     box-shadow: 0 2px 10px hsla(0, 0%, 0%, 20%);
-    //     background-color: var(--cultured);
-    //   }
-    // }
-  }
+  //   // & .navbar {
+  //   //   @include responsive(lg) {
+  //   //     position: fixed;
+  //   //     top: 0;
+  //   //     box-shadow: 0 2px 10px hsla(0, 0%, 0%, 20%);
+  //   //     background-color: var(--cultured);
+  //   //   }
+  //   // }
+  // }
 
   @include responsive(lg) {
-    position: relative;
+    // position: relative;
     padding-block: 10px;
     // border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
     // margin-bottom: 67px;
