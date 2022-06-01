@@ -16,13 +16,12 @@
   box-sizing: border-box;
   pointer-events: fill;
   background: var(--white);
-  // animation: shoppingBag 0.3s backwards;
-
+  
   transition-duration: 325ms;
   transition-property: all;
-  // transition-property: opacity;
   transition-timing-function: linear;
   
+  // animation: shoppingBag 0.3s backwards;
   
   @include responsive(sm) {
     width: 50%;
