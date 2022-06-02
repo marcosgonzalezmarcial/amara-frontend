@@ -13,7 +13,7 @@
   visibility: hidden;
   transition: 0.25s var(--cubic-out);
 
-  // showing the side-banvbar dynamiclly
+  // showing the side-navbar dynamiclly
   &.active {
     visibility: visible;
     transform: translateX(-300px);
@@ -22,11 +22,9 @@
 
   @include responsive(lg) {
     all: unset;
-    // position: absolute;
     top: calc(100% + 1px);
     left: 0;
     width: 100%;
-    // background: var(--white);
   }
 }
 
@@ -44,43 +42,39 @@
 
 
 
-
-
-
 .navbar-list {
 
   .navbar-link {
     padding-block: 10px;
     color: var(--eerie-black);
   
-    &:is(:hover, :focus, :active) {
-      color: var(--middle-blue-green);
+    &:is(/*:hover, */:focus, :active) {
+      // color: var(--middle-blue-green);
+      font-weight: var(--fw-500);
     }
   
     // view on large screens (above 992px)
     @include responsive(lg) {
       font-size: var(--fs-8);
-      font-weight: var(--fw-500);
+      font-weight: var(--fw-400);
       // padding-block: 20px;   
     }
   
   }
 
-  &:nth-child(3){
-    inline-size: 100px;
-  }
-
   li {
+    width: max-content;
     position: relative;
     a::after {
       content: '';
       position: absolute;
       height: 1px;
       width: 0%;
-      background-color: var(--middle-blue-green);
+      // background-color: var(--middle-blue-green);
+      background-color: var(--eerie-black);
       top: 35px;
       left: 0;
-      transition: width 250ms;
+      transition: width 375ms;
     }
     a:hover::after {
       width: 100%;
@@ -148,7 +142,6 @@
 
 @media (min-width: 992px) {
   .nav-open-btn,
-  // .header-action-btn:nth-child(2),
   .navbar-top,
   .overlay {
     display: none;

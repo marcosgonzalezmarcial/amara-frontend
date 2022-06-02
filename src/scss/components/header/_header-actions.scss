@@ -10,7 +10,7 @@
   justify-content: space-evenly;
   align-items: center;
   gap: 5px;
-  padding-block: 16px 10px;
+  padding-block: 16px;
   box-shadow: 0 -2px 20px hsla(0, 0%, 0%, 0.1);
   z-index: 1;
   border-top:1px solid rgba(0, 0, 0, 0.1);
@@ -23,62 +23,60 @@
     gap: 20px;
   }
 
-  &.active {
-    background: var(--cultured);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 5px;
-    padding-block: 16px 10px;
-    box-shadow: 0 -2px 20px hsla(0, 0%, 0%, 0.1);
-    border-top:1px solid rgba(0, 0, 0, 0.1);
-    z-index: 1;
+  .header-action-label {
+    color: var(--sonic-silver);
+    font-size: var(--fs-10);
+    transition: var(--transition-1);
   }
-}
 
-.header-action-btn {
-  position: relative;
-  width: 50px;
-  text-align: center;
-}
+  .header-action-btn {
+    position: relative;
+      // width: max-content;
+    text-align: center;
 
-.header-action-btn ion-icon {
-  margin-inline: auto;
-  font-size: 22px;
-  margin-bottom: 3px;
-}
 
-.header-action-label {
-  color: var(--sonic-silver);
-  font-size: var(--fs-10);
-  transition: var(--transition-1);
-}
+    ion-icon {
+      margin-inline: auto;
+      font-size: 22px;
+      margin-bottom: 3px;
+    }
+  
+    .btn-badge {
+      position: absolute;
+      top: -5px;
+      right: 0;
+      background: var(--background, var(--eerie-black));
+      width: 20px;
+      height: 20px;
+      display: grid;
+      place-items: center;
+      line-height: 0;
+      font-size: 13px;
+      color: var(--white);
+      border-radius: 50%;
+      &.green {
+        --background: var(--middle-blue-green);
+      }
+    }
 
-.header-action-btn:is(:hover, :focus) .header-action-label {
-  color: var(--eerie-black);
-}
-
-.header-action-btn .btn-badge {
-  position: absolute;
-  top: -5px;
-  right: 0;
-  background: var(--background, var(--eerie-black));
-  width: 20px;
-  height: 20px;
-  display: grid;
-  place-items: center;
-  line-height: 0;
-  font-size: 13px;
-  color: var(--white);
-  border-radius: 50%;
-}
-
-.header-action-btn {
-  .btn-badge.green {
-    --background: var(--middle-blue-green);
+    &:hover {
+      color: var(--middle-blue-green);
+      transform: scale(1.05);
+      p {
+        color: var(--middle-blue-green);
+        transform: scale(1.05);
+      }
+    }
   }
+
 }
+
+
+
+
+
+// .header-action-btn {
+//   .btn-badge.green {
+//     --background: var(--middle-blue-green);
+//   }
+// }

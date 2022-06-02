@@ -11,7 +11,7 @@
   z-index: 1000;
   transform: rotate(45deg);
   opacity: 0;
-  transition: all 325ms linear;
+  transition: all 125ms linear;
   transition-property: opacity, border-left-color, border-top-color, background-color;
   left: var(--triangle-border-left);
   display: none;
@@ -30,6 +30,9 @@
 
   @include responsive(md){
     top: 99px;
+  }
+  @include responsive(lg){
+    top: 80px;
   }
   @include responsive(xl){
     top: 78px;
