@@ -25,6 +25,9 @@
       grid-template-columns: repeat(3, 1fr);
       align-items: center;
     }
+    @include responsive(xxl){
+        padding-inline: 0;
+    }
   }
 
   & .logo {

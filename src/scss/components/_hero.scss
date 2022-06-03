@@ -20,14 +20,13 @@
 
   .container {
     width: 100%;
-
   }
 
   @include responsive(lg){
     min-height: 100vh;
   }
   @include responsive(xl){
-    background-size: contain;
+    background-size: 1235px;
   }
 }
 
