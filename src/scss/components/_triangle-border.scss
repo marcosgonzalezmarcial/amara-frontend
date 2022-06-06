@@ -11,8 +11,9 @@
   z-index: 1000;
   transform: rotate(45deg);
   opacity: 0;
-  transition: all 125ms linear;
-  transition-property: opacity, border-left-color, border-top-color, background-color;
+  transition-duration: 125ms;
+  transition-timing-function: ease-in-out;
+  transition-property: opacity, border-left-color, border-top-color,background-color;
   left: var(--triangle-border-left);
   display: none;
   @include responsive(lg) {
@@ -34,7 +35,7 @@
   @include responsive(lg){
     top: 80px;
   }
-  @include responsive(xl){
-    top: 78px;
-  }
+  // @include responsive(xl){
+  //   top: 79px;
+  // }
 }
