@@ -5,7 +5,7 @@ const navOpenBtn = document.querySelector("[data-nav-open-btn]");
 const navbar = document.querySelector("[data-navbar]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
 const header = document.querySelector("[data-header]");
-const headerActions = document.querySelector(".header-actions");
+// const headerActions = document.querySelector(".header-actions");
 const cartBtnEl = document.querySelector(
   "button.header-action-btn ion-icon[name='cart-outline']"
 );
@@ -21,7 +21,7 @@ const triangleBorderEl = document.querySelector(".arrow");
 // setting triangle border position on first load
 document.documentElement.style.setProperty(
   "--triangle-border-left",
-  `${cartBtnPos + 7}px`
+  `${cartBtnPos + 15}px`
 );
 
 // showing cart with triangle-border when the cart is clicked

@@ -4,6 +4,7 @@
     padding: 1rem 1rem 0.5rem 1rem;
     border: 1px solid grey;
     height: 100%;
+    overflow: auto;
 }
 
 
@@ -20,13 +21,17 @@
   background: var(--white);
   display: flex;
   flex-direction: column;
+  // padding: 1rem 1rem 0.5rem 1rem;
   
   width: 100%;
   height: calc(100% - 151px);
+  height: auto;
   max-height: 100%;
   overflow: hidden;
+  
 
-  animation: shoppingBagDontShow 0.5s forwards;
+  animation: shoppingBagDontShow 0.4s forwards;
+  
   
   @include responsive(sm) {
     width: 50%;
@@ -45,7 +50,8 @@
 
 
 .show-bag {
-  animation: shoppingBagShow 0.7s forwards;
+  animation: shoppingBagShow 0.4s forwards;
+  // overflow: auto;
 }
 
 .close-bag {
@@ -74,6 +80,7 @@
   display: grid;
   grid-template-columns: 0.4fr 0.8fr;
   gap: 10px;
+  margin-bottom: 1rem;
   .shopping-bag-content-container-img-container {
     width: 100%;
     img {
@@ -100,31 +107,29 @@
 
 @keyframes shoppingBagShow {
   0% {
-      max-height: 0;
+      height: 0;
       opacity: 0;
   }
   1% {
       opacity: 1;
   }
   100% {
-      max-height: auto;
+      height: 300px;
       opacity: 1;
   }
 }
 
 @keyframes shoppingBagDontShow {
   0% {
-      max-height: 100%;
+      height: 300px;
       opacity: 1;
   }
   99% {
       opacity: 1;
-   
   }
   100% {
-      max-height: 0;
+      height: 0%;
       opacity: 0
-  
   }
 }
 
