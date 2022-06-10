@@ -9,7 +9,7 @@ const header = document.querySelector("[data-header]");
 const cartBtnEl = document.querySelector(
   "button.header-action-btn ion-icon[name='cart-outline']"
 );
-const shoppingBagEl = document.querySelector(".shopping-bag");
+const shoppingBagEl = document.querySelector(".shopping-bag-box");
 
 // appending triangle-border for the cart
 
@@ -56,3 +56,13 @@ for (let i = 0; i < navElemArr.length; i++) {
 //     // headerActions.classList.remove("active");
 //   }
 // });
+
+function bagResize() {
+  if (window.innerWidth < 992) {
+    console.log(window.innerWidth);
+    shoppingBagEl.style.animation = null;
+    document.querySelector(".show-bag").style.animation = null;
+  }
+}
+
+window.addEventListener("DOMContentLoaded", bagResize);

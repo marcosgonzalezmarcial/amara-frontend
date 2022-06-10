@@ -1,57 +1,60 @@
-@use '../abstracts/mixins' as *;
+@use "../abstracts/mixins" as *;
 
-.shopping-bag-container {
-    padding: 1rem 1rem 0.5rem 1rem;
-    border: 1px solid grey;
-    height: 100%;
-    overflow: auto;
-}
+// mobile first approach
 
+.shopping-bag-box {
+  // max-height on desktop 568px
+  --height: 568px;
 
-.shopping-bag {
   position: fixed;
-  top: 74px;
-  width: 100%;
+  top: 75px;
   right: 0%;
   z-index: 1;
-  // transform: translateX(100%);
-  opacity: 1;
-  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  max-height: calc(100vh - 151px);
+  overflow: auto;
   pointer-events: fill;
   background: var(--white);
-  display: flex;
-  flex-direction: column;
-  // padding: 1rem 1rem 0.5rem 1rem;
-  
-  width: 100%;
-  height: calc(100% - 151px);
-  height: auto;
-  max-height: 100%;
-  overflow: hidden;
-  
+  box-sizing: border-box;
+  opacity: 1;
+  transform: translateX(100%);
 
-  animation: shoppingBagDontShow 0.4s forwards;
-  
-  
   @include responsive(sm) {
-    width: 50%;
+    max-width: 60%;
   }
   @include responsive(md) {
     max-width: 400px;
   }
   @include responsive(lg) {
     top: 84px;
-  }
-  @include responsive(xl) {
+    animation: shoppingBagDontShow 0.4s forwards;
+    transform: translateX(0);
     height: auto;
-    top: 84px;
-  } 
+    overflow: hidden;
+    max-height: var(--height);
+  }
+
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-property: transform;
 }
 
+.shopping-bag-container {
+  padding: 1rem;
+  height: 100%;
+  @include responsive(sm) {
+    border: 1px solid grey;
+  }
+
+  // height: calc(100vh - 150px);
+}
 
 .show-bag {
-  animation: shoppingBagShow 0.4s forwards;
-  // overflow: auto;
+  transform: translateX(0);
+  @include responsive(lg) {
+    animation: shoppingBagShow 0.7s forwards;
+  }
 }
 
 .close-bag {
@@ -59,21 +62,25 @@
   cursor: pointer;
 }
 
-
 .bag-title {
   color: var(--black);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
   line-height: 22px;
   margin-bottom: 1rem;
 }
 
 .shopping-bag-content {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0 auto;
+  // max-height: 420px;
+  // overflow: auto;
+  @include responsive(lg) {
+    max-height: 370px;
+    overflow: auto;
+    margin-bottom: 1rem;
+    margin-inline-start: 1rem;
+  }
 }
 
 .shopping-bag-content-container {
@@ -81,9 +88,17 @@
   grid-template-columns: 0.4fr 0.8fr;
   gap: 10px;
   margin-bottom: 1rem;
+
   .shopping-bag-content-container-img-container {
     width: 100%;
     img {
+      @include responsive(sm) {
+        max-height: 100%;
+      }
+      @include responsive(lg) {
+        max-height: 140px;
+      }
+      max-height: 120px;
       width: 100%;
     }
   }
@@ -103,33 +118,30 @@
   }
 }
 
-
-
 @keyframes shoppingBagShow {
   0% {
-      height: 0;
-      opacity: 0;
+    max-height: 0;
+    opacity: 0;
   }
   1% {
-      opacity: 1;
+    opacity: 1;
   }
   100% {
-      height: 300px;
-      opacity: 1;
+    max-height: var(--height);
+    opacity: 1;
   }
 }
 
 @keyframes shoppingBagDontShow {
   0% {
-      height: 300px;
-      opacity: 1;
+    max-height: var(--height);
+    opacity: 1;
   }
   99% {
-      opacity: 1;
+    opacity: 1;
   }
   100% {
-      height: 0%;
-      opacity: 0
+    max-height: 0%;
+    opacity: 0;
   }
 }
-

@@ -1,10 +1,10 @@
-@use '../abstracts/mixins' as *;
+@use "../abstracts/mixins" as *;
 
 .arrow {
   position: fixed;
   top: var(--triangle-border-top);
-  width: 10px; 
-  height: 10px; 
+  width: 10px;
+  height: 10px;
   border: none;
   background-color: none;
   // high z-index to position the triangle on top of the navbar
@@ -13,13 +13,13 @@
   opacity: 0;
   transition-duration: 125ms;
   transition-timing-function: ease-in-out;
-  transition-property: opacity, border-left-color, border-top-color,background-color;
+  transition-property: opacity, border-left-color, border-top-color,
+    background-color;
   left: var(--triangle-border-left);
   display: none;
   @include responsive(lg) {
     display: block;
   }
-
 }
 .arrow-up {
   opacity: 1;
@@ -28,14 +28,10 @@
   border-right-color: var(--white);
   border-bottom-color: var(--white);
 
-
-  @include responsive(md){
+  @include responsive(md) {
     top: 99px;
   }
-  @include responsive(lg){
-    top: 80px;
+  @include responsive(lg) {
+    top: 79px;
   }
-  // @include responsive(xl){
-  //   top: 79px;
-  // }
 }

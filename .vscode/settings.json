@@ -1,7 +1,7 @@
 {
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
   "files.autoSave": "off",
   "javascript.autoClosingTags": true,
   "html.autoClosingTags": true,

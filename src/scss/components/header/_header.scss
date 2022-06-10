@@ -10,10 +10,10 @@
   background: var(--white);
   width: 100%;
   padding-block: 20px;
-  z-index: 4;
+  z-index: 9999;
   transition: var(--transition-1);
   box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.1);
-
+  border-bottom: 1px solid lightgray;
 
   & .container {
     display: flex;
@@ -25,8 +25,8 @@
       grid-template-columns: repeat(3, 1fr);
       align-items: center;
     }
-    @include responsive(xxl){
-        padding-inline: 0;
+    @include responsive(xxl) {
+      padding-inline: 0;
     }
   }
 
@@ -36,9 +36,6 @@
     }
   }
 }
-
-
-
 
 // .header-search {
 //   display: none;
