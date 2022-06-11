@@ -29,6 +29,19 @@ document.documentElement.style.setProperty(
 cartBtnEl.parentElement.addEventListener("click", () => {
   triangleBorderEl.classList.toggle("arrow-up");
   shoppingBagEl.classList.toggle("show-bag");
+
+  // stopping the undesired scrolling effect on the shopping-bag
+  if (document.querySelector(".stop-scroll")) {
+    document.querySelector("main").classList.toggle("stop-scroll");
+    document.querySelector("footer").classList.toggle("stop-scroll");
+  } else {
+    setTimeout(() => {
+      document.querySelector("main").classList.toggle("stop-scroll");
+    }, 300);
+    setTimeout(() => {
+      document.querySelector("footer").classList.toggle("stop-scroll");
+    }, 300);
+  }
 });
 
 /**

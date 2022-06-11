@@ -45,6 +45,10 @@ ion-icon {
   pointer-events: none; 
 }
 
+html, body, main, footer {
+  overscroll-behavior-y: none;
+}
+
 html {
   font-family: var(--ff-jost);
   color: var(--sonic-silver);
