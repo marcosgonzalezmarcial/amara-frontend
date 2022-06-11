@@ -4,8 +4,15 @@
 
 //to avoid scrolling when the shopping-bag is opened
 .stop-scroll{
-  display: none;
+  overflow: hidden;
+  // overscroll-behavior: none;
+  @include responsive(sm) {
+    overflow: auto;
+    // overscroll-behavior: normal;
+  }
 }
+
+
 
 .shopping-bag-box {
   // max-height on desktop 568px
@@ -25,6 +32,7 @@
   opacity: 1;
   transform: translateX(100%);
   scroll-behavior: smooth;
+  overscroll-behavior: none;
   
 
   @include responsive(sm) {
@@ -50,12 +58,12 @@
 .shopping-bag-container {
   padding: 0.5rem;
   height: 100%;
+  overscroll-behavior: none;
   @include responsive(sm) {
     border: 1px solid grey;
     padding: 1rem;
   }
 
-  // height: calc(100vh - 150px);
 }
 
 .show-bag {
