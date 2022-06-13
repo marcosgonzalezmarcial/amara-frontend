@@ -1,4 +1,4 @@
-@use 'abstracts/variables' as *;
+// @use 'abstracts/variables' as *;
 @use 'abstracts/mixins' as *;
 
 /*-----------------------------------*\
@@ -39,15 +39,13 @@ input {
   outline-color: var(--middle-blue-green);
 }
 
-img { height: auto; }
+img { 
+  height: auto; 
+}
 
 ion-icon { 
   pointer-events: none; 
 }
-
-// html, body, main, footer {
-//   overscroll-behavior-y: none;
-// }
 
 html {
   font-family: var(--ff-jost);
@@ -57,11 +55,16 @@ html {
 
 body {
   background: var(--white);
-  padding-block: 70px;
+  // // padding-block: 70px;
 
-  @include responsive(lg){
-    padding-block: 0;
-  }
+  // @include responsive(lg){
+  //   padding-block: 0;
+  // }
+}
+
+.body-container {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
 }
 
 /*-----------------------------------*\

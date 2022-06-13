@@ -2,6 +2,14 @@
 
 // mobile first approach
 
+.shopping-bag-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 //to avoid scrolling when the shopping-bag is opened
 .stop-scroll{
   overflow: hidden;
@@ -14,7 +22,7 @@
 
 
 
-.shopping-bag-box {
+.shopping-bag-container {
   // max-height on desktop 568px
   --height: 568px;
 
@@ -42,7 +50,7 @@
     max-width: 400px;
   }
   @include responsive(lg) {
-    top: 84px;
+    top: 85px;
     animation: shoppingBagDontShow 0.4s forwards;
     transform: translateX(0);
     height: auto;
@@ -55,10 +63,11 @@
   transition-property: transform;
 }
 
-.shopping-bag-container {
+.shopping-bag {
   padding: 0.5rem;
   height: 100%;
   overscroll-behavior: none;
+  
   @include responsive(sm) {
     border: 1px solid grey;
     padding: 1rem;
@@ -86,12 +95,13 @@
   letter-spacing: 0.3px;
   line-height: 22px;
   margin-bottom: 1rem;
+  overscroll-behavior: none;
 }
 
 .shopping-bag-content {
-  // height: calc(100% - 200px);
-  max-height: calc(100% - 120px);
+  max-height: calc(100% - 140px);
   overflow: auto;
+  overscroll-behavior: none;
   @include responsive(lg) {
     max-height: 370px;
     overflow: auto;
@@ -104,7 +114,7 @@
   display: grid;
   grid-template-columns: 0.4fr 0.8fr;
   gap: 10px;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
 
   @include responsive(sm) {
     margin-bottom: 1rem;
@@ -165,4 +175,9 @@
     max-height: 0%;
     opacity: 0;
   }
+}
+
+
+.shopping-bag-footer {
+  overscroll-behavior: none;
 }
