@@ -11,9 +11,34 @@
   box-sizing: border-box;
 }
 
-li { list-style: none; }
+html {
+  font-family: var(--ff-jost);
+  font-size: 16px;
+  color: var(--sonic-silver);
+  scroll-behavior: smooth;
+}
 
-a { text-decoration: none; }
+body {
+  background: var(--white);
+  // // padding-block: 70px;
+
+  // @include responsive(lg){
+  //   padding-block: 0;
+  // }
+}
+
+.body-container {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+
+li { 
+  list-style: none; 
+}
+
+a { 
+  text-decoration: none; 
+}
 
 a,
 img,
@@ -47,25 +72,7 @@ ion-icon {
   pointer-events: none; 
 }
 
-html {
-  font-family: var(--ff-jost);
-  color: var(--sonic-silver);
-  scroll-behavior: smooth;
-}
 
-body {
-  background: var(--white);
-  // // padding-block: 70px;
-
-  // @include responsive(lg){
-  //   padding-block: 0;
-  // }
-}
-
-.body-container {
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-}
 
 /*-----------------------------------*\
  * #MEDIA QUARIES

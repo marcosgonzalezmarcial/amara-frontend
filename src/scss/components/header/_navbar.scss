@@ -5,10 +5,10 @@
   position: fixed;
   top: 0;
   right: -300px;
-  max-width: 300px;
+  max-width: 300px; 
   width: 100%;
   height: 100%;
-  padding: 30px 25px;
+  padding: 1.875rem 1.562rem;
   z-index: 3;
   visibility: hidden;
   transition: 0.25s var(--cubic-out);
@@ -28,15 +28,15 @@
   }
 }
 
-// side-bar menu > items on top
+// displaying side-bar menu > items on top
 .navbar-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 
   .nav-close-btn ion-icon {
-    font-size: 23px;
+    font-size: 1.5rem;
   }
 }
 
@@ -45,11 +45,10 @@
 .navbar-list {
 
   .navbar-link {
-    padding-block: 10px;
+    padding-block: 0.6rem;
     color: var(--eerie-black);
   
     &:is(/*:hover, */:focus, :active) {
-      // color: var(--middle-blue-green);
       font-weight: var(--fw-500);
     }
   
