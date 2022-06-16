@@ -18,21 +18,20 @@ html {
   font-size: 16px;
   color: var(--sonic-silver);
   scroll-behavior: smooth;
+  height: auto;
 }
 
 body {
   background: var(--white);
-  // // padding-block: 70px;
+  max-width: 100%;
+  height: auto;
+  display: grid;
+  // padding-block: 70px;
 
-  // @include responsive(lg){
+  // @include responsive(lg) {
   //   padding-block: 0;
   // }
 }
-
-// .body-container {
-//   display: grid;
-//   grid-template-rows: repeat(3, auto);
-// }
 
 li {
   list-style: none;
