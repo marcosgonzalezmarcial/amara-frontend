@@ -1,31 +1,61 @@
-import { triangleBorder } from "../src/components/triangleBorder";
+import { triangleBorder } from "./components/triangleBorder";
 
 const overlay = document.querySelector("[data-overlay]");
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
 const navbar = document.querySelector("[data-navbar]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
 const header = document.querySelector("[data-header]");
-const cartBtnEl = document.querySelector(
-  "button.header-action-btn ion-icon[name='cart-outline']"
-).parentElement;
+// const cartBtnEl = document.querySelector(
+//   "button.header-action-btn ion-icon[name='cart-outline']"
+// ).parentElement;
+const actionsButtons = [
+  ...document.querySelectorAll("button.header-action-btn"),
+];
 
 const shoppingBagEl = document.querySelector(".shopping-bag-container");
 
+// Inserting triangle border to the Header
 header.appendChild(triangleBorder());
 
 const triangleBorderEl = document.querySelector(".arrow");
 
-// showing shopping-bag with triangle-border when the shopping-bag is clicked
+/**
+ * shopping-bag toggle
+ */
 
-cartBtnEl.addEventListener("click", () => {
+actionsButtons.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    // removing active class (same styles than hover) from all the buttons except the clicked one
+    actionsButtons.forEach(
+      (btn) => this !== btn && btn.classList.remove("active")
+    );
+    this.classList.toggle("active");
+  });
+
+  btn.children[1].innerText === "Carrito"
+    ? btn.addEventListener("click", toggleBag)
+    : btn.addEventListener("click", hideBag);
+});
+
+// showing shopping-bag with triangle-border when the shopping-bag is clicked
+function toggleBag() {
   triangleBorderEl.classList.toggle("arrow-up");
   shoppingBagEl.classList.toggle("show-bag");
 
-  // stopping the undesired scrolling effect at the back the shopping-bag
+  // avoid page scrolling on the back when the bag is open
   setTimeout(() => {
     document.body.classList.toggle("stop-scroll");
   }, 300);
-});
+}
+
+function hideBag() {
+  triangleBorderEl.classList.remove("arrow-up");
+  shoppingBagEl.classList.remove("show-bag");
+  // avoid page scrolling on the back when the bag is open
+  setTimeout(() => {
+    document.body.classList.remove("stop-scroll");
+  }, 300);
+}
 
 /**
  * navbar toggle

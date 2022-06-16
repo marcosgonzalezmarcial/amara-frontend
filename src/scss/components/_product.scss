@@ -1,9 +1,8 @@
-@use '../abstracts/mixins' as *;
+@use "../abstracts/mixins" as *;
 
 /*-----------------------------------*\
  * #PRODUCT
 \*-----------------------------------*/
-
 
 .filter-list {
   display: flex;
@@ -24,33 +23,35 @@
   }
 }
 
-
 .product-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px 25px;
   margin-bottom: 60px;
-
 }
-
 
 @include responsive(xs) {
-  .product-list > li { width: calc(50% - 12.5px); }
+  .product-list > li {
+    width: calc(50% - 12.5px);
+  }
 }
 
-@include responsive(lg){
-  .product-list > li { width: calc(33.33% - 16.66px); }
+@include responsive(lg) {
+  .product-list > li {
+    width: calc(33.33% - 16.66px);
+  }
 }
 
-@include responsive(xl){
-  .product-list > li { width: calc(25% - 18.75px); }
+@include responsive(xl) {
+  .product-list > li {
+    width: calc(25% - 18.75px);
+  }
 }
 
 // Product Card
 
 .product-card {
-
   .card-banner {
     position: relative;
     margin-bottom: 20px;
@@ -69,8 +70,8 @@
     &.red {
       background: var(--candy-pink);
     }
-    &.green { 
-      background: var(--ocean-green); 
+    &.green {
+      background: var(--ocean-green);
     }
   }
 
@@ -90,16 +91,14 @@
     color: var(--eerie-black);
 
     &:is(:hover, :focus) {
-       border-color: var(--eerie-black); 
+      border-color: var(--eerie-black);
     }
 
-    ion-icon { 
-      font-size: 22px; 
+    ion-icon {
+      font-size: 22px;
     }
-    
   }
 
-  
   .cart-btn {
     flex-grow: 1;
     background: var(--eerie-black);
@@ -113,7 +112,7 @@
     }
   }
   .card-title {
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
   }
 
   .card-price {
@@ -125,11 +124,9 @@
       margin-left: 5px;
       text-decoration: line-through;
     }
-
   }
-
 }
 
-.product .btn { 
-  margin-inline: auto; 
+.product .btn {
+  margin-inline: auto;
 }

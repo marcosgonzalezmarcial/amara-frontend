@@ -5,30 +5,29 @@
 \*-----------------------------------*/
 
 .hero {
-  background: url("https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/hero-bg-img.jpg") no-repeat center/cover;
+  background: url("https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/hero-bg-img.jpg")
+    no-repeat center/cover;
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   opacity: 0.93;
 
-    &-content {
-      padding-inline-start: 20px;
-    }
+  &-content {
+    padding-inline-start: 20px;
+  }
 
-    .container {
-      width: 100%;
-    }
+  .container {
+    width: 100%;
+  }
 
-    // @include responsive(lg){
-    //   min-height: 100vh;
-    // }
-    // @include responsive(xl){
-    //   background-size: 1235px;
-    // }
+  // @include responsive(lg){
+  //   min-height: 100vh;
+  // }
+  // @include responsive(xl){
+  //   background-size: 1235px;
+  // }
 }
-
-
 
 .hero-subtitle {
   color: var(--black);

@@ -23,20 +23,29 @@
     gap: 20px;
   }
 
-  .header-action-label {
-    color: var(--sonic-silver);
-    font-size: var(--fs-10);
-    transition: var(--transition-1);
-  }
-
   .header-action-btn {
     position: relative;
     // width: max-content;
     text-align: center;
 
+    .header-action-label {
+      pointer-events: none;
+      color: var(--sonic-silver);
+      font-size: var(--fs-10);
+      transition: var(--transition-1);
+    }
+
+    &.active {
+      transform: scale(1.175);
+      color: var(--middle-blue-green);
+      p {
+        color: var(--middle-blue-green);
+      }
+    }
+
     ion-icon {
       margin-inline: auto;
-      font-size: 22px;
+      font-size: 1.375rem;
       margin-bottom: 3px;
     }
 
@@ -53,24 +62,18 @@
       font-size: 13px;
       color: var(--white);
       border-radius: 50%;
+      pointer-events: none;
       &.green {
         --background: var(--middle-blue-green);
       }
     }
 
     &:hover {
+      transform: scale(1.175);
       color: var(--middle-blue-green);
-      transform: scale(1.05);
       p {
         color: var(--middle-blue-green);
-        transform: scale(1.05);
       }
     }
   }
 }
-
-// .header-action-btn {
-//   .btn-badge.green {
-//     --background: var(--middle-blue-green);
-//   }
-// }

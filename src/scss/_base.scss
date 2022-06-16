@@ -1,11 +1,13 @@
 // @use 'abstracts/variables' as *;
-@use 'abstracts/mixins' as *;
+@use "abstracts/mixins" as *;
 
 /*-----------------------------------*\
  * #RESET
 \*-----------------------------------*/
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,17 +29,17 @@ body {
   // }
 }
 
-.body-container {
-  display: grid;
-  grid-template-rows: repeat(3, auto);
+// .body-container {
+//   display: grid;
+//   grid-template-rows: repeat(3, auto);
+// }
+
+li {
+  list-style: none;
 }
 
-li { 
-  list-style: none; 
-}
-
-a { 
-  text-decoration: none; 
+a {
+  text-decoration: none;
 }
 
 a,
@@ -45,7 +47,9 @@ img,
 span,
 input,
 button,
-ion-icon { display: block; }
+ion-icon {
+  display: block;
+}
 
 input,
 button {
@@ -64,15 +68,13 @@ input {
   outline-color: var(--middle-blue-green);
 }
 
-img { 
-  height: auto; 
+img {
+  height: auto;
 }
 
-ion-icon { 
-  pointer-events: none; 
+ion-icon {
+  pointer-events: none;
 }
-
-
 
 /*-----------------------------------*\
  * #MEDIA QUARIES
@@ -82,20 +84,20 @@ ion-icon {
  * CUSTOM PROPERTY
  */
 
- :root {
-  @include responsive(xs){
+:root {
+  @include responsive(xs) {
     --fs-1: 3rem;
     --fs-2: 2rem;
   }
-  @include responsive(sm){
+  @include responsive(sm) {
     --fs-1: 3.75rem;
     --fs-2: 2.375rem;
     --fs-3: 2.25rem;
   }
-  @include responsive(lg){
+  @include responsive(lg) {
     --fs-1: 5rem;
   }
-  @include responsive(xl){
+  @include responsive(xl) {
     --fs-1: 6.25rem;
   }
 }
@@ -104,28 +106,32 @@ ion-icon {
  * #REUSED STYLE
 \*-----------------------------------*/
 
-.container { 
-  padding-inline: 15px; 
+.container {
+  padding-inline: 15px;
 
-  @include responsive(sm){
+  @include responsive(sm) {
     max-width: 550px;
     margin-inline: auto;
   }
-  @include responsive(md){
+  @include responsive(md) {
     max-width: 700px;
   }
-  @include responsive(lg){
+  @include responsive(lg) {
     max-width: 950px;
   }
-  @include responsive(xl){
+  @include responsive(xl) {
     max-width: 1235px;
   }
 }
 
 a,
-button { transition: var(--transition-1); }
+button {
+  transition: var(--transition-1);
+}
 
-h3 > a { color: inherit; }
+h3 > a {
+  color: inherit;
+}
 
 .h1,
 .h2,
@@ -140,9 +146,13 @@ h3 > a { color: inherit; }
   line-height: 1;
 }
 
-.h2 { font-size: var(--fs-2); }
+.h2 {
+  font-size: var(--fs-2);
+}
 
-.h3 { font-size: var(--fs-6); }
+.h3 {
+  font-size: var(--fs-6);
+}
 
 .h4 {
   font-size: var(--fs-7);
@@ -195,16 +205,15 @@ h3 > a { color: inherit; }
   --border-color: var(--eerie-black);
 }
 
-.section { 
-  padding-block: var(--section-padding); 
+.section {
+  padding-block: var(--section-padding);
 }
 
-.w-100 { 
-  width: 100%; 
+.w-100 {
+  width: 100%;
 }
 
 .section-title {
   text-align: center;
   margin-bottom: 30px;
 }
-

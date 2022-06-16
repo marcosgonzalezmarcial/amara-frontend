@@ -1,13 +1,12 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
-
+// @use '../abstracts/variables' as *;
+@use "../abstracts/mixins" as *;
 
 /*-----------------------------------*\
  * #NEWSLATTER
 \*-----------------------------------*/
 
-.newsletter { 
-  padding-bottom: 120px; 
+.newsletter {
+  padding-bottom: 120px;
 }
 
 .newsletter-card {
@@ -41,7 +40,9 @@
   margin-bottom: 30px;
 }
 
-.newsletter-card .card-text { margin-bottom: 30px; }
+.newsletter-card .card-text {
+  margin-bottom: 30px;
+}
 
 .newsletter-card .input-wrapper {
   position: relative;
@@ -66,8 +67,8 @@
   transform: translateY(-50%);
 }
 
-.newsletter-card .btn { 
-  gap: 10px; 
+.newsletter-card .btn {
+  gap: 10px;
   @include responsive(md) {
     position: absolute;
     top: 0;
@@ -78,4 +79,3 @@
     border-radius: 0 6px 6px 0;
   }
 }
-
