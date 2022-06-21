@@ -12,22 +12,17 @@ export const triangleBorder = () => {
 
   // repositioning the element according to width size
   const repositionTriangleBorder = () => {
-    document.documentElement.style.setProperty(
+    let root = document.querySelector(":root");
+    // let header = document.querySelector("header").offsetHeight - 6;
+
+    root.style.setProperty(
       "--triangle-border-left",
       `${triangleBorderEl.getBoundingClientRect().left + 7}px`
     );
+
+    // root.style.setProperty("--triangle-border-top", `${header}px`);
   };
   window.onresize = repositionTriangleBorder;
-
-  // const triangleBorderTemplate = document.createElement("template");
-  // triangleBorderTemplate.innerHTML = `
-  //     ${triangleBorder}
-  // `;
-  // const triangleBorderTemplateClone = triangleBorderTemplate.content.cloneNode(
-  //   true
-  // );
-  // const triangleBorderFragment = document.createDocumentFragment();
-  // triangleBorderFragment.appendChild(triangleBorderTemplateClone);
 
   const triangleBorderTemplate = document.createElement("div");
   triangleBorderTemplate.innerHTML = `

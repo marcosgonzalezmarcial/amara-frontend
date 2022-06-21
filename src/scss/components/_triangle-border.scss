@@ -2,11 +2,10 @@
 
 .arrow {
   position: fixed;
-  top: var(--triangle-border-top);
+  top: var(--triangle-border-top, 59px);
   width: 10px;
   height: 10px;
   border: none;
-  background-color: none;
   // high z-index to position the triangle on top of the navbar
   z-index: 1000;
   transform: rotate(45deg);
@@ -14,7 +13,7 @@
   transition-duration: 125ms;
   transition-timing-function: ease-in-out;
   transition-property: opacity, border-left-color, border-top-color,
-    background-color;
+  background-color;
   left: var(--triangle-border-left);
   display: none;
   @include responsive(lg) {
@@ -28,10 +27,10 @@
   border-right-color: var(--white);
   border-bottom-color: var(--white);
 
-  @include responsive(md) {
-    top: 99px;
-  }
-  @include responsive(lg) {
-    top: 80px;
-  }
+  // @include responsive(md) {
+  //   top: var(--triangle-border-top);
+  // }
+  // @include responsive(lg) {
+  //   top: 80px;
+  // }
 }

@@ -20,7 +20,7 @@
   --height: 568px;
 
   position: fixed;
-  top: 75px;
+  top: var(--header-top, 50px);
   right: 0%;
   z-index: 1;
   width: 100%;
@@ -43,7 +43,7 @@
     max-width: 400px;
   }
   @include responsive(lg) {
-    top: 85px;
+    // top: 85px;
     animation: shoppingBagDontShow 0.4s forwards;
     transform: translateX(0);
     height: auto;

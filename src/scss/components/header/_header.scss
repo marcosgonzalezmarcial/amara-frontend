@@ -9,11 +9,24 @@
   left: 0;
   background-color: var(--white);
   width: 100%;
-  padding-block: 20px;
+  min-height: 50px;
+  padding-block: 10px;
   z-index: 99;
-  // transition: var(--transition-1);
   box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.1);
   border-bottom: 1px solid lightgray;
+
+  @include responsive(sm) {
+    padding: 15px;
+  }
+
+  @include responsive(lg) {
+    padding: 10px;
+    min-height: 60px;
+  }
+  @include responsive(xl) {
+    padding-block: 15px;
+    min-height: 66px;
+  }
 
   & .container {
     display: flex;
@@ -31,6 +44,14 @@
   }
 
   & .logo {
+    img {
+      height: 26px;
+      width: 106px;
+      @include responsive(lg) {
+        height: 35px;
+        width: 146px;
+      }
+    }
     @include responsive(lg) {
       margin-inline: auto;
     }

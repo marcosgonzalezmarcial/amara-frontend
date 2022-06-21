@@ -10,10 +10,14 @@
   justify-content: space-evenly;
   align-items: center;
   gap: 5px;
-  padding-block: 16px;
+  padding-block: 10px;
   box-shadow: 0 -2px 20px hsla(0, 0%, 0%, 0.1);
   z-index: 1;
   border-top: 1px solid lightgray;
+
+  @include responsive(md) {
+    padding-block: 15px;
+  }
 
   @include responsive(lg) {
     all: unset;
@@ -31,12 +35,12 @@
     .header-action-label {
       pointer-events: none;
       color: var(--sonic-silver);
-      font-size: var(--fs-10);
+      font-size: var(--fs-11);
       transition: var(--transition-1);
     }
 
     &.active {
-      transform: scale(1.175);
+      transform: scale(1.1);
       color: var(--middle-blue-green);
       p {
         color: var(--middle-blue-green);
@@ -45,8 +49,8 @@
 
     ion-icon {
       margin-inline: auto;
-      font-size: 1.375rem;
-      margin-bottom: 3px;
+      font-size: 1.1rem;
+      // margin-bottom: 3px;
     }
 
     .btn-badge {
@@ -54,12 +58,12 @@
       top: -5px;
       right: 0;
       background: var(--background, var(--eerie-black));
-      width: 20px;
-      height: 20px;
+      width: 15px;
+      height: 15px;
       display: grid;
       place-items: center;
       line-height: 0;
-      font-size: 13px;
+      font-size: 11px;
       color: var(--white);
       border-radius: 50%;
       pointer-events: none;
@@ -68,12 +72,12 @@
       }
     }
 
-    &:hover {
-      transform: scale(1.175);
-      color: var(--middle-blue-green);
-      p {
-        color: var(--middle-blue-green);
-      }
-    }
+    // &:hover {
+    //   transform: scale(1.1175);
+    //   color: var(--middle-blue-green);
+    //   p {
+    //     color: var(--middle-blue-green);
+    //   }
+    // }
   }
 }

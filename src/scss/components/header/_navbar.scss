@@ -103,12 +103,12 @@
 .nav-open-btn {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
   padding: 8px;
 
   span {
     width: 20px;
-    height: 2px;
+    height: 1px;
     background: var(--black);
     transition: var(--transition-1);
   }

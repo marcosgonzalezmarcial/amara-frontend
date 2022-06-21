@@ -18,19 +18,10 @@ html {
   font-size: 16px;
   color: var(--sonic-silver);
   scroll-behavior: smooth;
-  height: auto;
 }
 
 body {
   background: var(--white);
-  max-width: 100%;
-  height: auto;
-  display: grid;
-  // padding-block: 70px;
-
-  // @include responsive(lg) {
-  //   padding-block: 0;
-  // }
 }
 
 li {

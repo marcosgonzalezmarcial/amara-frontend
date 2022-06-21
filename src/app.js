@@ -5,14 +5,12 @@ const navOpenBtn = document.querySelector("[data-nav-open-btn]");
 const navbar = document.querySelector("[data-navbar]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
 const header = document.querySelector("[data-header]");
-// const cartBtnEl = document.querySelector(
-//   "button.header-action-btn ion-icon[name='cart-outline']"
-// ).parentElement;
 const actionsButtons = [
-  ...document.querySelectorAll("button.header-action-btn"),
+  ...document.querySelectorAll("button.header-action-btn")
 ];
 
 const shoppingBagEl = document.querySelector(".shopping-bag-container");
+const root = document.querySelector(":root");
 
 // Inserting triangle border to the Header
 header.appendChild(triangleBorder());
@@ -69,26 +67,30 @@ for (let i = 0; i < navElemArr.length; i++) {
   });
 }
 
-/**
- * add active class on header when scrolled 50px from top
- */
+document.addEventListener("DOMContentLoaded", setHeaderHeight);
+// window.onload = console.log(header.offsetHeight);
+// window.addEventListener("onload", setHeaderHeight);
+window.addEventListener("resize", setHeaderHeight);
 
-// window.addEventListener("scroll", function () {
-//   if (window.scrollY >= 90) {
-//     header.classList.add("active");
-//     // headerActions.classList.add("active");
-//   } else {
-//     header.classList.remove("active");
-//     // headerActions.classList.remove("active");
-//   }
-// });
+function setHeaderHeight() {
+  root.style.setProperty(
+    "--triangle-border-top",
+    `${header.offsetHeight - 5}px`
+  );
+  root.style.setProperty("--header-top", `${header.offsetHeight}px`);
+}
 
-// function bagResize() {
-//   if (window.innerWidth < 992) {
-//     console.log(window.innerWidth);
-//     shoppingBagEl.style.animation = null;
-//     document.querySelector(".show-bag").style.animation = null;
-//   }
-// }
+// i'd do this with media queries
 
-// window.addEventListener("DOMContentLoaded", alert("Hola Mundo"));
+if (window.innerWidth > 579) {
+  root.style.setProperty("--header-top", "60px");
+  root.style.setProperty("--triangle-border-top", "55px");
+}
+if (window.innerWidth > 991) {
+  root.style.setProperty("--header-top", "66px");
+  root.style.setProperty("--triangle-border-top", "61px");
+}
+if (window.innerWidth > 1199) {
+  root.style.setProperty("--header-top", "76px");
+  root.style.setProperty("--triangle-border-top", "71px");
+}
