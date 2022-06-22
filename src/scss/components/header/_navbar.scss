@@ -50,8 +50,10 @@
 
     // view on large screens (above 992px)
     @include responsive(lg) {
-      font-size: var(--fs-7);
-      font-weight: var(--fw-400);
+      font-size: var(--fs-9);
+      font-weight: var(--fw-500);
+      letter-spacing: 0.5px;
+    
     }
   }
 
@@ -64,7 +66,7 @@
       height: 1px;
       width: 0%;
       background-color: var(--eerie-black);
-      top: 2.4rem;
+      top: 2.05rem;
       left: 0;
       transition: width 275ms;
     }
@@ -80,7 +82,7 @@
     display: flex;
     // justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.2rem;
   }
 }
 

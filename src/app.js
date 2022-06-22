@@ -11,6 +11,7 @@ const actionsButtons = [
 
 const shoppingBagEl = document.querySelector(".shopping-bag-container");
 const root = document.querySelector(":root");
+const headerActionsBottom = document.querySelector(".header-actions");
 
 // Inserting triangle border to the Header
 header.appendChild(triangleBorder());
@@ -68,8 +69,6 @@ for (let i = 0; i < navElemArr.length; i++) {
 }
 
 document.addEventListener("DOMContentLoaded", setHeaderHeight);
-// window.onload = console.log(header.offsetHeight);
-// window.addEventListener("onload", setHeaderHeight);
 window.addEventListener("resize", setHeaderHeight);
 
 function setHeaderHeight() {
@@ -87,10 +86,24 @@ if (window.innerWidth > 579) {
   root.style.setProperty("--triangle-border-top", "55px");
 }
 if (window.innerWidth > 991) {
-  root.style.setProperty("--header-top", "66px");
-  root.style.setProperty("--triangle-border-top", "61px");
+  root.style.setProperty("--header-top", "62px");
+  root.style.setProperty("--triangle-border-top", "58px");
 }
 if (window.innerWidth > 1199) {
-  root.style.setProperty("--header-top", "76px");
-  root.style.setProperty("--triangle-border-top", "71px");
+  root.style.setProperty("--header-top", "72px");
+  root.style.setProperty("--triangle-border-top", "68px");
+}
+
+function setHeaderActionsBottomHeight() {
+  root.style.setProperty(
+    "--navbar-bottom-height",
+    `${headerActionsBottom.offsetHeight}px`
+  );
+}
+
+document.addEventListener("DOMContentLoaded", setHeaderActionsBottomHeight);
+window.addEventListener("resize", setHeaderActionsBottomHeight);
+
+if (window.innerWidth > 767) {
+  root.style.setProperty("--navbar-bottom-height", "67px");
 }
