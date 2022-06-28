@@ -1,4 +1,8 @@
+import { Footer } from "./components/Footer";
 import { triangleBorder } from "./components/triangleBorder";
+
+// inserting Footer element
+document.querySelector("body").appendChild(Footer());
 
 const overlay = document.querySelector("[data-overlay]");
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
@@ -87,11 +91,11 @@ if (window.innerWidth > 579) {
 }
 if (window.innerWidth > 991) {
   root.style.setProperty("--header-top", "62px");
-  root.style.setProperty("--triangle-border-top", "58px");
+  root.style.setProperty("--triangle-border-top", "57px");
 }
 if (window.innerWidth > 1199) {
   root.style.setProperty("--header-top", "72px");
-  root.style.setProperty("--triangle-border-top", "68px");
+  root.style.setProperty("--triangle-border-top", "67px");
 }
 
 function setHeaderActionsBottomHeight() {

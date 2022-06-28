@@ -32,8 +32,15 @@
   }
   @include responsive(xl) {
     background-size: cover;
-    background-position-y: 20%;
+    background-position-y: 17%;
   }
+  @include responsive(xxl) {
+
+    .h1.hero-title {
+      font-size: 8rem;
+    }
+  }
+
 }
 
 .hero-subtitle {
