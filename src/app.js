@@ -1,14 +1,39 @@
+import { Blog } from "./components/Blog";
+import { Category } from "./components/Category";
 import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { Hero } from "./components/Hero";
+import { Newsletter } from "./components/Newsletter";
+import { Products } from "./components/Products";
+import { Services } from "./components/Services";
 import { triangleBorder } from "./components/triangleBorder";
 
-// inserting Footer element
+/***********Building HTML DOM with javascript*********
+ ******************************************************/
+
+//Header section
+document.querySelector("body").appendChild(Header());
+//Hero section
+document.querySelector("article").appendChild(Hero());
+//Services section
+document.querySelector("article").appendChild(Services());
+//Category section
+document.querySelector("article").appendChild(Category());
+//Products section
+document.querySelector("article").appendChild(Products());
+// Blog Section
+document.querySelector("article").appendChild(Blog());
+// Newsletter section
+document.querySelector("article").appendChild(Newsletter());
+// Footer section
 document.querySelector("body").appendChild(Footer());
 
+/* DOM Elements variables */
 const overlay = document.querySelector("[data-overlay]");
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
 const navbar = document.querySelector("[data-navbar]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
-const header = document.querySelector("[data-header]");
+const header = document.querySelector(".header");
 const actionsButtons = [
   ...document.querySelectorAll("button.header-action-btn")
 ];

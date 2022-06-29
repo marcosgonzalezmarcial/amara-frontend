@@ -18,12 +18,14 @@
   display: none;
   @include responsive(lg) {
     display: block;
+
   }
 }
 .arrow-up {
   opacity: 1;
   background-color: var(--white);
   border: 1px solid rgb(190, 190, 190);
+  border: 1px solid darkgray;
   border-right-color: var(--white);
   border-bottom-color: var(--white);
 
