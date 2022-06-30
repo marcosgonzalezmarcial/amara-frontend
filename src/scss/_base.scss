@@ -207,3 +207,16 @@ h3 > a {
   text-align: center;
   margin-bottom: 30px;
 }
+
+.container-fluid {
+  @include responsive(xl) {
+    max-width: 95%;
+    margin-inline: auto;
+  }
+}
+// .header .container-fluid {
+//   @include responsive(xl) {
+//     max-width: 95%;
+//     margin-inline: auto;
+//   }
+// }

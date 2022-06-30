@@ -102,7 +102,7 @@ export const Header = () => {
     </div>
   </div>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="overlay" data-overlay></div>
 
     <!-- <div class="header-search">

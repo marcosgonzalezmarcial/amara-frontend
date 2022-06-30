@@ -55,6 +55,13 @@
   .card-banner {
     position: relative;
     margin-bottom: 20px;
+    img {
+      aspect-ratio: 3 / 3.75;
+      transition: transform 400ms ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
   }
 
   .card-badge {
@@ -131,9 +138,6 @@
   margin-inline: auto;
 }
 
-
-
-
 .filter-list {
   display: flex;
   flex-wrap: wrap;
@@ -149,7 +153,9 @@
   font-weight: var(--fw-500);
 }
 
-.filter-btn.active { color: var(--eerie-black); }
+.filter-btn.active {
+  color: var(--eerie-black);
+}
 
 .product-list {
   display: flex;
@@ -175,9 +181,13 @@
   padding: 3px 10px;
 }
 
-.product-card .card-badge.red { background: var(--candy-pink); }
+.product-card .card-badge.red {
+  background: var(--candy-pink);
+}
 
-.product-card .card-badge.green { background: var(--ocean-green); }
+.product-card .card-badge.green {
+  background: var(--ocean-green);
+}
 
 .product-card .card-actions {
   display: flex;
@@ -195,7 +205,9 @@
   color: var(--eerie-black);
 }
 
-.product-card .card-action-btn:is(:hover, :focus) { border-color: var(--eerie-black); }
+.product-card .card-action-btn:is(:hover, :focus) {
+  border-color: var(--eerie-black);
+}
 
 .product-card .cart-btn {
   flex-grow: 1;
@@ -209,9 +221,13 @@
   color: var(--eerie-black);
 }
 
-.product-card .card-action-btn ion-icon { font-size: 20px; }
+.product-card .card-action-btn ion-icon {
+  font-size: 20px;
+}
 
-.product-card .card-title { margin-bottom: 5px; }
+.product-card .card-title {
+  margin-bottom: 5px;
+}
 
 .product-card .card-price {
   color: var(--eerie-black);
@@ -225,11 +241,14 @@
   text-decoration: line-through;
 }
 
-.product .btn { margin-inline: auto; }
-
+.product .btn {
+  margin-inline: auto;
+}
 
 @include responsive(lg) {
-  .product-list > li { width: calc(33.33% - 16.66px); }
+  .product-list > li {
+    width: calc(33.33% - 16.66px);
+  }
 
   .product-card .card-actions {
     position: absolute;
@@ -241,14 +260,20 @@
     transition: var(--transition-1);
   }
 
-  .product-card .card-banner { overflow: hidden; }
+  .product-card .card-banner {
+    overflow: hidden;
+  }
 
   .product-card .card-banner:hover .card-actions {
     visibility: visible;
     transform: translateY(0);
   }
 
-  .product-card .card-action-btn:first-child { border-radius: 6px 0 0 6px; }
+  .product-card .card-action-btn:first-child {
+    border-radius: 6px 0 0 6px;
+  }
 
-  .product-card .card-action-btn:last-child { border-radius: 0 6px 6px 0; }
+  .product-card .card-action-btn:last-child {
+    border-radius: 0 6px 6px 0;
+  }
 }
