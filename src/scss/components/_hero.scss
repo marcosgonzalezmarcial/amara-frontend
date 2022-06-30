@@ -23,24 +23,22 @@
     width: 100%;
   }
 
-  @include responsive(lg){
+  @include responsive(lg) {
     background-image: url("https://raw.githubusercontent.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/hero-bg-img.jpg");
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     background-position-y: 11%;
     background-position-x: 50%;
-    background-size: 1235px;
+    // background-size: 1235px;
   }
   @include responsive(xl) {
     background-size: cover;
     background-position-y: 17%;
   }
   @include responsive(xxl) {
-
     .h1.hero-title {
       font-size: 8rem;
     }
   }
-
 }
 
 .hero-subtitle {

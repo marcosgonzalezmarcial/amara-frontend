@@ -13,7 +13,7 @@ export const Blog = () => {
                   <figure class="card-banner">
                     <a href="#">
                       <img
-                        src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/blog-1.jpg"
+                        src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/cyber_monday_blog.jpg"
                         alt="Cyber Monday Fashion en Amara"
                         loading="lazy"
                         width="1020"
@@ -52,7 +52,7 @@ export const Blog = () => {
                   <figure class="card-banner">
                     <a href="#">
                       <img
-                        src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/blog-2.jpg"
+                        src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/High-End-Furniture.jpg"
                         alt="La decoración de tu casa de verando"
                         loading="lazy"
                         width="1020"
@@ -91,7 +91,7 @@ export const Blog = () => {
                   <figure class="card-banner">
                     <a href="#">
                       <img
-                        src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/blog-3.jpg"
+                        src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/mujer_comprando_blog.jpg"
                         alt="Ideas únicas de moda que para descubrir"
                         loading="lazy"
                         width="1020"

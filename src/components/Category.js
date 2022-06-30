@@ -4,7 +4,7 @@ export const Category = () => {
   Category.classList.add("category");
 
   Category.innerHTML = `
-  <div class="container">
+  <div class="container-fluid">
     <ul class="category-list">
       <li class="category-item">
         <figure class="category-banner">
