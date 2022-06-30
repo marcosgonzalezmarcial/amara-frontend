@@ -33,9 +33,9 @@ const overlay = document.querySelector("[data-overlay]");
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
 const navbar = document.querySelector("[data-navbar]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
-const header = document.querySelector(".header");
+const header = document.querySelector("header");
 const actionsButtons = [
-  ...document.querySelectorAll("button.header-action-btn")
+  ...document.querySelectorAll("button.header-action-btn"),
 ];
 
 const shoppingBagEl = document.querySelector(".shopping-bag-container");
@@ -97,7 +97,7 @@ for (let i = 0; i < navElemArr.length; i++) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", setHeaderHeight);
+// document.addEventListener("DOMContentLoaded", setHeaderHeight);
 window.addEventListener("resize", setHeaderHeight);
 
 function setHeaderHeight() {
@@ -110,11 +110,11 @@ function setHeaderHeight() {
 
 // i'd do this with media queries
 
-if (window.innerWidth > 579) {
+if (window.innerWidth > 579 && window.innerWidth < 992) {
   root.style.setProperty("--header-top", "60px");
   root.style.setProperty("--triangle-border-top", "55px");
 }
-if (window.innerWidth > 991) {
+if (window.innerWidth > 991 && window.innerWidth < 1200) {
   root.style.setProperty("--header-top", "62px");
   root.style.setProperty("--triangle-border-top", "57px");
 }

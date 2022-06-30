@@ -13,13 +13,8 @@
   padding-block: 10px;
   z-index: 99;
   box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.1);
-  // border-bottom: 1px solid lightgray;
   border-bottom: 1px solid rgb(223, 223, 223);
   padding-block: 15px;
-
-  // @include responsive(sm) {
-  //   padding: 15px;
-  // }
 
   @include responsive(lg) {
     padding: 15px;
@@ -27,7 +22,6 @@
     box-shadow: none;
   }
   @include responsive(xl) {
-    // padding-block: 20px;
     min-height: 66px;
   }
 

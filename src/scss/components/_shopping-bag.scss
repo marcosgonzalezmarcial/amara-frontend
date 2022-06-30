@@ -2,9 +2,8 @@
 
 // mobile first approach
 
-
 //to avoid scrolling when the shopping-bag is opened
-.stop-scroll{
+.stop-scroll {
   overflow: hidden;
   // overscroll-behavior: none;
   @include responsive(sm) {
@@ -13,20 +12,17 @@
   }
 }
 
-
-
 .shopping-bag-container {
   // max-height on desktop 568px
   --height: 568px;
 
   position: fixed;
   top: var(--header-top, 60px);
-  right: 0.5rem;
+  right: 0rem;
   z-index: 1;
   width: 100%;
   height: 100vh;
   max-height: calc(100vh - 126px);
-  // max-height: calc(100% - var(--navbar-bottom-height));
   overflow: hidden;
   pointer-events: fill;
   background: var(--white);
@@ -36,7 +32,6 @@
   scroll-behavior: smooth;
   overscroll-behavior: none;
   border-top: none;
-  
 
   @include responsive(sm) {
     max-width: 60%;
@@ -45,6 +40,7 @@
     max-width: 400px;
   }
   @include responsive(lg) {
+    right: 0.5rem;
     animation: shoppingBagDontShow 0.4s forwards;
     transform: translateX(0);
     height: auto;
@@ -63,7 +59,7 @@
   overscroll-behavior: none;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap; 
+  flex-wrap: nowrap;
   overflow-y: scroll;
 
   @include responsive(lg) {
@@ -103,15 +99,18 @@
   flex-direction: column;
   gap: 1rem;
 
-    &::-webkit-scrollbar {
-	    width: 8px;
-	    background-color: #F5F5F5;
-    }
+  scrollbar-width: thin;
+  scrollbar-color: #f5f5f5, rgb(210, 210, 210);
 
-    &::-webkit-scrollbar-thumb {
-	    border-radius: 10px;
-	    background-color: rgb(210, 210, 210);
-    }
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(210, 210, 210);
+  }
 
   @include responsive(lg) {
     margin-inline: 0 -1rem;
@@ -125,11 +124,10 @@
   display: grid;
   grid-template-columns: 0.3fr 0.7fr;
   gap: 16px;
-  
+
   @include responsive(lg) {
     margin-inline-end: 1rem;
   }
-
 
   .shopping-bag-content-container-img-container {
     width: 100%;
@@ -148,9 +146,6 @@
     .item-description-top {
       display: grid;
       grid-template-columns: 0.8fr 0.2fr;
-      &-right {
-
-      }
     }
     .item-description-bottom {
       display: flex;
@@ -188,7 +183,6 @@
   }
 }
 
-
 .shopping-bag-footer {
   display: flex;
   flex-direction: column;
@@ -219,7 +213,8 @@
     letter-spacing: 0.3px;
     line-height: 22px;
 
-    .shopping-bag-subtotal-text, .shopping-bag-subtotal {
+    .shopping-bag-subtotal-text,
+    .shopping-bag-subtotal {
       font-size: 15px;
       font-weight: 500;
     }
