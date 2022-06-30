@@ -9,7 +9,7 @@ export const Category = () => {
       <li class="category-item">
         <figure class="category-banner">
           <img
-            src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/category-2.jpg"
+            src="./src/assets/images/casual & outdoor.jpg" 
             alt="Casual & outdoor"
             loading="lazy"
             width="510"
