@@ -31,8 +31,8 @@ export const Products = () => {
           <figure class="card-banner">
             <a href="#">
               <img
-                src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/product-1.jpg"
-                alt="Varsi mochila de cuero"
+                src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/mochila-producto.jpg"
+                alt="Mochila deportiva"
                 loading="lazy"
                 width="800"
                 height="1034"
@@ -87,8 +87,8 @@ export const Products = () => {
           <figure class="card-banner">
             <a href="#">
               <img
-                src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/product-2.jpg"
-                alt="Camisa denim mujer"
+                src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/camisa-le%C3%B1adora-hombre.jpg"
+                alt="Camisa leñadora hombre"
                 loading="lazy"
                 width="800"
                 height="1034"

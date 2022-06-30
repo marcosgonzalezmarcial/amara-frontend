@@ -1,15 +1,12 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
-
-
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 /*-----------------------------------*\
  * #CATETORY
 \*-----------------------------------*/
 
-.category { 
-  padding-top: 0; 
-
+.category {
+  padding-top: 0;
 }
 
 .category-list {
@@ -18,26 +15,21 @@
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  
-  
+
   .category-item {
     flex-basis: 100%;
     flex-grow: 1;
     flex-shrink: 1;
     position: relative;
-    
+
     @include responsive(xs) {
-      flex-basis: calc(50% - 15px);;
+      flex-basis: calc(50% - 15px);
     }
     @include responsive(lg) {
- 
       flex-basis: calc(33% - 20px);
     }
   }
-  
 }
-
-
 
 .category-banner {
   background: var(--cultured);
@@ -46,13 +38,13 @@
 }
 
 .category-banner img {
-  height: 100%;
+  // height: 100%;
   object-fit: cover;
   transition: var(--transition-2);
 }
 
 .category-item:hover .category-banner img {
-   transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .category-item .btn {
@@ -63,4 +55,3 @@
   width: max-content;
   padding-inline: 30px;
 }
-
