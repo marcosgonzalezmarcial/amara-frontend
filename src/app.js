@@ -136,3 +136,5 @@ window.addEventListener("resize", setHeaderActionsBottomHeight);
 if (window.innerWidth > 767) {
   root.style.setProperty("--navbar-bottom-height", "67px");
 }
+
+root.style.setProperty("--window-height", `${window.innerHeight}px`);

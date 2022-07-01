@@ -86,6 +86,84 @@ export const Header = () => {
             </div>
           </div>
         </div>
+        <div class="shopping-bag-content-container">
+          <div class="shopping-bag-content-container-img-container">
+            <img
+              src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/product-1.jpg"
+              alt="product 1"
+            />
+          </div>
+          <div
+            class="shopping-bag-content-container-item-description-container"
+          >
+            <div class="item-description-top">
+              <div class="item-description-top-right">
+                <p>Mochila</p>
+                <p>Cant: 1</p>
+                <p>Talla: M</p>
+                <p>Negro</p>
+              </div>
+              <div class="item-description-top-left">
+                <p>&euro;49</p>
+              </div>
+            </div>
+            <div class="item-description-bottom">
+              <p>eliminar</p>
+            </div>
+          </div>
+        </div>
+        <div class="shopping-bag-content-container">
+          <div class="shopping-bag-content-container-img-container">
+            <img
+              src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/product-1.jpg"
+              alt="product 1"
+            />
+          </div>
+          <div
+            class="shopping-bag-content-container-item-description-container"
+          >
+            <div class="item-description-top">
+              <div class="item-description-top-right">
+                <p>Mochila</p>
+                <p>Cant: 1</p>
+                <p>Talla: M</p>
+                <p>Negro</p>
+              </div>
+              <div class="item-description-top-left">
+                <p>&euro;49</p>
+              </div>
+            </div>
+            <div class="item-description-bottom">
+              <p>eliminar</p>
+            </div>
+          </div>
+        </div>
+        <div class="shopping-bag-content-container">
+          <div class="shopping-bag-content-container-img-container">
+            <img
+              src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/product-1.jpg"
+              alt="product 1"
+            />
+          </div>
+          <div
+            class="shopping-bag-content-container-item-description-container"
+          >
+            <div class="item-description-top">
+              <div class="item-description-top-right">
+                <p>Mochila</p>
+                <p>Cant: 1</p>
+                <p>Talla: M</p>
+                <p>Negro</p>
+              </div>
+              <div class="item-description-top-left">
+                <p>&euro;49</p>
+              </div>
+            </div>
+            <div class="item-description-bottom">
+              <p>eliminar</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="shopping-bag-footer">
         <div class="shopping-bag-footer-item">
