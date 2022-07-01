@@ -15,7 +15,6 @@
   z-index: 1;
   border-top: 1px solid lightgray;
 
-
   @include responsive(md) {
     padding-block: 15px;
   }
@@ -26,11 +25,11 @@
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
+    margin-block-start: 5px;
   }
 
   .header-action-btn {
     position: relative;
-    // width: max-content;
     text-align: center;
 
     .header-action-label {
@@ -72,18 +71,9 @@
         --background: var(--middle-blue-green);
       }
     }
-
-    // &:hover {
-    //   transform: scale(1.1175);
-    //   color: var(--middle-blue-green);
-    //   p {
-    //     color: var(--middle-blue-green);
-    //   }
-    // }
   }
-  
 }
 
 ion-icon[name="heart-outline"] + .header-action-label + .btn-badge {
-    right: 4px; 
+  right: 4px;
 }
