@@ -17,12 +17,13 @@
   --height: 568px;
 
   position: fixed;
-  top: var(--header-top, 60px);
+  top: var(--header-top, 50px);
   right: 0rem;
   z-index: 1;
   width: 100%;
   height: 100vh;
-  max-height: calc(100vh - 126px);
+  // max-height: calc(100vh - 116px);
+  max-height: calc(var(--window-height) - 115px);
   overflow: hidden;
   pointer-events: fill;
   background: var(--white);
@@ -88,12 +89,12 @@
   letter-spacing: 0.3px;
   line-height: 22px;
   flex-basis: 5%;
-  overscroll-behavior: none;
+  // overscroll-behavior: none;
   padding-block: 0.5rem;
 }
 
 .shopping-bag-content {
-  overscroll-behavior: none;
+  // overscroll-behavior: none;
   flex-basis: 80%;
   display: flex;
   flex-direction: column;
@@ -199,7 +200,7 @@
     display: inline-block;
   }
 
-  overscroll-behavior: none;
+  // overscroll-behavior: none;
   flex-basis: 15%;
 
   .shopping-bag-footer-item {
