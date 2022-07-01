@@ -14,8 +14,6 @@
   z-index: 99;
   box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.1);
   border-bottom: 1px solid rgb(223, 223, 223);
-  padding-block: 15px;
-
   .container-fluid {
     width: 95%;
     margin-inline: auto;
@@ -24,9 +22,8 @@
   }
 
   @include responsive(lg) {
-    // padding: 15px;
     min-height: 60px;
-    box-shadow: none;
+    // box-shadow: none;
     .container-fluid {
       width: 95%;
       margin-inline: auto;
@@ -54,6 +51,7 @@
   }
 
   & .logo {
+    place-self: center;
     img {
       height: 26px;
       width: 106px;

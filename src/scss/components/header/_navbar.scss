@@ -51,9 +51,8 @@
     // view on large screens (above 992px)
     @include responsive(lg) {
       font-size: var(--fs-9);
-      font-weight: var(--fw-500);
-      letter-spacing: 0.5px;
-    
+      font-weight: var(--fw-400);
+      letter-spacing: 1px;
     }
   }
 
@@ -71,7 +70,7 @@
       transition: width 275ms;
     }
     a:hover::after {
-      width: 100%;
+      width: 60%;
     }
     a:focus::after {
       width: 100%;
