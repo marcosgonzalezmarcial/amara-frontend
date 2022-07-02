@@ -35,7 +35,7 @@ const navbar = document.querySelector("[data-navbar]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
 const header = document.querySelector("header");
 const actionsButtons = [
-  ...document.querySelectorAll("button.header-action-btn"),
+  ...document.querySelectorAll("button.header-action-btn")
 ];
 
 const shoppingBagEl = document.querySelector(".shopping-bag-container");
@@ -138,3 +138,5 @@ if (window.innerWidth > 767) {
 }
 
 root.style.setProperty("--window-height", `${window.innerHeight}px`);
+
+// test comment
