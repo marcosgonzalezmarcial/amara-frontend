@@ -2,7 +2,7 @@ export const Category = () => {
   let Category = document.createElement("section");
   Category.classList.add("section");
   Category.classList.add("category");
-
+  // fgdg
   Category.innerHTML = `
   <div class="container-fluid">
     <ul class="category-list">
