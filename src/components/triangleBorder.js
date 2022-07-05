@@ -19,8 +19,6 @@ export const triangleBorder = () => {
       "--triangle-border-left",
       `${triangleBorderEl.getBoundingClientRect().left + 7}px`
     );
-
-    // root.style.setProperty("--triangle-border-top", `${header}px`);
   };
   window.onresize = repositionTriangleBorder;
 

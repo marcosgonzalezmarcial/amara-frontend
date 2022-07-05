@@ -35,7 +35,7 @@ const navbar = document.querySelector("[data-navbar]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
 const header = document.querySelector("header");
 const actionsButtons = [
-  ...document.querySelectorAll("button.header-action-btn"),
+  ...document.querySelectorAll("button.header-action-btn")
 ];
 
 const shoppingBagEl = document.querySelector(".shopping-bag-container");
@@ -98,30 +98,47 @@ for (let i = 0; i < navElemArr.length; i++) {
 }
 
 // document.addEventListener("DOMContentLoaded", setHeaderHeight);
-window.addEventListener("resize", setHeaderHeight);
 
-function setHeaderHeight() {
+window.addEventListener("resize", setHeaderCustomProps);
+
+function setHeaderCustomProps() {
   root.style.setProperty(
     "--triangle-border-top",
-    `${header.offsetHeight - 5}px`
+    `${header.offsetHeight - 4}px`
   );
-  root.style.setProperty("--header-top", `${header.offsetHeight}px`);
+
+  // root.style.setProperty("--header-top", `${header.offsetHeight}px`);
+
+  if (window.innerWidth > 991) {
+    root.style.setProperty("--header-top", `61px`);
+  } else {
+    root.style.setProperty("--header-top", `50px`);
+  }
 }
 
-// i'd do this with media queries
+// setting variables for header components relative to window innerWidth size on first load - >i'd do this with media queries
+// document.addEventListener(
+//   "DOMContentLoaded",
+//   setIntialHeaderComponentCustomProps
+// );
 
-if (window.innerWidth > 579 && window.innerWidth < 992) {
-  root.style.setProperty("--header-top", "60px");
+// function setIntialHeaderComponentCustomProps() {
+if (/*window.innerWidth > 579 && */ window.innerWidth < 992) {
+  root.style.setProperty("--header-top", "50px");
   root.style.setProperty("--triangle-border-top", "55px");
 }
 if (window.innerWidth > 991 && window.innerWidth < 1200) {
-  root.style.setProperty("--header-top", "62px");
+  root.style.setProperty("--header-top", "61px");
   root.style.setProperty("--triangle-border-top", "57px");
 }
 if (window.innerWidth > 1199) {
-  root.style.setProperty("--header-top", "72px");
-  root.style.setProperty("--triangle-border-top", "67px");
+  root.style.setProperty("--header-top", "61px");
+  root.style.setProperty("--triangle-border-top", "56px");
 }
+// }
+
+document.addEventListener("DOMContentLoaded", setHeaderActionsBottomHeight);
+window.addEventListener("resize", setHeaderActionsBottomHeight);
 
 function setHeaderActionsBottomHeight() {
   root.style.setProperty(
@@ -129,12 +146,17 @@ function setHeaderActionsBottomHeight() {
     `${headerActionsBottom.offsetHeight}px`
   );
 }
-
-document.addEventListener("DOMContentLoaded", setHeaderActionsBottomHeight);
-window.addEventListener("resize", setHeaderActionsBottomHeight);
-
 if (window.innerWidth > 767) {
   root.style.setProperty("--navbar-bottom-height", "67px");
 }
 
 root.style.setProperty("--window-height", `${window.innerHeight}px`);
+
+// dynamically adding border to the header on scroll
+const addBorderScroll = () => {
+  window.innerWidth >= 768 && window.scrollY >= window.innerHeight - 60
+    ? header.classList.add("scroll-border")
+    : header.classList.remove("scroll-border");
+};
+
+window.onscroll = addBorderScroll;
