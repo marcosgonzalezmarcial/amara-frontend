@@ -52,7 +52,7 @@
     @include responsive(lg) {
       font-size: var(--fs-9);
       font-weight: var(--fw-400);
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
     }
   }
 
