@@ -9,14 +9,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: var(--window-height, 100vh);
+  // height: caclvar(--window-height);
+  // height:calc(var(--window-height) - calc(var(--header-top) + var(--header-actions-height)));
+  height: calc(100vh - var(--header-actions-height));
+  position: relative;
+
   
 
   .hero-content {
-    position: relative;
+    position: absolute;
+    top: var(--header-top);
     display: grid;
     height: 100%;
-    max-height: calc(var(--window-height) - 65px);
+    // max-height:calc(var(--window-height) - calc(var(--header-top) + var(--header-actions-height)));
+    // max-height: 100%;
+    max-height: calc(100% - var(--header-top));
     width: 100%;
 
     @include responsive(md) {
@@ -26,12 +33,13 @@
         display: none;
       }
       
-      height: 100vh;
+      max-height: calc(100% - calc(var(--header-top) + var(--header-actions-height)));
+      max-height: calc(100% - var(--header-top));
       display: grid;
       grid-template-rows: 1fr;
       grid-template-columns: 0.65fr 0.35fr;
       gap: 0.5rem;
-
+      
       .hero-left {
         background-color: var(--white);
         background-image: url("https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/bg-blue-woman.jpg");
@@ -48,6 +56,7 @@
         background-position: 50% 10%;
       }
     }
+  
   }
 
   .container {
@@ -79,13 +88,14 @@
 .hero-title-left {
   max-width: 5.5ch;
   justify-self: start;
-  align-self: end;
+  align-self: center;
   padding-inline-start: 1rem;
   padding-block-start: 3rem;
   font-size: 3rem !important;
   color: hsl(165, 63%, 61%) !important;
   color: #fff !important;
   text-shadow: 1.5px 1.5px hsl(0, 0%, 0%);
+  // margin-top: 2.5rem;
 
   @include responsive(md) {
     display: none;
@@ -105,7 +115,7 @@
 
   @include responsive(md) {
     display: grid;
-    height: 100vh;
+    height: 100%;
   }
 }
 
@@ -114,25 +124,22 @@
     display: none;
   }
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.2);
   justify-self: center;
   align-self: center;
-  border-radius: 3;
-  border-color: #fff;
-  font-size: 1rem;
+  border-radius: 5px;
+  border-color: hsl(0, 0%, 100%);
+  font-size: 0.85rem;
   font-weight: 600;
   transition-property: transform, background-color, color;
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;
-  line-height: 0.1rem;
-  padding: 1rem 1.5rem;
+  padding: 0.6rem 1rem !important;
   letter-spacing: 0.1rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: rgba(255, 255, 255, 0.75);
-  color: black;
-  background-color: transparent;
-  color: white;
-  margin-block-start: 9rem;
+  background-color: rgba(255, 255, 255, 0.692);
+  color: #000000;
+  height: auto;
+
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
