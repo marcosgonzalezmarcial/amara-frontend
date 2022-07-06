@@ -141,15 +141,25 @@ document.addEventListener("DOMContentLoaded", setHeaderActionsBottomHeight);
 window.addEventListener("resize", setHeaderActionsBottomHeight);
 
 function setHeaderActionsBottomHeight() {
+  // if (window.innerWidth <= 768) {
+  //   root.style.setProperty("--navbar-bottom-height", `64px`);
+  // }
+  // if (window.innerWidth > 768) {
+  //   root.style.setProperty("--navbar-bottom-height", `66px`);
+  // }
   root.style.setProperty(
-    "--navbar-bottom-height",
+    "--header-actions-height",
     `${headerActionsBottom.offsetHeight}px`
   );
 }
-if (window.innerWidth > 767) {
-  root.style.setProperty("--navbar-bottom-height", "67px");
+if (window.innerWidth <= 768) {
+  root.style.setProperty("--header-actions-height", `64px`);
+}
+if (window.innerWidth > 768) {
+  root.style.setProperty("--header-actions-height", `66px`);
 }
 
+// Setting winwow height for custom variables reference
 root.style.setProperty("--window-height", `${window.innerHeight}px`);
 
 // dynamically adding border to the header on scroll
