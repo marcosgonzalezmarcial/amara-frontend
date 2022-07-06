@@ -11,7 +11,7 @@
   align-items: center;
   gap: 5px;
   padding-block: 14px;
-  box-shadow: 0 -2px 20px hsla(0, 0%, 0%, 0.1);
+  // box-shadow: 0 -2px 20px hsla(0, 0%, 0%, 0.1);
   z-index: 1;
   border-top: 1px solid lightgray;
 
@@ -35,8 +35,11 @@
     .header-action-label {
       pointer-events: none;
       color: var(--sonic-silver);
-      font-size: var(--fs-11);
-      transition: var(--transition-1);
+      color: black;
+      letter-spacing: 0.25px;
+      // font-size: var(--fs-11);
+      font-size: 12px;
+      // transition: var(--transition-1);
     }
 
     &.active {
@@ -50,20 +53,19 @@
     ion-icon {
       margin-inline: auto;
       font-size: 1.1rem;
-      // margin-bottom: 3px;
     }
 
     .btn-badge {
       position: absolute;
       top: -5px;
-      right: 0;
+      right: 2px;
       background: var(--background, var(--eerie-black));
-      width: 15px;
-      height: 15px;
+      width: 13.5px;
+      height: 13.5px;
       display: grid;
       place-items: center;
-      line-height: 0;
-      font-size: 11px;
+      // line-height: 0;
+      font-size: 9.5px;
       color: var(--white);
       border-radius: 50%;
       pointer-events: none;
@@ -75,5 +77,5 @@
 }
 
 ion-icon[name="heart-outline"] + .header-action-label + .btn-badge {
-  right: 4px;
+  right: 10px;
 }

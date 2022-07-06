@@ -12,7 +12,9 @@
 //   gap: 10px 20px;
 //   margin-bottom: 50px;
 // }
-
+.section.product {
+  padding-block-end: 0 !important;
+}
 .filter-btn {
   color: inherit;
   font-size: var(--fs-7);
@@ -28,7 +30,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px 25px;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 
 @include responsive(xs) {

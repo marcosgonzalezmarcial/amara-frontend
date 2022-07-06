@@ -63,6 +63,10 @@
   flex-wrap: nowrap;
   overflow-y: scroll;
 
+  @include responsive(md) {
+    border: 1px solid darkgray;
+  }
+
   @include responsive(lg) {
     border: 1px solid darkgray;
     overflow: auto;
@@ -134,7 +138,7 @@
     width: 100%;
     img {
       aspect-ratio: 3 / 4;
-      min-height: 129px !important;
+      // min-height: 129px !important;
       width: 100%;
     }
   }
