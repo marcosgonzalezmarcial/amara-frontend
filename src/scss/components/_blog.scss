@@ -1,12 +1,13 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
-
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 /*-----------------------------------*\
  * #BLOG
 \*-----------------------------------*/
 
-.blog .section-title { margin-bottom: 40px; }
+.blog .section-title {
+  margin-bottom: 40px;
+}
 
 .blog-list {
   display: flex;
@@ -16,10 +17,10 @@
   gap: 30px;
 
   & > li {
-    @include responsive(md){
+    @include responsive(md) {
       width: calc(50% - 15px);
     }
-    @include responsive(lg){
+    @include responsive(lg) {
       width: calc(33.33% - 20px);
     }
   }
@@ -38,9 +39,13 @@
   transition: var(--transition-2);
 }
 
-.blog-card:hover .card-banner img { transform: scale(1.05); }
+.blog-card:hover .card-banner img {
+  transform: scale(1.05);
+}
 
-.blog-card .card-content { padding-inline: 20px; }
+.blog-card .card-content-blog {
+  padding-inline: 20px;
+}
 
 .blog-card .card-meta-list {
   display: flex;
@@ -68,10 +73,11 @@
   text-transform: uppercase;
 }
 
-.blog-card .card-meta-link:is(:hover, :focus) { color: var(--eerie-black); }
+.blog-card .card-meta-link:is(:hover, :focus) {
+  color: var(--eerie-black);
+}
 
 .blog-card .card-title {
   line-height: 1.4;
   text-align: center;
 }
-

@@ -1,0 +1,23 @@
+@use "../../abstracts/mixins" as *;
+
+.card-actions {
+  display: flex;
+  height: 45px;
+}
+
+@include responsive(lg) {
+  .product-card .card-actions {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    transform: translateY(100px);
+    visibility: hidden;
+    transition: var(--transition-1);
+  }
+
+  .product-card .card-banner:hover .card-actions {
+    visibility: visible;
+    transform: translateY(0);
+  }
+}

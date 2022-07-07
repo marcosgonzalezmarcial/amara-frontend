@@ -9,7 +9,7 @@ export const Services = () => {
               <li class="service-item">
                 <div class="service-item-icon">
                   <img
-                    src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/svg-logos/service-icon-1.svg"
+                    src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/svg-logos/service-icon-1.svg"
                     alt="Service icon"
                   />
                 </div>
@@ -24,7 +24,7 @@ export const Services = () => {
               <li class="service-item">
                 <div class="service-item-icon">
                   <img
-                    src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/svg-logos/service-icon-2.svg"
+                    src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/svg-logos/service-icon-2.svg"
                     alt="Service icon"
                   />
                 </div>
@@ -39,7 +39,7 @@ export const Services = () => {
               <li class="service-item">
                 <div class="service-item-icon">
                   <img
-                    src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/svg-logos/service-icon-3.svg"
+                    src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/svg-logos/service-icon-3.svg"
                     alt="Service icon"
                   />
                 </div>
@@ -54,7 +54,7 @@ export const Services = () => {
               <li class="service-item">
                 <div class="service-item-icon">
                   <img
-                    src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/svg-logos/service-icon-4.svg"
+                    src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/svg-logos/service-icon-4.svg"
                     alt="Service icon"
                   />
                 </div>

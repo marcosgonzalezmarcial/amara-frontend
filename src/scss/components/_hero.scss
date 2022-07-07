@@ -5,16 +5,15 @@
 \*-----------------------------------*/
 
 .hero {
-  background-image: url("https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/bg-orange-man.jpg");
+  background-image: url("https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/bg-orange-man.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   // height: caclvar(--window-height);
   // height:calc(var(--window-height) - calc(var(--header-top) + var(--header-actions-height)));
-  height: calc(100vh - var(--header-actions-height));
+  // height: calc(100vh - var(--header-actions-height));
+  height: 100vh;
   position: relative;
-
-  
 
   .hero-content {
     position: absolute;
@@ -32,17 +31,19 @@
       .btn.btn-primary {
         display: none;
       }
-      
-      max-height: calc(100% - calc(var(--header-top) + var(--header-actions-height)));
+
+      max-height: calc(
+        100% - calc(var(--header-top) + var(--header-actions-height))
+      );
       max-height: calc(100% - var(--header-top));
       display: grid;
       grid-template-rows: 1fr;
       grid-template-columns: 0.65fr 0.35fr;
       gap: 0.5rem;
-      
+
       .hero-left {
         background-color: var(--white);
-        background-image: url("https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/bg-blue-woman.jpg");
+        background-image: url("https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/bg-blue-woman.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position-x: 50%;
@@ -50,13 +51,12 @@
       }
       .hero-right {
         background-color: var(--white);
-        background-image: url("https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/bg-orange-man.jpg");
+        background-image: url("https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/bg-orange-man.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 10%;
       }
     }
-  
   }
 
   .container {
@@ -140,7 +140,6 @@
   color: #000000;
   height: auto;
 
-
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: rgba(255, 255, 255, 0.75);
@@ -150,7 +149,7 @@
 }
 .btn.btn-secondary-bg-xxl {
   display: none;
-  
+
   @include responsive(md) {
     display: block;
     height: auto;
@@ -170,7 +169,7 @@
     // transition-duration: 275ms;
     // transition-timing-function: ease-in-out;
   }
-  
+
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
     background-color: rgba(255, 255, 255, 0.68);

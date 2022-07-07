@@ -9,7 +9,7 @@ export const Category = () => {
       <li class="category-item">
         <figure class="category-banner">
           <img
-            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/casual%20&%20outdoor.jpg" 
+            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/casual-outdoor.jpg" 
             alt="Casual & outdoor"
             loading="lazy"
             // width="510"
@@ -24,7 +24,7 @@ export const Category = () => {
       <li class="category-item">
         <figure class="category-banner">
           <img
-            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/winter-fashion.jpg"
+            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/winter-fashion.jpg"
             alt="Colección invierno"
             loading="lazy"
             width="510"
@@ -39,7 +39,7 @@ export const Category = () => {
       <li class="category-item">
         <figure class="category-banner">
           <img
-            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/zapatos-botas.jpg"
+            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/zapatos-botas.jpg"
             alt="Calzado exclusivo"
             loading="lazy"
             width="510"
@@ -54,7 +54,7 @@ export const Category = () => {
       <li class="category-item">
         <figure class="category-banner">
           <img
-            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/gafas-accesorios.jpg"
+            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/gafas-accesorios.jpg"
             alt="Gafas"
             loading="lazy"
             width="510"
@@ -67,7 +67,7 @@ export const Category = () => {
       <li class="category-item">
         <figure class="category-banner">
           <img
-            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/bijou.jpg"
+            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/bijou.jpg"
             alt="Bojouterie"
             loading="lazy"
             width="510"
@@ -82,7 +82,7 @@ export const Category = () => {
       <li class="category-item">
         <figure class="category-banner">
           <img
-            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/casual-fashion.jpg"
+            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/casual-fashion.jpg"
             alt="Gorras deportivas"
             loading="lazy"
             width="510"

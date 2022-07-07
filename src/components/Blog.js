@@ -13,7 +13,7 @@ export const Blog = () => {
                   <figure class="card-banner">
                     <a href="#">
                       <img
-                        src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/cyber_monday_blog.jpg"
+                        src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/cyber_monday_blog.jpg"
                         alt="Cyber Monday Fashion en Amara"
                         loading="lazy"
                         width="1020"
@@ -23,7 +23,7 @@ export const Blog = () => {
                     </a>
                   </figure>
 
-                  <div class="card-content">
+                  <div class="card-content-blog">
                     <ul class="card-meta-list">
                       <li class="card-meta-item">
                         <ion-icon name="folder-open-outline"></ion-icon>
@@ -52,7 +52,7 @@ export const Blog = () => {
                   <figure class="card-banner">
                     <a href="#">
                       <img
-                        src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/High-End-Furniture.jpg"
+                        src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/High-End-Furniture.jpg"
                         alt="La decoración de tu casa de verando"
                         loading="lazy"
                         width="1020"
@@ -62,7 +62,7 @@ export const Blog = () => {
                     </a>
                   </figure>
 
-                  <div class="card-content">
+                  <div class="card-content-blog">
                     <ul class="card-meta-list">
                       <li class="card-meta-item">
                         <ion-icon name="folder-open-outline"></ion-icon>
@@ -91,7 +91,7 @@ export const Blog = () => {
                   <figure class="card-banner">
                     <a href="#">
                       <img
-                        src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/new-images/src/assets/images/mujer_comprando_blog.jpg"
+                        src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/mujer_comprando_blog.jpg"
                         alt="Ideas únicas de moda que para descubrir"
                         loading="lazy"
                         width="1020"
@@ -101,7 +101,7 @@ export const Blog = () => {
                     </a>
                   </figure>
 
-                  <div class="card-content">
+                  <div class="card-content-blog">
                     <ul class="card-meta-list">
                       <li class="card-meta-item">
                         <ion-icon name="folder-open-outline"></ion-icon>
