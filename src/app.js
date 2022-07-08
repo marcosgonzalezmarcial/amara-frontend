@@ -35,7 +35,7 @@ const navbar = document.querySelector("[data-navbar]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
 const header = document.querySelector("header");
 const actionsButtons = [
-  ...document.querySelectorAll("button.header-action-btn")
+  ...document.querySelectorAll("button.header-action-btn"),
 ];
 
 const shoppingBagEl = document.querySelector(".shopping-bag-container");
@@ -137,7 +137,7 @@ if (window.innerWidth > 1199) {
 }
 // }
 
-document.addEventListener("DOMContentLoaded", setHeaderActionsBottomHeight);
+// document.addEventListener("DOMContentLoaded", setHeaderActionsBottomHeight);
 window.addEventListener("resize", setHeaderActionsBottomHeight);
 
 function setHeaderActionsBottomHeight() {

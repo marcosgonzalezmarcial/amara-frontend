@@ -65,7 +65,7 @@ export const Products = () => {
       <figure class="card-banner">
         <a href="#">
           <img
-            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/camisa_denim_mujer.jpg"
+            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/camisa-denim-mujer.jpg"
             alt="Camisa denim mujer"
             loading="lazy"
           />

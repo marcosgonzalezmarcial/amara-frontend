@@ -2,6 +2,9 @@
 @use "../abstracts/mixins" as *;
 
 .category {
+  .container-fluid {
+    max-width: 100%;
+  }
   padding-block-end: 0 !important;
 }
 

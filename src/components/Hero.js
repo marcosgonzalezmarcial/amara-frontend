@@ -8,7 +8,7 @@ export const Hero = () => {
   
   
   <h1 class="h1 hero-title-left">Amara style </h1>
-  <button class="btn btn-secondary-bg">DESCÚBRENOS</button>
+  <button class="btn-mobile">¿Te animas?</button>
   <h1 class="h1 hero-title-right">Fashion house</h1>
   
   <div class="hero-left">

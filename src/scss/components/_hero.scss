@@ -5,14 +5,12 @@
 \*-----------------------------------*/
 
 .hero {
-  background-image: url("https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/hero-bg-seatead-man.jpg");
+  background-image: url("https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/hero-bg-urban-woman.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
   width: 100%;
-  // height: caclvar(--window-height);
-  // height:calc(var(--window-height) - calc(var(--header-top) + var(--header-actions-height)));
-  // height: calc(100vh - var(--header-actions-height));
-  height: 100vh;
+  height: var(--window-height);
   position: relative;
 
   .hero-content {
@@ -20,9 +18,9 @@
     top: var(--header-top);
     display: grid;
     height: 100%;
-    // max-height:calc(var(--window-height) - calc(var(--header-top) + var(--header-actions-height)));
-    // max-height: 100%;
-    max-height: calc(100% - var(--header-top));
+    max-height: calc(
+      100% - calc(var(--header-top) + var(--header-actions-height))
+    );
     width: 100%;
 
     @include responsive(md) {
@@ -76,7 +74,6 @@
   margin-inline-end: 1rem;
   max-width: 5.5ch;
   font-size: 3rem !important;
-  color: hsl(165, 63%, 61%) !important;
   color: #fff !important;
   text-shadow: 1.5px 1.5px hsl(0, 0%, 0%);
   text-align: right;
@@ -92,10 +89,8 @@
   padding-inline-start: 1rem;
   padding-block-start: 3rem;
   font-size: 3rem !important;
-  color: hsl(165, 63%, 61%) !important;
   color: #fff !important;
   text-shadow: 1.5px 1.5px hsl(0, 0%, 0%);
-  // margin-top: 2.5rem;
 
   @include responsive(md) {
     display: none;
@@ -119,44 +114,15 @@
   }
 }
 
-.btn.btn-secondary-bg {
-  @include responsive(md) {
-    display: none;
-  }
-  color: #fff;
-  justify-self: center;
-  align-self: center;
-  border-radius: 5px;
-  border-color: hsl(0, 0%, 100%);
-  font-size: 0.85rem;
-  font-weight: 600;
-  transition-property: transform, background-color, color;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
-  padding: 0.6rem 1rem !important;
-  letter-spacing: 0.1rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: rgba(255, 255, 255, 0.692);
-  color: #000000;
-  height: auto;
-
-  &:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: rgba(255, 255, 255, 0.75);
-    color: black;
-    transform: scale(1.05);
-  }
-}
 .btn.btn-secondary-bg-xxl {
   display: none;
 
   @include responsive(md) {
     display: block;
     height: auto;
-    color: #fff;
+    color: var(--white);
     justify-self: center;
     align-self: center;
-    margin-block-start: 20vh;
     border-radius: 0;
     font-size: var(--fs-10);
     font-weight: 500;
@@ -165,13 +131,38 @@
     color: black;
     padding-block: 0.5rem;
     background-color: rgba(255, 255, 255, 0.85);
-    // transition-property: background-color, box-shadow;
-    // transition-duration: 275ms;
-    // transition-timing-function: ease-in-out;
   }
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
     background-color: rgba(255, 255, 255, 0.68);
+  }
+}
+
+.btn-mobile {
+  @include responsive(md) {
+    display: none;
+  }
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--black);
+  font-weight: var(--fw-600);
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding-inline: 1.2rem;
+  padding-block: 0.65rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  transition: var(--transition-2);
+  transition-property: background-color, color;
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+    color: black;
   }
 }

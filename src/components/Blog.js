@@ -13,7 +13,7 @@ export const Blog = () => {
                   <figure class="card-banner">
                     <a href="#">
                       <img
-                        src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/cyber_monday_blog.jpg"
+                        src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/cyber-monday-blog.jpg"
                         alt="Cyber Monday Fashion en Amara"
                         loading="lazy"
                         width="1020"
@@ -91,7 +91,7 @@ export const Blog = () => {
                   <figure class="card-banner">
                     <a href="#">
                       <img
-                        src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/mujer_comprando_blog.jpg"
+                        src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/mujer-comprando-blog.jpg"
                         alt="Ideas únicas de moda que para descubrir"
                         loading="lazy"
                         width="1020"

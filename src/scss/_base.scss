@@ -58,10 +58,6 @@ input {
   outline-color: var(--middle-blue-green);
 }
 
-img {
-  height: auto;
-}
-
 ion-icon {
   pointer-events: none;
 }
@@ -209,14 +205,10 @@ h3 > a {
 }
 
 .container-fluid {
+  max-width: 90%;
+  margin-inline: auto;
   @include responsive(xl) {
     max-width: 95%;
     margin-inline: auto;
   }
 }
-// .header .container-fluid {
-//   @include responsive(xl) {
-//     max-width: 95%;
-//     margin-inline: auto;
-//   }
-// }
