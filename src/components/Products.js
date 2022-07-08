@@ -4,7 +4,7 @@ export const Products = () => {
   Products.classList.add("product");
 
   Products.innerHTML = `
-  <div class="container">
+  <div class="container-fluid">
     <h2 class="h2 section-title">Productos de la semana</h2>
 
     <ul class="filter-list">
@@ -63,14 +63,13 @@ export const Products = () => {
       <li>
       <div class="product-card">
       <figure class="card-banner">
-      <a href="#">
-      <img
-      src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/camisa_denim_mujer.jpg"
-                alt="Camisa denim mujer"
-                loa"
-                
-                />
-                </a>
+        <a href="#">
+          <img
+            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/camisa_denim_mujer.jpg"
+            alt="Camisa denim mujer"
+            loading="lazy"
+          />
+        </a>
                 
                 <div class="card-badge green">New</div>
                 
@@ -101,10 +100,10 @@ export const Products = () => {
         <figure class="card-banner">
           <a href="#">
           <img
-          src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/bota-producto.jpg"
-          alt="Bota"
+          src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/botas-mujer.jpg"
+          alt="Botas de mujer"
           loading="lazy"
-              />
+          />
             </a>
 
             <div class="card-actions">
@@ -132,12 +131,13 @@ export const Products = () => {
         <li>
         <div class="product-card">
         <figure class="card-banner">
-        <a href="#">
-        <img
-        src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/camisa-lisa-mujer-producto.jpg"
-        alt="Camisa lis               loading="
-              />
-              </a>
+          <a href="#">
+            <img
+            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/camisa-lisa-mujer.jpg"
+            alt="Camisa lisa mujer"
+            loading="lazy"
+            />
+          </a>
               
               <div class="card-actions">
                 <button class="card-action-btn cart-btn">
@@ -162,12 +162,13 @@ export const Products = () => {
         <li>
         <div class="product-card">
         <figure class="card-banner">
-        <a href="#">
-              <img
-                src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/camiseta-verde-de-hombre-fibras-naturales.jpg"
-                alt="Camiseta verde               loading="
-                />
-                </a>
+          <a href="#">
+            <img
+              src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/camiseta-verde-apagado-hombre.jpg"
+              alt="Camiseta verde hombre"               
+              loading="lazy"
+            />
+          </a>
                 
                 <div class="card-actions">
 
@@ -197,12 +198,12 @@ export const Products = () => {
               <div class="product-card">
           <figure class="card-banner">
             <a href="#">
-            <img
-            src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/gafa-producto.jpg"
+              <img
+                src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/gafa-producto.jpg"
                 alt="Amara Gafas"               
                 loading="lazy"
-                />
-                </a>
+              />
+            </a>
                 
               <div class="card-actions">
 
@@ -229,12 +230,13 @@ export const Products = () => {
               <li>
               <div class="product-card">
               <figure class="card-banner">
-              <a href="#">
-              <img
-              src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/camisa-rayas-hombre-producto.jpg"
-              alt="Camisa de rayas               loading="
-              />
-              </a>
+                <a href="#">
+                  <img
+                  src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/camisa-rayas-hombre-producto.jpg"
+                  alt="Camisa de rayas para hombre"               
+                  loading="lazy"
+                  />
+                </a>
               
                 <div class="card-actions">
                 
@@ -260,13 +262,13 @@ export const Products = () => {
       <li>
         <div class="product-card">
         <figure class="card-banner">
-        <a href="#">
-              <img
-              src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/blazer-mujer-producto.jpg"
-              alt="Blazer"
+          <a href="#">
+            <img
+              src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/vestido-mujer.jpg"
+              alt="Vestido mujer"
               loading="lazy"
-              />
-            </a>
+            />
+          </a>
 
             <div class="card-actions">
             
