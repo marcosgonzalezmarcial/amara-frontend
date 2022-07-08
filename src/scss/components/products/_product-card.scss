@@ -96,10 +96,10 @@
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
 
-  [name="heart-outline"] {
-    justify-self: end;
-    font-size: 22px;
-  }
+  // [name="heart-outline"] {
+  //   justify-self: end;
+  //   font-size: 22px;
+  // }
 
   .card-price {
     width: min-content;
@@ -107,4 +107,25 @@
   p {
     text-align: center;
   }
+}
+
+.heart-icon-wrapper {
+  img {
+    margin-inline-start: auto;
+  }
+}
+
+.heart-icon {
+  justify-self: end !important;
+}
+.heart-icon-hide {
+  display: none;
+}
+
+.heart-icon-filled {
+  justify-self: end !important;
+  display: none;
+}
+.heart-icon-filled-show {
+  display: block;
 }

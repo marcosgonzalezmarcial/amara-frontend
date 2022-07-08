@@ -170,3 +170,13 @@ const addBorderScroll = () => {
 };
 
 window.onscroll = addBorderScroll;
+
+const heartIcon = document.querySelector(".heart-icon");
+const heartIconFilled = document.querySelector(".heart-icon-filled");
+
+heartIcon.addEventListener("click", (e) => {
+  // debugger;
+  // e.target.classList.toggle("heart-icon-hide");
+  // heartIconFilled.classList.toggle("heart-icon-filled-show");
+  console.log(e);
+});

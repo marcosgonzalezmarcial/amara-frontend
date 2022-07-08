@@ -54,7 +54,8 @@ export const Products = () => {
             <div class="card-title">
             <p href="#">Varsi mochila de cuero</p>
             </div>
-            <ion-icon name="heart-outline"></ion-icon>
+            <img class="heart-icon" src="https://img.icons8.com/sf-ultralight/25/000000/like.png"/>
+            <img class="heart-icon-filled" src="https://img.icons8.com/sf-ultralight-filled/25/000000/like.png"/>
             </div>
             
         </div>
@@ -90,7 +91,10 @@ export const Products = () => {
               <div class="card-title">
               <p href="#">Varsi mochila de cuero</p>
               </div>
-              <ion-icon name="heart-outline"></ion-icon>
+              <div class="heart-icon-wrapper">
+                <img class="heart-icon" src="https://img.icons8.com/sf-ultralight/25/000000/like.png"/>
+                <img class="heart-icon-filled" src="https://img.icons8.com/sf-ultralight-filled/25/000000/like.png"/>
+              </div>
               </div>
         </div>
         </li>
@@ -123,7 +127,7 @@ export const Products = () => {
             <div class="card-title">
             <p href="#">Varsi mochila de cuero</p>
             </div>
-            <ion-icon name="heart-outline"></ion-icon>
+            <img class="heart-icon" src="https://img.icons8.com/sf-ultralight/25/000000/like.png"/>
             </div>
         </div>
         </li>
@@ -154,7 +158,7 @@ export const Products = () => {
             <div class="card-title">
             <p href="#">Varsi mochila de cuero</p>
             </div>
-            <ion-icon name="heart-outline"></ion-icon>
+            <img class="heart-icon" src="https://img.icons8.com/sf-ultralight/25/000000/like.png"/>
             </div>
         </div>
         </li>
@@ -187,7 +191,7 @@ export const Products = () => {
               <div class="card-title">
               <p href="#">Varsi mochila de cuero</p>
               </div>
-              <ion-icon name="heart-outline"></ion-icon>
+              <img class="heart-icon" src="https://img.icons8.com/sf-ultralight/25/000000/like.png"/>
               </div>
               </div>
               </li>
@@ -222,7 +226,7 @@ export const Products = () => {
               <div class="card-title">
               <p href="#">Varsi mochila de cuero</p>
               </div>
-              <ion-icon name="heart-outline"></ion-icon>
+              <img class="heart-icon" src="https://img.icons8.com/sf-ultralight/25/000000/like.png"/>
               </div>
               </div>
               </li>
@@ -254,7 +258,7 @@ export const Products = () => {
             <div class="card-title">
               <p href="#">Varsi mochila de cuero</p>
             </div>
-            <ion-icon name="heart-outline"></ion-icon>
+            <img class="heart-icon" src="https://img.icons8.com/sf-ultralight/25/000000/like.png"/>
             </div>
             </div>
             </li>
@@ -287,7 +291,7 @@ export const Products = () => {
             <div class="card-title">
               <p href="#">Varsi mochila de cuero</p>
             </div>
-            <ion-icon name="heart-outline"></ion-icon>
+            <img class="heart-icon" src="https://img.icons8.com/sf-ultralight/25/000000/like.png"/>
           </div>
         </div>
         </li>
@@ -299,10 +303,3 @@ export const Products = () => {
         `;
   return Products;
 };
-
-// <button
-//   class="card-action-btn"
-//   aria-label="Añadir a favoritos"
-// >
-//   <ion-icon name="heart-outline"></ion-icon>
-// </button>
