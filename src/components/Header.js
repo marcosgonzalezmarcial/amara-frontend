@@ -263,6 +263,13 @@ export const Header = () => {
 
         <p class="header-action-label">Buscar</p>
       </button>
+      <button class="header-action-btn">
+        <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+
+        <p class="header-action-label">Carrito</p>
+
+        <div class="btn-badge green" aria-hidden="true">3</div>
+      </button>
 
       <button class="header-action-btn">
         <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
@@ -272,13 +279,6 @@ export const Header = () => {
         <div class="btn-badge" aria-hidden="true">2</div>
       </button>
 
-      <button class="header-action-btn">
-        <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
-
-        <p class="header-action-label">Carrito</p>
-
-        <div class="btn-badge green" aria-hidden="true">3</div>
-      </button>
     </div>
     <!-- end of header actions -->
 

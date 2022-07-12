@@ -8,7 +8,7 @@ export const Hero = () => {
   
   
   <h1 class="h1 hero-title-left">Amara style </h1>
-  <button class="btn-mobile">¿Te animas?</button>
+  <button class="btn-mobile">Descúbrenos</button>
   <h1 class="h1 hero-title-right">Fashion house</h1>
   
   <div class="hero-left">
@@ -17,7 +17,9 @@ export const Hero = () => {
   <div class="hero-right">
   <button class="btn btn-secondary-bg-xxl">MODA HOMBRE</button>
   </div>
-</div>
+  </div>
 `;
   return hero;
 };
+
+// <button class="btn-mobile">¿Te animas?</button>

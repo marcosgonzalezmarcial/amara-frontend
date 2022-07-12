@@ -1,9 +1,5 @@
-@use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-/*-----------------------------------*\
- * #BLOG
-\*-----------------------------------*/
 
 .blog .section-title {
   margin-bottom: 40px;
@@ -67,6 +63,7 @@
 }
 
 .blog-card .card-meta-link {
+  width: max-content;
   color: inherit;
   font-size: var(--fs-9);
   font-weight: var(--fw-500);

@@ -1,0 +1,31 @@
+@use "../abstracts/mixins" as *;
+
+section.call-to-action {
+  width: 100%;
+  height: 300px;
+  @include responsive(xxl) {
+    height: 375px;
+  }
+}
+
+.container-fluid-cta {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/call-to-action-summer-bg.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+.section-title {
+    margin-block-end: 1rem;
+    span {
+      display: inline-block;
+      color: rgb(228, 26, 26);
+    }
+  }
+
+  .call-to-action-btn {
+    @include square-button;
+    margin: auto;
+  }
+}

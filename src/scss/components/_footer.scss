@@ -11,6 +11,11 @@
 .footer-top {
   background: var(--cultured);
   padding-block: var(--section-padding);
+  // padding-inline: 2rem;
+  
+  @include responsive(md) {
+    padding-inline: 2rem;
+  }
 }
 
 .footer-top .container {

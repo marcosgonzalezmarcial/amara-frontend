@@ -1,4 +1,5 @@
 import { Blog } from "./components/Blog";
+import { CallToActionSummer } from "./components/CallToAction";
 import { Category } from "./components/Category";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
@@ -21,6 +22,8 @@ document.querySelector("article").appendChild(Services());
 document.querySelector("article").appendChild(Category());
 //Products section
 document.querySelector("article").appendChild(Products());
+//Call-to-action section
+document.querySelector("article").appendChild(CallToActionSummer());
 // Blog Section
 document.querySelector("article").appendChild(Blog());
 // Newsletter section
@@ -35,7 +38,7 @@ const navbar = document.querySelector("[data-navbar]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
 const header = document.querySelector("header");
 const actionsButtons = [
-  ...document.querySelectorAll("button.header-action-btn"),
+  ...document.querySelectorAll("button.header-action-btn")
 ];
 
 const shoppingBagEl = document.querySelector(".shopping-bag-container");
@@ -53,40 +56,45 @@ const triangleBorderEl = document.querySelector(".arrow");
 
 actionsButtons.forEach((btn) => {
   btn.addEventListener("click", function () {
-    // removing active class (same styles than hover) from all the buttons except the clicked one
+    // removing active class from all the buttons except the clicked one
     actionsButtons.forEach(
       (btn) => this !== btn && btn.classList.remove("active")
     );
     this.classList.toggle("active");
   });
 
-  btn.children[1].innerText === "Carrito"
-    ? btn.addEventListener("click", toggleBag)
-    : btn.addEventListener("click", hideBag);
+  // btn.children[1].innerText === "Carrito"
+  //   ? btn.addEventListener("click", toggleBag)
+  //   : btn.addEventListener("click", hideBag);
+  btn.children[1].innerText === "Carrito" &&
+    btn.addEventListener("click", toggleBag);
+  // : btn.addEventListener("click", hideBag);
 });
 
-// showing shopping-bag with triangle-border when the shopping-bag is clicked
+// showing shopping-bag with triangle-border when the shopping-bag btn is clicked
 function toggleBag() {
   triangleBorderEl.classList.toggle("arrow-up");
   shoppingBagEl.classList.toggle("show-bag");
-
   // avoid page scrolling on the back when the bag is open
-  setTimeout(() => {
-    document.body.classList.toggle("stop-scroll");
-  }, 300);
+  document.body.classList.toggle("stop-scroll");
+
+  // setTimeout(() => {
+  //   document.body.classList.toggle("stop-scroll");
+  // }, 200);
 }
 
-function hideBag() {
-  triangleBorderEl.classList.remove("arrow-up");
-  shoppingBagEl.classList.remove("show-bag");
-  // avoid page scrolling on the back when the bag is open
-  setTimeout(() => {
-    document.body.classList.remove("stop-scroll");
-  }, 300);
-}
+// function hideBag() {
+//   triangleBorderEl.classList.remove("arrow-up");
+//   shoppingBagEl.classList.remove("show-bag");
+//   document.body.classList.remove("stop-scroll");
+//   // avoid page scrolling on the back when the bag is open
+//   // setTimeout(() => {
+//   //   document.body.classList.remove("stop-scroll");
+//   // }, 200);
+// }
 
 /**
- * navbar toggle
+ * side-navbar menu toggle
  */
 const navElemArr = [overlay, navOpenBtn, navCloseBtn];
 
@@ -96,8 +104,6 @@ for (let i = 0; i < navElemArr.length; i++) {
     overlay.classList.toggle("active");
   });
 }
-
-// document.addEventListener("DOMContentLoaded", setHeaderHeight);
 
 window.addEventListener("resize", setHeaderCustomProps);
 
@@ -160,7 +166,7 @@ if (window.innerWidth > 768) {
 }
 
 // Setting winwow height for custom variables reference
-root.style.setProperty("--window-height", `${window.innerHeight}px`);
+// root.style.setProperty("--window-height", `${window.innerHeight}px`);
 
 // dynamically adding border to the header on scroll
 const addBorderScroll = () => {
@@ -168,15 +174,33 @@ const addBorderScroll = () => {
     ? header.classList.add("scroll-border")
     : header.classList.remove("scroll-border");
 };
-
 window.onscroll = addBorderScroll;
 
-const heartIcon = document.querySelector(".heart-icon");
-const heartIconFilled = document.querySelector(".heart-icon-filled");
+// // moving the shopping bag top position when scrolling down
+// // root.style.setProperty("--shopping-bag-top-scroll", `${50 + window.scrollY}px`);
 
-heartIcon.addEventListener("click", (e) => {
-  // debugger;
-  // e.target.classList.toggle("heart-icon-hide");
-  // heartIconFilled.classList.toggle("heart-icon-filled-show");
-  console.log(e);
+// const shoppingBagMaxHeight = () => {
+//   const shoppingBagContainer = document.querySelector(
+//     ".shopping-bag-container"
+//   );
+//   if (window.scrollY > 0) {
+//     shoppingBagContainer.style.maxHeight = "calc(100vh - var(--header-top))";
+//     // } else if (window.scrollY > 1) {
+//     //   shoppingBagContainer.style.maxHeight = "calc(100vh - var(--header-top))";
+//   } else {
+//     return null;
+//   }
+// };
+// // window.onscroll = shoppingBagMaxHeight;
+
+//
+const heartIconWrappers = [...document.querySelectorAll(".heart-icon-wrapper")];
+
+heartIconWrappers.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    if (e.target.children[0].classList.contains("heart-icon")) {
+      e.target.children[0].classList.toggle("heart-icon-hide");
+      e.target.children[1].classList.toggle("heart-icon-filled-show");
+    }
+  });
 });
