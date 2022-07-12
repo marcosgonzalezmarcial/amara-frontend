@@ -28,4 +28,8 @@ section.call-to-action {
     @include square-button;
     margin: auto;
   }
+
+  .call-to-action-content {
+    padding-inline: 0.5rem;
+  }
 }

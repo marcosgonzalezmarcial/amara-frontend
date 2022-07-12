@@ -11,7 +11,7 @@
   text-align: center;
   * {
     @include responsive(md) {
-      max-width: 480px;
+      // max-width: 480px;
       margin-inline: auto;
     }
   }

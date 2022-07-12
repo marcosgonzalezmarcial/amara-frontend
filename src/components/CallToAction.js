@@ -1,9 +1,9 @@
-export const CallToActionSummer = () => {
-  let callToActionSummer = document.createElement("section");
-  callToActionSummer.classList.add("section");
-  callToActionSummer.classList.add("call-to-action");
+export const CallToAction = () => {
+  let CallToAction = document.createElement("section");
+  CallToAction.classList.add("section");
+  CallToAction.classList.add("call-to-action");
 
-  callToActionSummer.innerHTML = `
+  CallToAction.innerHTML = `
   <div class="container-fluid-cta">
     <div class="call-to-action-content">
       <h1 class="call-to-action-title h2 section-title">
@@ -15,5 +15,5 @@ export const CallToActionSummer = () => {
     </div>
   </div>
   `;
-  return callToActionSummer;
+  return CallToAction;
 };

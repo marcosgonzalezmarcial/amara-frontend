@@ -1,4 +1,4 @@
-export const triangleBorder = () => {
+export const TriangleBorder = () => {
   const cartBtnEl = document.querySelector(
     "button.header-action-btn ion-icon[name='cart-outline']"
   );
