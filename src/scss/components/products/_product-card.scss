@@ -3,7 +3,6 @@
 .product-card {
   .card-banner {
     position: relative;
-    // margin-bottom: 20px;
     img {
       width: 100%;
       aspect-ratio: 3 / 3.75;
@@ -35,37 +34,35 @@
   }
 
   .card-action-btn {
-    border: 1px solid var(--cultured);
-    width: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    background: var(--white);
-    color: var(--eerie-black);
-    border-color: var(--eerie-black);
-
-    &:is(:hover, :focus) {
-      border-color: var(--eerie-black);
-    }
-
-    ion-icon {
-      font-size: 22px;
-    }
-  }
-
-  .cart-btn {
     flex-grow: 1;
     background: var(--eerie-black);
     color: var(--white);
     border-color: var(--eerie-black);
     font-weight: var(--fw-500);
-
-    &:is(:hover, :focus) {
-      background-color: var(--white);
-      color: var(--eerie-black);
+ 
+    &:is(:active) {
+      background-color: lighten($color: black, $amount: 25%);
+      color: var(--white);
     }
+    &:is(:hover) {
+      background-color: lighten($color: black, $amount: 40%);
+      // color: var(--white);
+    }
+
+    // @include responsive (lg) {
+    //   &:is(:hover) {
+    //     background-color: var(--white);
+    //     color: var(--eerie-black);
+    //   }
+    // }
   }
+
+  // .cart-btn {
+
+  // }
 
   .card-title {
     color: #121314;
@@ -96,10 +93,6 @@
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
 
-  [name="heart-outline"] {
-    justify-self: end;
-    font-size: 22px;
-  }
 
   .card-price {
     width: min-content;
@@ -107,4 +100,29 @@
   p {
     text-align: center;
   }
+}
+
+.heart-icon-wrapper {
+    margin-inline-start: auto;
+    width: 22px;
+    img {
+      width: 100%;
+    }
+}
+
+.heart-icon {
+  pointer-events: none;
+  user-select: none;
+}
+.heart-icon-hide {
+  display: none;
+}
+
+.heart-icon-filled {
+  pointer-events: none;
+  user-select: none;
+  display: none;
+}
+.heart-icon-filled-show {
+  display: block;
 }

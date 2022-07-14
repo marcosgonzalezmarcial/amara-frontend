@@ -11,9 +11,9 @@
   align-items: center;
   gap: 5px;
   padding-block: 14px;
-  // box-shadow: 0 -2px 20px hsla(0, 0%, 0%, 0.1);
   z-index: 1;
   border-top: 1px solid lightgray;
+  overscroll-behavior: none;
 
   @include responsive(md) {
     padding-block: 15px;
@@ -31,6 +31,7 @@
   .header-action-btn {
     position: relative;
     text-align: center;
+    overscroll-behavior: none;
 
     .header-action-label {
       pointer-events: none;
@@ -53,6 +54,10 @@
     ion-icon {
       margin-inline: auto;
       font-size: 1.1rem;
+      // pointer-events: none;
+      // p {
+      //   pointer-events: none;
+      // }
     }
 
     .btn-badge {

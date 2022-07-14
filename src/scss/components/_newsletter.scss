@@ -1,24 +1,17 @@
 // @use '../abstracts/variables' as *;
 @use "../abstracts/mixins" as *;
 
-/*-----------------------------------*\
- * #NEWSLATTER
-\*-----------------------------------*/
-
-.newsletter {
-  padding-bottom: 120px;
-}
 
 .newsletter-card {
   background-color: var(--cultured);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
-  padding: 80px 15px;
+  padding: 40px 15px;
   text-align: center;
   * {
     @include responsive(md) {
-      max-width: 480px;
+      // max-width: 480px;
       margin-inline: auto;
     }
   }
