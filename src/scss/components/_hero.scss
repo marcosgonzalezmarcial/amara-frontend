@@ -5,25 +5,27 @@
 \*-----------------------------------*/
 
 .hero {
-  background-image: url("https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/hero-bg-urban-woman.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
   width: 100%;
-  height: var(--window-height);
+  height: calc(100vh - var(--header-actions-height));
   position: relative;
+  margin-block-end: 25px;
 
   .hero-content {
+    background-image: url("https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/hero-bg-urban-woman.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
     position: absolute;
-    top: var(--header-top);
+    top: var(--header-height);
     display: grid;
     height: 100%;
     max-height: calc(
-      100% - calc(var(--header-top) + var(--header-actions-height))
+      100vh - calc(var(--header-height) + var(--header-actions-height))
     );
     width: 100%;
 
     @include responsive(md) {
+      background-image: none;
       .hero-title,
       .hero-subtitle,
       .btn.btn-primary {
@@ -31,9 +33,9 @@
       }
 
       max-height: calc(
-        100% - calc(var(--header-top) + var(--header-actions-height))
+        100% - calc(var(--header-height) + var(--header-actions-height))
       );
-      max-height: calc(100% - var(--header-top));
+      max-height: calc(100% - var(--header-height));
       display: grid;
       grid-template-rows: 1fr;
       grid-template-columns: 0.65fr 0.35fr;
@@ -64,17 +66,21 @@
   @include responsive(md) {
     background-image: none;
   }
+
+  @include responsive(lg) {
+    height: 100vh;
+  }
 }
 
 .hero-title-right {
   max-width: 5ch;
   justify-self: right;
   align-self: center;
-  padding-bottom: 3.5rem;
+  padding-block-end: 3.5rem;
   margin-inline-end: 1rem;
   max-width: 5.5ch;
-  font-size: 3rem !important;
-  color: #fff !important;
+  font-size: 3.2rem;
+  color: var(--white);
   text-shadow: 1.5px 1.5px hsl(0, 0%, 0%);
   text-align: right;
 
@@ -88,8 +94,8 @@
   align-self: center;
   padding-inline-start: 1rem;
   padding-block-start: 3rem;
-  font-size: 3rem !important;
-  color: #fff !important;
+  font-size: 3.2rem;
+  color: var(--white);
   text-shadow: 1.5px 1.5px hsl(0, 0%, 0%);
 
   @include responsive(md) {
@@ -143,26 +149,5 @@
   @include responsive(md) {
     display: none;
   }
-  background: rgba(255, 255, 255, 0.9);
-  color: var(--black);
-  font-weight: var(--fw-600);
-  font-size: 18px;
-  letter-spacing: 0.5px;
-  padding-inline: 1.2rem;
-  padding-block: 0.65rem;
-  border: 1px solid black;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-self: center;
-  align-self: center;
-  transition: var(--transition-2);
-  transition-property: background-color, color;
-
-  &:hover,
-  &:focus {
-    background-color: #fff;
-    color: black;
-  }
+ @include square-button;
 }

@@ -18,10 +18,12 @@ html {
   font-size: 16px;
   color: var(--sonic-silver);
   scroll-behavior: smooth;
+  height: -webkit-fill-available;
 }
 
 body {
   background: var(--white);
+  height: -webkit-fill-available;
 }
 
 li {
@@ -49,7 +51,7 @@ button {
 }
 
 button {
-  text-align: left;
+  // text-align: left;
   cursor: pointer;
 }
 
@@ -70,46 +72,40 @@ ion-icon {
  * CUSTOM PROPERTY
  */
 
-:root {
-  @include responsive(xs) {
-    --fs-1: 3rem;
-    --fs-2: 2rem;
+ :root {
+   @include responsive(xs) {
+     --fs-1: 3rem;
+     --fs-2: 2rem;
+    }
+    @include responsive(sm) {
+      --fs-1: 3.75rem;
+      --fs-2: 2.375rem;
+      --fs-3: 2.25rem;
+    }
+    @include responsive(lg) {
+      --fs-1: 5rem;
+    }
+    @include responsive(xl) {
+      --fs-1: 6.25rem;
+    }
   }
-  @include responsive(sm) {
-    --fs-1: 3.75rem;
-    --fs-2: 2.375rem;
-    --fs-3: 2.25rem;
-  }
-  @include responsive(lg) {
-    --fs-1: 5rem;
-  }
-  @include responsive(xl) {
-    --fs-1: 6.25rem;
-  }
-}
-
-/*-----------------------------------*\
- * #REUSED STYLE
-\*-----------------------------------*/
-
+  
+  /*-----------------------------------*\
+  * #REUSED STYLE
+  \*-----------------------------------*/
+  
 .container {
   padding-inline: 15px;
-
-  @include responsive(sm) {
-    max-width: 550px;
-    margin-inline: auto;
-  }
-  @include responsive(md) {
-    max-width: 700px;
-  }
-  @include responsive(lg) {
-    max-width: 950px;
-  }
-  @include responsive(xl) {
-    max-width: 1235px;
-  }
 }
 
+.container-fluid {
+  max-width: 90%;
+  margin-inline: auto;
+  @include responsive(xl) {
+    max-width: 95%;
+    margin-inline: auto;
+  }
+}
 a,
 button {
   transition: var(--transition-1);
@@ -144,6 +140,8 @@ h3 > a {
   font-size: var(--fs-7);
   font-weight: var(--fw-500);
 }
+
+///////// Buttons //////////////////////////////
 
 .btn {
   background: var(--background, var(--eerie-black));
@@ -191,24 +189,18 @@ h3 > a {
   --border-color: var(--eerie-black);
 }
 
+//////////// end of buttons ////////////////////
+
 .section {
   padding-block: var(--section-padding);
 }
 
-.w-100 {
-  width: 100%;
-}
+// .w-100 {
+//   width: 100%;
+// }
 
 .section-title {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.container-fluid {
-  max-width: 90%;
-  margin-inline: auto;
-  @include responsive(xl) {
-    max-width: 95%;
-    margin-inline: auto;
-  }
-}
