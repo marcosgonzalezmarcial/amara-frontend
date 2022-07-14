@@ -16,11 +16,11 @@
     background-size: cover;
     background-position: 50%;
     position: absolute;
-    top: var(--header-top);
+    top: var(--header-height);
     display: grid;
     height: 100%;
     max-height: calc(
-      100vh - calc(var(--header-top) + var(--header-actions-height))
+      100vh - calc(var(--header-height) + var(--header-actions-height))
     );
     width: 100%;
 
@@ -33,9 +33,9 @@
       }
 
       max-height: calc(
-        100% - calc(var(--header-top) + var(--header-actions-height))
+        100% - calc(var(--header-height) + var(--header-actions-height))
       );
-      max-height: calc(100% - var(--header-top));
+      max-height: calc(100% - var(--header-height));
       display: grid;
       grid-template-rows: 1fr;
       grid-template-columns: 0.65fr 0.35fr;

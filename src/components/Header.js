@@ -181,7 +181,7 @@ export const Header = () => {
               </div>
               
               <div class="container-fluid">
-              <div class="overlay navbar-slide" data-navbar-overlay></div>
+              <div class="overlay navbar-slide"></div>
               
               <!-- <div class="header-search">
               <input
@@ -197,7 +197,7 @@ export const Header = () => {
         </div> -->
         
         <!-- Navbar -->
-        <nav class="navbar" data-navbar>
+        <nav class="navbar">
         <div class="navbar-top">
         <a href="#" class="logo">
         <img

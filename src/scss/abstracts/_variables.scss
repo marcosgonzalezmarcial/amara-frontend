@@ -1,3 +1,4 @@
+@use "mixins" as *;
 /*-----------------------------------*\
  * #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -28,15 +29,30 @@
 
   // cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
-  /**
-   * spacing
-   */
+  /**********************************
+  *********** spacing **************/
 
   --section-padding: 25px;
 
-  // /**
-  //  * responsiveness
-  //  */
+  /**********************************
+  *** responsive custom variables ***/
+
+  // setting variables for header & triangle-border components 
+  --header-height: 50px;
+  --triangle-border-top: 55px;
+  --header-actions-height: 64px;
+  @include responsive(md){
+    --header-actions-height: 66px;
+  }
+  @include responsive(lg) {
+    --header-height: 61px;
+    --triangle-border-top: 57px;
+  }
+  @include responsive(xl) {
+    --triangle-border-top: 56px;
+  }
+  
+  
 
   //  --xs: 480px;
   //  --sm: 580px;
