@@ -31,30 +31,28 @@
   }
 }
 
-
 @mixin border-bottom {
   border-bottom: 1px solid hsl(0, 0%, 87%);
 }
 
-
 @mixin square-button() {
-      display: block;
-      height: auto;
-      color: var(--white);
-      justify-self: center;
-      align-self: center;
-      border-radius: 0;
-      font-size: var(--fs-10);
-      font-weight: 500;
-      letter-spacing: 0.01rem;
-      padding-inline: 1rem;
-      color: black;
-      padding-block: 0.5rem;
-      background-color: rgba(255, 255, 255, 0.85);
-      border: 1px solid var(--border-color, var(--eerie-black));
+  display: block;
+  height: auto;
+  color: var(--white);
+  justify-self: center;
+  align-self: center;
+  border-radius: 0;
+  font-size: var(--step--2);
+  font-weight: var(--fw-500);
+  letter-spacing: 0.01rem;
+  padding-inline: 1em;
+  color: black;
+  padding-block: 0.5em;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--border-color, var(--eerie-black));
 
-    &:hover {
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
-      background-color: rgba(255, 255, 255, 0.68);
-    } 
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
+    background-color: rgba(255, 255, 255, 0.68);
+  }
 }

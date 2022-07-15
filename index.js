@@ -43,13 +43,3 @@ function hideBag() {
   document.body.classList.remove("stop-scroll");
 }
 /**** end of shopping-bag toggle ****/
-
-// document.addEventListener("DOMContentLoaded", setHeaderActionsBottomHeight);
-window.addEventListener("resize", setHeaderActionsBottomHeight);
-
-function setHeaderActionsBottomHeight() {
-  root.style.setProperty(
-    "--header-actions-height",
-    `${headerActionsBottom.offsetHeight}px`
-  );
-}

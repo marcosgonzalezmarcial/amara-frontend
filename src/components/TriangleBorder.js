@@ -5,7 +5,7 @@ export const TriangleBorder = () => {
   // setting triangle border position on first load
   document.documentElement.style.setProperty(
     "--triangle-border-left",
-    `${Math.round(cartBtnPos) + 13}px`
+    `${Math.round(cartBtnPos) + 21}px`
   );
 
   const triangleBorder = '<div class="arrow"></div>';

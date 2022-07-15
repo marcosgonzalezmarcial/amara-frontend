@@ -21,7 +21,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    font-size: var(--fs-9);
+    // font-size: var(--fs-9);
+    font-size: var(--step--2);
     font-weight: var(--fw-500);
     padding: 3px 10px;
 
@@ -41,8 +42,9 @@
     background: var(--eerie-black);
     color: var(--white);
     border-color: var(--eerie-black);
+    font-size: var(--step--2);
     font-weight: var(--fw-500);
- 
+
     &:is(:active) {
       background-color: lighten($color: black, $amount: 25%);
       color: var(--white);
@@ -67,16 +69,15 @@
   .card-title {
     color: #121314;
     font-weight: 300;
-    font-size: 16px;
+    // font-size: 16px;
+    font-size: var(--step--2);
     line-height: 22px;
     letter-spacing: 0.3px;
   }
 
   .card-price {
     color: red;
-    // color: #121314;
-    font-weight: 300;
-    font-size: 14px;
+    font-size: var(--step--2);
     line-height: 22px;
     letter-spacing: 0.3px;
     data:not(:first-child) {
@@ -93,7 +94,6 @@
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
 
-
   .card-price {
     width: min-content;
   }
@@ -103,11 +103,11 @@
 }
 
 .heart-icon-wrapper {
-    margin-inline-start: auto;
-    width: 22px;
-    img {
-      width: 100%;
-    }
+  margin-inline-start: auto;
+  width: 22px;
+  img {
+    width: 100%;
+  }
 }
 
 .heart-icon {

@@ -1,7 +1,6 @@
 // @use '../abstracts/variables' as *;
 @use "../abstracts/mixins" as *;
 
-
 .newsletter-card {
   background-color: var(--cultured);
   background-repeat: no-repeat;
@@ -9,13 +8,9 @@
   background-position: left;
   padding: 40px 15px;
   text-align: center;
-  * {
-    @include responsive(md) {
-      // max-width: 480px;
-      margin-inline: auto;
-    }
-  }
+
   .card-form {
+    margin-inline: auto;
     @include responsive(md) {
       position: relative;
     }
@@ -25,50 +20,55 @@
   }
 }
 
-.newsletter-card .card-title {
-  color: var(--eerie-black);
-  font-size: var(--fs-3);
-  font-weight: var(--fw-500);
-  line-height: 1.2;
-  margin-bottom: 30px;
-}
-
-.newsletter-card .card-text {
-  margin-bottom: 30px;
-}
-
-.newsletter-card .input-wrapper {
-  position: relative;
-  margin-bottom: 20px;
-  @include responsive(md) {
-    margin-bottom: 0;
+.newsletter-card {
+  .card-title {
+    color: var(--eerie-black);
+    // font-size: var(--fs-3);
+    font-size: var(--step-1);
+    font-weight: var(--fw-500);
+    line-height: 1.2;
+    margin-bottom: 2rem;
   }
-}
+  .card-text {
+    font-size: var(--step--2);
+    margin-bottom: 2rem;
+  }
+  .input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+    @include responsive(md) {
+      margin-bottom: 0;
+    }
+    ion-icon {
+      font-size: 18px;
+      position: absolute;
+      top: 50%;
+      left: 25px;
+      transform: translateY(-50%);
+    }
+  }
+  .input-field {
+    background: var(--white);
+    height: 60px;
+    padding-inline: 50px 20px;
+    border-radius: 6px;
+    font-size: var(--step--2);
+  }
 
-.newsletter-card .input-field {
-  background: var(--white);
-  height: 60px;
-  padding-inline: 50px 20px;
-  border-radius: 6px;
-}
+  .btn {
+    gap: 10px;
+    margin-inline: auto;
+    width: 15ch;
 
-.newsletter-card .input-wrapper ion-icon {
-  font-size: 18px;
-  position: absolute;
-  top: 50%;
-  left: 25px;
-  transform: translateY(-50%);
-}
-
-.newsletter-card .btn {
-  gap: 10px;
-  @include responsive(md) {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: max-content;
-    padding-inline: 35px;
-    border-radius: 0 6px 6px 0;
+    @include responsive(md) {
+      font-size: var(--step--2);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: max-content;
+      padding-inline: 2rem;
+      border-radius: 0 6px 6px 0;
+    }
   }
 }

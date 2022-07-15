@@ -1,14 +1,17 @@
 @use "../abstracts/mixins" as *;
 
-.section.product .container {
-  @include responsive(xxl) {
-    max-width: 90%;
+.section.product {
+  padding-block-end: 2.5rem;
+  .container {
+    @include responsive(xxl) {
+      max-width: 90%;
+    }
   }
 }
 
 .filter-btn {
   color: inherit;
-  font-size: var(--fs-7);
+  font-size: var(--step--1);
   font-weight: var(--fw-500);
 
   &.active {
@@ -57,22 +60,4 @@
   align-items: center;
   gap: 10px 20px;
   margin-bottom: 50px;
-}
-
-.filter-btn {
-  color: inherit;
-  font-size: var(--fs-7);
-  font-weight: var(--fw-500);
-}
-
-.filter-btn.active {
-  color: var(--eerie-black);
-}
-
-.product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px 25px;
-  margin-bottom: 60px;
 }
