@@ -2,7 +2,7 @@
 
 .arrow {
   position: fixed;
-  top: var(--triangle-border-top, 59px);
+  top: var(--triangle-border-top);
   width: 10px;
   height: 10px;
   border: none;
@@ -13,12 +13,11 @@
   transition-duration: 125ms;
   transition-timing-function: ease-in-out;
   transition-property: opacity, border-left-color, border-top-color,
-  background-color;
+    background-color;
   left: var(--triangle-border-left);
   display: none;
   @include responsive(lg) {
     display: block;
-
   }
 }
 .arrow-up {

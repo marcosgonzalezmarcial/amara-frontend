@@ -2,7 +2,7 @@
 
 section.call-to-action {
   width: 100%;
-  height: 300px;
+  height: 325px;
   @include responsive(xxl) {
     height: 375px;
   }
@@ -16,17 +16,24 @@ section.call-to-action {
   justify-content: center;
   align-items: center;
 
-.section-title {
+  .section-title {
     margin-block-end: 1rem;
     span {
       display: inline-block;
       color: rgb(228, 26, 26);
     }
   }
+  .call-to-action-title {
+    font-size: var(--step-3);
+  }
 
   .call-to-action-btn {
     @include square-button;
-    margin: auto;
+    margin-inline: auto;
+    @include responsive(lg) {
+      margin: 2.1rem auto;
+    }
+    font-size: var(--step--1);
   }
 
   .call-to-action-content {

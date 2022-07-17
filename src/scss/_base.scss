@@ -65,38 +65,12 @@ ion-icon {
 }
 
 /*-----------------------------------*\
- * #MEDIA QUARIES
-\*-----------------------------------*/
-
-/**
- * CUSTOM PROPERTY
- */
-
- :root {
-   @include responsive(xs) {
-     --fs-1: 3rem;
-     --fs-2: 2rem;
-    }
-    @include responsive(sm) {
-      --fs-1: 3.75rem;
-      --fs-2: 2.375rem;
-      --fs-3: 2.25rem;
-    }
-    @include responsive(lg) {
-      --fs-1: 5rem;
-    }
-    @include responsive(xl) {
-      --fs-1: 6.25rem;
-    }
-  }
-  
-  /*-----------------------------------*\
   * #REUSED STYLE
   \*-----------------------------------*/
-  
-.container {
-  padding-inline: 15px;
-}
+
+// .container {
+//   padding-inline: 1rem;
+// }
 
 .container-fluid {
   max-width: 90%;
@@ -117,38 +91,40 @@ h3 > a {
 
 .h1,
 .h2,
-.h3,
-.h4 {
+.h3 {
   color: var(--eerie-black);
   font-weight: var(--fw-600);
 }
 
 .h1 {
-  font-size: var(--fs-1);
+  // font-size: var(--fs-1);
+  font-size: var(--step-3);
   line-height: 1;
 }
 
 .h2 {
-  font-size: var(--fs-2);
+  // font-size: var(--fs-2);
+  font-size: var(--step-2);
 }
 
 .h3 {
-  font-size: var(--fs-6);
+  // font-size: var(--fs-6);
+  font-size: var(--step--1);
 }
 
-.h4 {
-  font-size: var(--fs-7);
-  font-weight: var(--fw-500);
-}
+// .h4 {
+//   font-size: var(--fs-7);
+//   font-weight: var(--fw-500);
+// }
 
-///////// Buttons //////////////////////////////
+///////// Buttons ///////////////////
 
 .btn {
   background: var(--background, var(--eerie-black));
   color: var(--color, var(--white));
   font-weight: var(--fw-600);
   height: var(--height, 60px);
-  padding-inline: 50px;
+  // padding-inline: 50px;
   border: 1px solid var(--border-color, var(--eerie-black));
   border-radius: 6px;
   display: flex;
@@ -163,6 +139,7 @@ h3 > a {
 }
 
 .btn-secondary {
+  font-size: var(--step--2);
   --height: 50px;
   --background: var(--white);
   --color: var(--eerie-black);
@@ -180,6 +157,7 @@ h3 > a {
   --background: var(--white);
   --color: var(--eerie-black);
   --border-color: var(--eerie-black);
+  font-size: var(--step--2);
   padding-inline: 40px;
 }
 
@@ -189,7 +167,7 @@ h3 > a {
   --border-color: var(--eerie-black);
 }
 
-//////////// end of buttons ////////////////////
+//////////// end of buttons ///////////////
 
 .section {
   padding-block: var(--section-padding);
@@ -201,6 +179,5 @@ h3 > a {
 
 .section-title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
-

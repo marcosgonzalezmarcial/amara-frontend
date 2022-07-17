@@ -8,6 +8,7 @@ import { addBorderScroll } from "./ui-utils/addBorderScroll";
 import { navbarMenuToggle } from "./ui-utils/navbarMenuToggle";
 import { setHeaderCustomProps } from "./ui-utils/setHeaderCustomProps";
 import { addFavourites } from "./ui-utils/addFavourites";
+import { repositionTriangleBorder } from "./ui-utils/repositionTriangleBorder";
 
 export const App = () => {
   const root = document.getElementById("root");
@@ -17,16 +18,16 @@ export const App = () => {
   root.appendChild(Footer());
 
   // Inserting triangle border to the Header once the App is mounted
-  const header = document.querySelector("header");
-  header.appendChild(TriangleBorder());
+  document.querySelector("header").appendChild(TriangleBorder());
 
   // dynamically adding border to the header on scroll
   window.addEventListener("scroll", addBorderScroll);
   // setting header custop props dynamically
   window.addEventListener("resize", setHeaderCustomProps);
-  // adding side-navbar menu toggle fucntionallity
+  // repositioning the element according to window width size
+  window.addEventListener("resize", repositionTriangleBorder);
+  // adding side-navbar menu toggle functionallity
   navbarMenuToggle();
-
   // add product to favorites logic
   addFavourites();
 

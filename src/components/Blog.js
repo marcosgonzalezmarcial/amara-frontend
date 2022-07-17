@@ -16,9 +16,6 @@ export const Blog = () => {
                         src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/cyber-monday-blog.jpg"
                         alt="Cyber Monday Fashion en Amara"
                         loading="lazy"
-                        width="1020"
-                        height="700"
-                        class="w-100"
                       />
                     </a>
                   </figure>
@@ -55,9 +52,7 @@ export const Blog = () => {
                         src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/High-End-Furniture.jpg"
                         alt="La decoración de tu casa de verando"
                         loading="lazy"
-                        width="1020"
-                        height="700"
-                        class="w-100"
+                      
                       />
                     </a>
                   </figure>
@@ -94,9 +89,6 @@ export const Blog = () => {
                         src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/mujer-comprando-blog.jpg"
                         alt="Ideas únicas de moda que para descubrir"
                         loading="lazy"
-                        width="1020"
-                        height="700"
-                        class="w-100"
                       />
                     </a>
                   </figure>

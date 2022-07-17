@@ -38,8 +38,7 @@
       color: var(--sonic-silver);
       color: black;
       letter-spacing: 0.25px;
-      // font-size: var(--fs-11);
-      font-size: 12px;
+      font-size: var(--step--3);
       // transition: var(--transition-1);
     }
 
@@ -54,6 +53,8 @@
     ion-icon {
       margin-inline: auto;
       font-size: 1.1rem;
+      // font-size: var(--step--1);
+
       // pointer-events: none;
       // p {
       //   pointer-events: none;
@@ -69,8 +70,7 @@
       height: 13.5px;
       display: grid;
       place-items: center;
-      // line-height: 0;
-      font-size: 9.5px;
+      font-size: var(--step--4);
       color: var(--white);
       border-radius: 50%;
       pointer-events: none;
