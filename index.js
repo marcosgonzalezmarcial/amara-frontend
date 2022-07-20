@@ -4,11 +4,9 @@ document.querySelector("body").appendChild(App());
 
 /* DOM Elements variables */
 const actionsButtons = [
-  ...document.querySelectorAll("button.header-action-btn"),
+  ...document.querySelectorAll("button.header-action-btn")
 ];
 const shoppingBagEl = document.querySelector(".shopping-bag-container");
-const root = document.querySelector(":root");
-const headerActionsBottom = document.querySelector(".header-actions");
 
 /*****************************************
  ******** shopping-bag toggle ************/
