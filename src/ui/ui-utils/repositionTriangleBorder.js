@@ -7,6 +7,6 @@ export const repositionTriangleBorder = () => {
 
   root.style.setProperty(
     "--triangle-border-left",
-    `${Math.round(triangleBorderEl.getBoundingClientRect().left) + 4}px`
+    `${Math.round(triangleBorderEl.getBoundingClientRect().left) + 6}px`
   );
 };

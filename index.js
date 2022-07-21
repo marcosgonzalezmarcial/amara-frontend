@@ -26,6 +26,9 @@ actionsButtons.forEach((btn) => {
 });
 
 // showing shopping-bag with triangle-border when the shopping-bag btn is clicked
+// const arrow = document.querySelector(".arrow");
+// console.log(arrow);
+
 function toggleBag() {
   document.querySelector(".arrow").classList.toggle("arrow-up");
   shoppingBagEl.classList.toggle("show-bag");

@@ -2,6 +2,7 @@ export const addFavourites = () => {
   const heartIconWrappers = [
     ...document.querySelectorAll(".heart-icon-wrapper")
   ];
+  console.log(heartIconWrappers);
 
   heartIconWrappers.forEach((el) => {
     el.addEventListener("click", (e) => {
