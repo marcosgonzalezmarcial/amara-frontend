@@ -1,7 +1,8 @@
+// import { TriangleBorder } from "./TriangleBorder";
+
 export const Header = () => {
-  let header = document.createElement("header");
+  const header = document.createElement("header");
   header.classList.add("header");
-  header.setAttribute = "data-header";
 
   header.innerHTML = `
   <div class="shopping-bag-container">
@@ -292,5 +293,6 @@ export const Header = () => {
         </div>
         `;
 
+  // document.querySelector("header").innerHTML = TriangleBorder();
   return header;
 };

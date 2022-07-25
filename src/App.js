@@ -4,11 +4,12 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { TriangleBorder } from "./components/TriangleBorder";
 // utils
-import { addBorderScroll } from "./ui-utils/addBorderScroll";
-import { navbarMenuToggle } from "./ui-utils/navbarMenuToggle";
-import { setHeaderCustomProps } from "./ui-utils/setHeaderCustomProps";
-import { addFavourites } from "./ui-utils/addFavourites";
-import { repositionTriangleBorder } from "./ui-utils/repositionTriangleBorder";
+import { addBorderScroll } from "./ui/ui-utils/addBorderScroll";
+import { navbarMenuToggle } from "./ui/ui-utils/navbarMenuToggle";
+import { setHeaderCustomProps } from "./ui/ui-utils/setHeaderCustomProps";
+// import { addFavourites } from "./ui/ui-utils/addFavourites";
+import { repositionTriangleBorder } from "./ui/ui-utils/repositionTriangleBorder";
+import { paintProducts } from "./ui/ui-utils/paintProducts";
 
 export const App = () => {
   const root = document.getElementById("root");
@@ -16,6 +17,9 @@ export const App = () => {
   root.appendChild(Header());
   root.appendChild(Main());
   root.appendChild(Footer());
+
+  // paint products from api on first load
+  paintProducts();
 
   // Inserting triangle border to the Header once the App is mounted
   document.querySelector("header").appendChild(TriangleBorder());
@@ -28,8 +32,6 @@ export const App = () => {
   window.addEventListener("resize", repositionTriangleBorder);
   // adding side-navbar menu toggle functionallity
   navbarMenuToggle();
-  // add product to favorites logic
-  addFavourites();
 
   return root;
 };
