@@ -4,7 +4,7 @@ document.querySelector("body").appendChild(App());
 
 /* DOM Elements variables */
 const actionsButtons = [
-  ...document.querySelectorAll("button.header-action-btn")
+  ...document.querySelectorAll("button.header-action-btn"),
 ];
 const shoppingBagEl = document.querySelector(".shopping-bag-container");
 
@@ -24,8 +24,6 @@ actionsButtons.forEach((btn) => {
     ? btn.addEventListener("click", toggleBag)
     : btn.addEventListener("click", hideBag);
 });
-
-console.log(document.querySelector(".arrow"));
 
 function toggleBag() {
   document.querySelector(".arrow").classList.toggle("arrow-up");
