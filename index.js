@@ -25,9 +25,7 @@ actionsButtons.forEach((btn) => {
     : btn.addEventListener("click", hideBag);
 });
 
-// showing shopping-bag with triangle-border when the shopping-bag btn is clicked
-// const arrow = document.querySelector(".arrow");
-// console.log(arrow);
+console.log(document.querySelector(".arrow"));
 
 function toggleBag() {
   document.querySelector(".arrow").classList.toggle("arrow-up");
