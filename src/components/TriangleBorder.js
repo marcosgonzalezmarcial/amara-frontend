@@ -1,12 +1,13 @@
 export const TriangleBorder = () => {
-  const cartBtnEl = document.querySelector("ion-icon[name='cart-outline']");
+  const badgeRefPos = document
+    .querySelector(".btn-badge")
+    .getBoundingClientRect().left;
 
   // setting triangle border position on first load
-  if (!!cartBtnEl) {
-    const cartBtnPos = cartBtnEl.getBoundingClientRect().left;
+  if (!!badgeRefPos) {
     document.documentElement.style.setProperty(
       "--triangle-border-left",
-      `${Math.round(cartBtnPos) + 15}px`
+      `${Math.round(badgeRefPos - 2.5)}px`
     );
   }
 

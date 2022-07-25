@@ -4,7 +4,7 @@ import { addFavourites } from "./addFavourites";
 export const paintProducts = async () => {
   const productsData = await fetchProducts();
 
-  const adddedProducts = productsData.map((product) => {
+  const addedProducts = productsData.map((product) => {
     return `<li>
     <div class="product-card">
     <figure class="card-banner">
@@ -51,9 +51,7 @@ export const paintProducts = async () => {
   });
   const ulProducts = document.querySelector(".product-list");
 
-  console.log(adddedProducts);
-
-  ulProducts.innerHTML = adddedProducts.join(" ");
+  ulProducts.innerHTML = addedProducts.join(" ");
 
   // add product to favorites logic
   addFavourites();
