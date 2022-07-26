@@ -1,4 +1,5 @@
 import { App } from "./src/App";
+import { paintProducts } from "./src/ui/ui-utils/paintProducts";
 
 document.querySelector("body").appendChild(App());
 
@@ -6,6 +7,7 @@ document.querySelector("body").appendChild(App());
 const actionsButtons = [
   ...document.querySelectorAll("button.header-action-btn"),
 ];
+const categoryButtons = [...document.querySelectorAll(".filter-btn")];
 const shoppingBagEl = document.querySelector(".shopping-bag-container");
 
 /*****************************************
@@ -40,3 +42,18 @@ function hideBag() {
   document.body.classList.remove("stop-scroll");
 }
 /**** end of shopping-bag toggle ****/
+
+/**** fetching products by category in Products section ****/
+categoryButtons.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    // removing active class from all the buttons except the clicked one
+    categoryButtons.forEach(
+      (btn) => this !== btn && btn.classList.remove("active")
+    );
+    this.classList.toggle("active");
+    paintProducts(btn.firstChild.data);
+  });
+  console.log(btn.firstChild.data);
+});
+
+/**** end fetching products by category in Products section ****/

@@ -1,8 +1,8 @@
 import { fetchProducts } from "../../api/fetchProducts";
 import { addFavourites } from "./addFavourites";
 
-export const paintProducts = async () => {
-  const productsData = await fetchProducts();
+export const paintProducts = async (category) => {
+  const productsData = await fetchProducts(category);
 
   const addedProducts = productsData.map((product) => {
     return `<li>
