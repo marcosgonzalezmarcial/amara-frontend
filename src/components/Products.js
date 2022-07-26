@@ -11,7 +11,7 @@ export const Products = () => {
         <button class="filter-btn active">Más vendidos</button>
       </li>
       <li>
-        <button class="filter-btn">Hot Collection</button>
+        <button class="filter-btn">Hot collection</button>
       </li>
       <li>
         <button class="filter-btn">Tendencias</button>

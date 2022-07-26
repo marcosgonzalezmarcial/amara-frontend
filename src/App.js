@@ -18,8 +18,8 @@ export const App = () => {
   root.appendChild(Main());
   root.appendChild(Footer());
 
-  // paint products from api on first load
-  paintProducts();
+  // paint products from api on first load category "Más vendidos"
+  paintProducts("Más vendidos");
 
   // Inserting triangle border to the Header once the App is mounted
   document.querySelector("header").appendChild(TriangleBorder());
