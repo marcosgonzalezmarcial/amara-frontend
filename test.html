@@ -1,12 +1,12 @@
-import { fetchProductsByCategory } from "../../api/fetchProductsByCategory";
-import { addFavourites } from "./addFavourites";
-import { addProductToCart } from "./addProductToCart";
-
-export const paintProducts = async (category) => {
-  const productsData = await fetchProductsByCategory(category);
-
-  const addedProducts = productsData.map((product) => {
-    return `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
     <li>
       <div class="product-card">
         <figure class="card-banner">
@@ -19,7 +19,7 @@ export const paintProducts = async (category) => {
           </a>
 
           <div class="card-actions">
-            <button data-id=${product.id} class="card-action-btn">
+            <button class="card-action-btn">
               <p>Añadir</p>
             </button>
           </div>
@@ -49,24 +49,6 @@ export const paintProducts = async (category) => {
           </div>
         </div>
       </div>
-    </li>`;
-  });
-  const ulProducts = document.querySelector(".product-list");
-
-  ulProducts.innerHTML = addedProducts.join(" ");
-
-  // add product to favorites logic
-  addFavourites();
-
-  // adding product to shopping bag fuctionality
-  const addToShoppingBagButtons = [
-    ...document.querySelectorAll(".card-action-btn"),
-  ];
-  addToShoppingBagButtons.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      addProductToCart(e.target.dataset.id);
-    });
-  });
-
-  return productsData;
-};
+    </li>
+  </body>
+</html>

@@ -1,4 +1,5 @@
 import { App } from "./src/App";
+import { addProductToCart } from "./src/ui/ui-utils/addProductToCart";
 import { paintProducts } from "./src/ui/ui-utils/paintProducts";
 
 document.querySelector("body").appendChild(App());
@@ -9,7 +10,6 @@ const actionsButtons = [
 ];
 const categoryButtons = [...document.querySelectorAll(".filter-btn")];
 const shoppingBagEl = document.querySelector(".shopping-bag-container");
-
 /*****************************************
  ******** shopping-bag toggle ************/
 
@@ -53,7 +53,6 @@ categoryButtons.forEach((btn) => {
     this.classList.toggle("active");
     paintProducts(btn.firstChild.data);
   });
-  console.log(btn.firstChild.data);
 });
 
 /**** end fetching products by category in Products section ****/

@@ -51,20 +51,12 @@
     }
     &:is(:hover) {
       background-color: lighten($color: black, $amount: 40%);
-      // color: var(--white);
     }
 
-    // @include responsive (lg) {
-    //   &:is(:hover) {
-    //     background-color: var(--white);
-    //     color: var(--eerie-black);
-    //   }
-    // }
+    p {
+      pointer-events: none;
+    }
   }
-
-  // .cart-btn {
-
-  // }
 
   .card-title {
     color: #121314;

@@ -9,6 +9,8 @@ export const TriangleBorder = () => {
       "--triangle-border-left",
       `${Math.round(badgeRefPos - 2.5)}px`
     );
+  } else {
+    return;
   }
 
   const triangleBorder = '<div class="arrow"></div>';

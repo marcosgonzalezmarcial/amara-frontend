@@ -7,7 +7,6 @@ import { TriangleBorder } from "./components/TriangleBorder";
 import { addBorderScroll } from "./ui/ui-utils/addBorderScroll";
 import { navbarMenuToggle } from "./ui/ui-utils/navbarMenuToggle";
 import { setHeaderCustomProps } from "./ui/ui-utils/setHeaderCustomProps";
-// import { addFavourites } from "./ui/ui-utils/addFavourites";
 import { repositionTriangleBorder } from "./ui/ui-utils/repositionTriangleBorder";
 import { paintProducts } from "./ui/ui-utils/paintProducts";
 
