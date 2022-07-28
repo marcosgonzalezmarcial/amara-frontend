@@ -41,7 +41,6 @@
     min-height: 58px;
   }
 
-
   & .logo {
     place-self: center;
     img {
@@ -58,7 +57,6 @@
 .scroll-border {
   @include border-bottom;
 }
-
 
 // .header-search {
 //   display: none;
@@ -97,4 +95,3 @@
 //     }
 //   }
 // }
-

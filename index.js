@@ -9,7 +9,6 @@ const actionsButtons = [
 ];
 const categoryButtons = [...document.querySelectorAll(".filter-btn")];
 const shoppingBagEl = document.querySelector(".shopping-bag-container");
-
 /*****************************************
  ******** shopping-bag toggle ************/
 
@@ -27,14 +26,22 @@ actionsButtons.forEach((btn) => {
     : btn.addEventListener("click", hideBag);
 });
 
-function toggleBag() {
+export function toggleBag() {
   document.querySelector(".arrow").classList.toggle("arrow-up");
   shoppingBagEl.classList.toggle("show-bag");
   // avoid page scrolling on the back when the bag is open
   document.body.classList.toggle("stop-scroll");
 }
 
-function hideBag() {
+export function showBag() {
+  if (shoppingBagEl.classList.contains("show-bag")) return;
+  document.querySelector(".arrow").classList.toggle("arrow-up");
+  shoppingBagEl.classList.toggle("show-bag");
+  // avoid page scrolling on the back when the bag is open
+  document.body.classList.toggle("stop-scroll");
+}
+
+export function hideBag() {
   document.querySelector(".arrow").classList.remove("arrow-up");
   shoppingBagEl.classList.remove("show-bag");
 
@@ -53,7 +60,10 @@ categoryButtons.forEach((btn) => {
     this.classList.toggle("active");
     paintProducts(btn.firstChild.data);
   });
-  console.log(btn.firstChild.data);
 });
 
 /**** end fetching products by category in Products section ****/
+
+const shoppingBagCloseBtn = document.querySelector(".bag-close-btn");
+// console.log(shoppingBagCloseBtn);
+shoppingBagCloseBtn.addEventListener("click", hideBag);

@@ -21,7 +21,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    // font-size: var(--fs-9);
     font-size: var(--step--2);
     font-weight: var(--fw-500);
     padding: 3px 10px;
@@ -46,25 +45,22 @@
     font-weight: var(--fw-500);
 
     &:is(:active) {
-      background-color: lighten($color: black, $amount: 25%);
-      color: var(--white);
+      background-color: #80c2bd;
     }
-    &:is(:hover) {
-      background-color: lighten($color: black, $amount: 40%);
-      // color: var(--white);
+    @include responsive(lg) {
+      &:is(:hover) {
+        background-color: lighten($color: black, $amount: 33.33%);
+
+        &:is(:active) {
+          background-color: #80c2bd;
+        }
+      }
     }
 
-    // @include responsive (lg) {
-    //   &:is(:hover) {
-    //     background-color: var(--white);
-    //     color: var(--eerie-black);
-    //   }
-    // }
+    p {
+      pointer-events: none;
+    }
   }
-
-  // .cart-btn {
-
-  // }
 
   .card-title {
     color: #121314;
