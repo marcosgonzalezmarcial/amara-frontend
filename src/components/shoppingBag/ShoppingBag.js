@@ -52,7 +52,9 @@ export const ShoppingBag = () => {
           <div class="shopping-bag-footer">
             <div class="shopping-bag-footer-item">
               <div class="shopping-bag-subtotal-text">Subtotal:</div>
-              <div class="shopping-bag-subtotal">${shoppingBagTotalFromLocalStorage}€</div>
+              <div class="shopping-bag-subtotal">${shoppingBagTotalFromLocalStorage.toFixed(
+                2
+              )}€</div>
             </div>
             <div class="shopping-bag-footer-item">
               <div class="shopping-bag-delivery-text">Envío:</div>
@@ -62,15 +64,18 @@ export const ShoppingBag = () => {
             </div>
             `;
   } else {
-    debugger;
     renderShoppingBag = `
-            <div class="bag-title">Bolsa (${productsFromLocalStorage.length})</div>
+            <div class="bag-title">Bolsa (${
+              productsFromLocalStorage.length
+            })</div>
             <div class="shopping-bag-content">
             </div>
             <div class="shopping-bag-footer">
             <div class="shopping-bag-footer-item">
             <div class="shopping-bag-subtotal-text">Subtotal:</div>
-            <div class="shopping-bag-subtotal">${shoppingBagTotalFromLocalStorage}€</div>
+            <div class="shopping-bag-subtotal">${shoppingBagTotalFromLocalStorage.toFixed(
+              2
+            )}€</div>
             </div>
             <div class="shopping-bag-footer-item">
             <div class="shopping-bag-delivery-text">Envío:</div>

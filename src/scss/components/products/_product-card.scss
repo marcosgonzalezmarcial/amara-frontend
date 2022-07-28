@@ -46,11 +46,16 @@
     font-weight: var(--fw-500);
 
     &:is(:active) {
-      background-color: lighten($color: black, $amount: 25%);
-      color: var(--white);
+      background-color: #80c2bd;
     }
-    &:is(:hover) {
-      background-color: lighten($color: black, $amount: 40%);
+    @include responsive(lg) {
+      &:is(:hover) {
+        background-color: lighten($color: black, $amount: 33.33%);
+
+        &:is(:active) {
+          background-color: #80c2bd;
+        }
+      }
     }
 
     p {
