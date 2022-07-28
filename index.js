@@ -1,5 +1,4 @@
 import { App } from "./src/App";
-import { addProductToCart } from "./src/ui/ui-utils/addProductToCart";
 import { paintProducts } from "./src/ui/ui-utils/paintProducts";
 
 document.querySelector("body").appendChild(App());
@@ -27,14 +26,22 @@ actionsButtons.forEach((btn) => {
     : btn.addEventListener("click", hideBag);
 });
 
-function toggleBag() {
+export function toggleBag() {
   document.querySelector(".arrow").classList.toggle("arrow-up");
   shoppingBagEl.classList.toggle("show-bag");
   // avoid page scrolling on the back when the bag is open
   document.body.classList.toggle("stop-scroll");
 }
 
-function hideBag() {
+export function showBag() {
+  if (shoppingBagEl.classList.contains("show-bag")) return;
+  document.querySelector(".arrow").classList.toggle("arrow-up");
+  shoppingBagEl.classList.toggle("show-bag");
+  // avoid page scrolling on the back when the bag is open
+  document.body.classList.toggle("stop-scroll");
+}
+
+export function hideBag() {
   document.querySelector(".arrow").classList.remove("arrow-up");
   shoppingBagEl.classList.remove("show-bag");
 
@@ -56,3 +63,7 @@ categoryButtons.forEach((btn) => {
 });
 
 /**** end fetching products by category in Products section ****/
+
+const shoppingBagCloseBtn = document.querySelector(".bag-close-btn");
+// console.log(shoppingBagCloseBtn);
+shoppingBagCloseBtn.addEventListener("click", hideBag);

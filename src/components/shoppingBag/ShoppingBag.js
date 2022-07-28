@@ -45,7 +45,22 @@ export const ShoppingBag = () => {
 
   if (productsFromLocalStorage.length > 0) {
     renderShoppingBag = `
-    <div class="bag-title">Bolsa (${productsFromLocalStorage.length})</div>
+    <div class="shopping-bag-header">
+      <div class="bag-title">Bolsa <span>(${
+        productsFromLocalStorage.length
+      })</span></div>
+      <button
+        class="bag-close-btn"
+        aria-label="Close Menu"
+      >
+        <ion-icon
+          name="close-outline"
+          role="img"
+          class="md hydrated"
+          aria-label="close outline"
+        ></ion-icon>
+      </button>
+    </div>
     <div class="shopping-bag-content">
     ${shoppingBagProductsFromLocalStorage}
           </div>
@@ -65,9 +80,22 @@ export const ShoppingBag = () => {
             `;
   } else {
     renderShoppingBag = `
-            <div class="bag-title">Bolsa (${
-              productsFromLocalStorage.length
-            })</div>
+            <div class="shopping-bag-header">
+      <div class="bag-title">Bolsa <span>(${
+        productsFromLocalStorage.length
+      })</span></div>
+      <button
+        class="bag-close-btn"
+        aria-label="Close Menu"
+      >
+        <ion-icon
+          name="close-outline"
+          role="img"
+          class="md hydrated"
+          aria-label="close outline"
+        ></ion-icon>
+      </button>
+    </div>
             <div class="shopping-bag-content">
             </div>
             <div class="shopping-bag-footer">

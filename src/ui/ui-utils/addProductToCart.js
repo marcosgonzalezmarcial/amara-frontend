@@ -1,3 +1,4 @@
+import { showBag } from "../../..";
 import { fetchProductById } from "../../api/fetchProductById";
 import { addProductToLocalStorage } from "../localStorage/addProductToLocalStorage";
 import { updateLocalStorageTotal } from "../localStorage/updateLocalStorageTotal";
@@ -40,15 +41,16 @@ export const addProductToCart = async (id) => {
 
   addProductToLocalStorage(product);
   updateLocalStorageTotal(product);
+  showBag();
 
   function updateShoppingBag() {
     const bagTitle = document.querySelector(".bag-title");
     const bagSubtotal = document.querySelector(".shopping-bag-subtotal");
-    bagTitle.innerHTML = `Bolsa (${totalItems.length + 1})`;
+    bagTitle.innerHTML = `Bolsa <span>(${totalItems.length + 1})</span>`;
 
     const newTotal = JSON.parse(localStorage.getItem("totalSum"));
 
-    bagSubtotal.textContent = `€${newTotal}`;
+    bagSubtotal.textContent = `€${newTotal.toFixed(2)}`;
   }
 
   updateShoppingBag();
