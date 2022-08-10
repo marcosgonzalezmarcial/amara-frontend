@@ -6,7 +6,7 @@ export const Header = () => {
   const header = document.createElement('header')
   header.classList.add('header')
 
-  header.innerHTML = `
+  header.innerHTML = /* html */`
     <div class="container-fluid">
       <div class="overlay navbar-slide"></div>
 
@@ -90,7 +90,7 @@ export const Header = () => {
 
           <p class="header-action-label">Buscar</p>
         </button>
-        <button class="header-action-btn">
+        <button class="header-action-btn shopping-bag-btn">
           <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
 
           <p class="header-action-label">Carrito</p>

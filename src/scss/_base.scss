@@ -19,11 +19,13 @@ html {
   color: var(--sonic-silver);
   scroll-behavior: smooth;
   height: -webkit-fill-available;
+  height: -moz-available;
 }
 
 body {
   background: var(--white);
   height: -webkit-fill-available;
+  height: -moz-available;
 }
 
 li {
