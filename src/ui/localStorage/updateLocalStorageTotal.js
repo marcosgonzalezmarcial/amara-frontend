@@ -1,3 +1,5 @@
+/* global localStorage */
+
 export const updateLocalStorageTotal = (product) => {
   const total = product.price
 

@@ -1,3 +1,4 @@
+/* global localStorage */
 import { showBag } from '../../..'
 import { fetchProductById } from '../../api/fetchProductById'
 import { addProductToLocalStorage } from '../localStorage/addProductToLocalStorage'
@@ -8,7 +9,7 @@ export const addProductToCart = async (id) => {
 
   const shoppingBagContent = document.querySelector('.shopping-bag-content')
 
-  const shoppingBagProduct = `
+  const shoppingBagProduct = /* html */`
       <div class="shopping-bag-content-container">
         <div class="shopping-bag-content-container-img-container">
           <img
