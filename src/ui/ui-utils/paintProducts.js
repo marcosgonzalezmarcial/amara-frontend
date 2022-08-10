@@ -6,7 +6,7 @@ export const paintProducts = async (category) => {
   const productsData = await fetchProductsByCategory(category)
 
   const addedProducts = productsData.map((product) => {
-    return `
+    return /* html */`
     <li>
       <div class="product-card">
         <figure class="card-banner">
@@ -17,14 +17,12 @@ export const paintProducts = async (category) => {
               loading="lazy"
             />
           </a>
-
           <div class="card-actions">
-            <button data-id=${product.id} class="card-action-btn">
+            <button data-id="${product.id}" class="card-action-btn">
               <p>Añadir</p>
             </button>
           </div>
         </figure>
-
         <div class="card-content">
           <div class="card-price">
             <data value="${product.attributes.price}">
@@ -49,16 +47,17 @@ export const paintProducts = async (category) => {
           </div>
         </div>
       </div>
-    </li>`
+    </li>
+    `
   })
   const ulProducts = document.querySelector('.product-list')
 
   ulProducts.innerHTML = addedProducts.join(' ')
 
-  // add product to favorites logic
+  // add product to favorites logic, this could be in another file...
   addFavourites()
 
-  // adding product to shopping bag fuctionality
+  // adding product to cart fuctionality
   const addToShoppingBagButtons = [
     ...document.querySelectorAll('.card-action-btn')
   ]

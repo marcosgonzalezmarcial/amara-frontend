@@ -98,7 +98,7 @@
   padding-block: 0.5rem;
 }
 
-.shopping-bag-content {
+.shopping-bag-body {
   // overscroll-behavior: none;
   flex-basis: 80%;
   display: flex;
@@ -122,11 +122,10 @@
     margin-inline: 0 -1rem;
     max-height: 370px;
     overflow: auto;
-    gap: 1.5rem;
   }
 }
 
-.shopping-bag-content-container {
+.shopping-bag-item {
   display: grid;
   grid-template-columns: 0.3fr 0.7fr;
   gap: 16px;
@@ -135,14 +134,14 @@
     margin-inline-end: 1rem;
   }
 
-  .shopping-bag-content-container-img-container {
+  .shopping-bag-item-banner {
     width: 100%;
     img {
       aspect-ratio: 3 / 4;
       width: 100%;
     }
   }
-  .shopping-bag-content-container-item-description-container {
+  .shopping-bag-item-description {
     display: grid;
     grid-template-rows: 0.7fr 0.3fr;
     color: var(--black);
