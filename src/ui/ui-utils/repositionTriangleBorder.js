@@ -1,12 +1,12 @@
 export const repositionTriangleBorder = () => {
-  let root = document.querySelector(":root");
+  const root = document.querySelector(':root')
 
   const badgeRefPos = document
-    .querySelector(".btn-badge")
-    .getBoundingClientRect().left;
+    .querySelector('.btn-badge')
+    .getBoundingClientRect().left
 
   root.style.setProperty(
-    "--triangle-border-left",
+    '--triangle-border-left',
     `${Math.round(badgeRefPos - 6.8)}px`
-  );
-};
+  )
+}

@@ -1,7 +1,7 @@
 export const Category = () => {
-  let Category = document.createElement("section");
-  Category.classList.add("section");
-  Category.classList.add("category");
+  const Category = document.createElement('section')
+  Category.classList.add('section')
+  Category.classList.add('category')
 
   Category.innerHTML = `
   <div class="container-fluid">
@@ -77,6 +77,6 @@ export const Category = () => {
       </li>
     </ul>
   </div>
-  `;
-  return Category;
-};
+  `
+  return Category
+}

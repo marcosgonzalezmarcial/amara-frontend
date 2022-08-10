@@ -1,6 +1,6 @@
 export const Footer = () => {
-  let footer = document.createElement("footer");
-  footer.classList.add("footer");
+  const footer = document.createElement('footer')
+  footer.classList.add('footer')
 
   footer.innerHTML = `
     <div class="footer-top">
@@ -169,7 +169,7 @@ export const Footer = () => {
         </div>
       </div>
     </div>
-`;
+`
 
-  return footer;
-};
+  return footer
+}

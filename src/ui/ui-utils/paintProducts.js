@@ -1,9 +1,9 @@
-import { fetchProductsByCategory } from "../../api/fetchProductsByCategory";
-import { addFavourites } from "./addFavourites";
-import { addProductToCart } from "./addProductToCart";
+import { fetchProductsByCategory } from '../../api/fetchProductsByCategory'
+import { addFavourites } from './addFavourites'
+import { addProductToCart } from './addProductToCart'
 
 export const paintProducts = async (category) => {
-  const productsData = await fetchProductsByCategory(category);
+  const productsData = await fetchProductsByCategory(category)
 
   const addedProducts = productsData.map((product) => {
     return `
@@ -49,24 +49,24 @@ export const paintProducts = async (category) => {
           </div>
         </div>
       </div>
-    </li>`;
-  });
-  const ulProducts = document.querySelector(".product-list");
+    </li>`
+  })
+  const ulProducts = document.querySelector('.product-list')
 
-  ulProducts.innerHTML = addedProducts.join(" ");
+  ulProducts.innerHTML = addedProducts.join(' ')
 
   // add product to favorites logic
-  addFavourites();
+  addFavourites()
 
   // adding product to shopping bag fuctionality
   const addToShoppingBagButtons = [
-    ...document.querySelectorAll(".card-action-btn"),
-  ];
+    ...document.querySelectorAll('.card-action-btn')
+  ]
   addToShoppingBagButtons.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      addProductToCart(e.target.dataset.id);
-    });
-  });
+    btn.addEventListener('click', (e) => {
+      addProductToCart(e.target.dataset.id)
+    })
+  })
 
-  return productsData;
-};
+  return productsData
+}

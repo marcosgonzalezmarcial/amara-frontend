@@ -1,8 +1,8 @@
-import { Article } from "./Article";
+import { Article } from './Article'
 
 export const Main = () => {
-  let main = document.createElement("main");
-  main.appendChild(Article());
+  const main = document.createElement('main')
+  main.appendChild(Article())
 
-  return main;
-};
+  return main
+}

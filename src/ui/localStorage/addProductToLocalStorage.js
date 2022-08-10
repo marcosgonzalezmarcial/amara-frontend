@@ -1,11 +1,11 @@
 export const addProductToLocalStorage = (product) => {
-  let products = JSON.parse(localStorage.getItem("products")) || [];
+  let products = JSON.parse(localStorage.getItem('products')) || []
 
-  products = [...products, product];
-  let totalSum = 0;
+  products = [...products, product]
+  let totalSum = 0
   products.forEach((product) => {
-    totalSum += product.price;
-  });
+    totalSum += product.price
+  })
 
-  localStorage.setItem("products", JSON.stringify(products));
-};
+  localStorage.setItem('products', JSON.stringify(products))
+}

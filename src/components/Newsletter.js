@@ -1,7 +1,7 @@
 export const Newsletter = () => {
-  let newsletter = document.createElement("section");
-  newsletter.classList.add("section");
-  newsletter.classList.add("newsletter");
+  const newsletter = document.createElement('section')
+  newsletter.classList.add('section')
+  newsletter.classList.add('newsletter')
 
   newsletter.innerHTML = `
   <div class="container">
@@ -34,6 +34,6 @@ export const Newsletter = () => {
         </form>
       </div>
   </div>
-`;
-  return newsletter;
-};
+`
+  return newsletter
+}

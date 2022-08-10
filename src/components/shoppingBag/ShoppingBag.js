@@ -1,17 +1,18 @@
+/* eslint-disable no-undef */
 export const ShoppingBag = () => {
-  const ShoppingBag = document.createElement("div");
-  ShoppingBag.classList.add("shopping-bag-container");
+  const ShoppingBag = document.createElement('div')
+  ShoppingBag.classList.add('shopping-bag-container')
 
   const productsFromLocalStorage =
-    JSON.parse(localStorage.getItem("products")) || [];
+    JSON.parse(localStorage.getItem('products')) || []
 
   const shoppingBagTotalFromLocalStorage =
-    JSON.parse(localStorage.getItem("totalSum")) || 0;
+    JSON.parse(localStorage.getItem('totalSum')) || 0
 
-  let shoppingBagProductsFromLocalStorage = "";
+  let shoppingBagProductsFromLocalStorage = ''
 
-  productsFromLocalStorage.map((product) => {
-    shoppingBagProductsFromLocalStorage += `
+  productsFromLocalStorage.map((product) =>
+    (shoppingBagProductsFromLocalStorage += /* html */`
       <div class="shopping-bag-content-container">
         <div class="shopping-bag-content-container-img-container">
           <img
@@ -38,10 +39,10 @@ export const ShoppingBag = () => {
           </div>
         </div>
       </div>
-    `;
-  });
+    `
+    ))
 
-  let renderShoppingBag = "";
+  let renderShoppingBag = ''
 
   if (productsFromLocalStorage.length > 0) {
     renderShoppingBag = `
@@ -77,7 +78,7 @@ export const ShoppingBag = () => {
             </div>
             <button class="shopping-bag-checkout-btn">Comenzar pedido</button>
             </div>
-            `;
+            `
   } else {
     renderShoppingBag = `
             <div class="shopping-bag-header">
@@ -111,16 +112,16 @@ export const ShoppingBag = () => {
             </div>
             <button class="shopping-bag-checkout-btn">Comenzar pedido</button>
             </div>
-            `;
+            `
   }
 
   ShoppingBag.innerHTML = `
     <div class="shopping-bag">
       ${renderShoppingBag}
     <div>
-    `;
+    `
 
-  return ShoppingBag;
-};
+  return ShoppingBag
+}
 
 // <p>No tienes productos en la cesta de compra</p>

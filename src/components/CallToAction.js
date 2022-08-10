@@ -1,7 +1,7 @@
 export const CallToAction = () => {
-  let CallToAction = document.createElement("section");
-  CallToAction.classList.add("section");
-  CallToAction.classList.add("call-to-action");
+  const CallToAction = document.createElement('section')
+  CallToAction.classList.add('section')
+  CallToAction.classList.add('call-to-action')
 
   CallToAction.innerHTML = `
   <div class="container-fluid-cta">
@@ -14,6 +14,6 @@ export const CallToAction = () => {
       </button>
     </div>
   </div>
-  `;
-  return CallToAction;
-};
+  `
+  return CallToAction
+}

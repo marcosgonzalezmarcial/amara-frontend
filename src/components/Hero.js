@@ -1,7 +1,7 @@
 export const Hero = () => {
-  let hero = document.createElement("section");
-  hero.classList.add("hero");
-  hero.setAttribute("id", "home");
+  const hero = document.createElement('section')
+  hero.classList.add('hero')
+  hero.setAttribute('id', 'home')
 
   hero.innerHTML = `
   <div class="hero-content">
@@ -18,8 +18,8 @@ export const Hero = () => {
   <button class="btn btn-secondary-bg-xxl">MODA HOMBRE</button>
   </div>
   </div>
-`;
-  return hero;
-};
+`
+  return hero
+}
 
 // <button class="btn-mobile">¿Te animas?</button>

@@ -1,14 +1,18 @@
 {
-  "name": "e-commerce-mvp",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
-  "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build"
-  },
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.5.0",
-    "parcel": "latest"
-  },
-  "keywords": [],
-  "description": ""
+	"name": "e-commerce-mvp",
+	"browserslist": "> 0.5%, last 2 versions, not dead",
+	"scripts": {
+		"start": "parcel index.html --open",
+		"build": "parcel build",
+		"lint": "eslint ."
+	},
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.5.0",
+		"parcel": "latest",
+		"standard": "17.0.0"
+	},
+	"description": "",
+	"eslintConfig": {
+		"extends": "./node_modules/standard/eslintrc.json"
+	}
 }

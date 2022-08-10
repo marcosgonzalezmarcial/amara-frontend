@@ -1,10 +1,10 @@
 // import { TriangleBorder } from "./TriangleBorder";
 
-import { ShoppingBag } from "./shoppingBag/ShoppingBag";
+import { ShoppingBag } from './shoppingBag/ShoppingBag'
 
 export const Header = () => {
-  const header = document.createElement("header");
-  header.classList.add("header");
+  const header = document.createElement('header')
+  header.classList.add('header')
 
   header.innerHTML = `
     <div class="container-fluid">
@@ -120,10 +120,10 @@ export const Header = () => {
       </button>
       <!-- end of hamburguer menu btn -->
     </div>
-  `;
+  `
 
-  header.appendChild(ShoppingBag());
+  header.appendChild(ShoppingBag())
   // header.appendChild(TriangleBorder());
   // document.querySelector("header").innerHTML = TriangleBorder();
-  return header;
-};
+  return header
+}

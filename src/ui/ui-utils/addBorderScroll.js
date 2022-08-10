@@ -1,20 +1,20 @@
 export const addBorderScroll = () => {
-  const header = document.querySelector("header");
+  const header = document.querySelector('header')
 
-  if (!!header) {
+  if (header) {
     if (
       window.innerWidth >= 768 &&
       window.scrollY >= window.innerHeight - 125
     ) {
-      header.classList.add("scroll-border");
+      header.classList.add('scroll-border')
     } else {
-      if (header.classList.contains("scroll-border")) {
-        header.classList.remove("scroll-border");
+      if (header.classList.contains('scroll-border')) {
+        header.classList.remove('scroll-border')
       } else {
-        return null;
+        return null
       }
     }
   } else {
-    return null;
+    return null
   }
-};
+}
