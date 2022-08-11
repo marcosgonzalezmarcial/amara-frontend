@@ -3,6 +3,7 @@ import { showBag } from '../../..'
 import { fetchProductById } from '../../api/fetchProductById'
 import { addProductToLocalStorage } from '../localStorage/addProductToLocalStorage'
 import { updateLocalStorageTotal } from '../localStorage/updateLocalStorageTotal'
+import { deleteItem } from './deleteItem'
 import { updateBagTotal } from './updateBagTotal'
 
 export const addProductToCart = async (id) => {
@@ -37,7 +38,8 @@ export const addProductToCart = async (id) => {
           </div>
         </div>
         <div class="item-description-bottom">
-          <p>eliminar</p>
+          <button data-id=${product.id} class="item-description-bottom-text">eliminar
+          </button>
         </div>
       </div>
     </div>  
@@ -51,4 +53,12 @@ export const addProductToCart = async (id) => {
   updateBagTotal()
   // show the bag when a products is added
   showBag()
+
+  const deleteBtns = document.querySelectorAll('.item-description-bottom-text')
+
+  deleteBtns.forEach((btn) => {
+    btn.addEventListener('click', (event) => {
+      deleteItem(event.target.dataset.id)
+    })
+  })
 }

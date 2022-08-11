@@ -25,7 +25,8 @@ export const paintProductsLocalStorage = () => {
             </div>
           </div>
           <div class="item-description-bottom">
-            <p>eliminar</p>
+            <button data-id=${product.id} class="item-description-bottom-text">eliminar
+            </button>         
           </div>
         </div>
       </div>  
