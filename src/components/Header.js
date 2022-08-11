@@ -1,28 +1,20 @@
-// import { TriangleBorder } from "./TriangleBorder";
-
+/* global localStorage */
 import { ShoppingBag } from './shoppingBag/ShoppingBag'
 
 export const Header = () => {
   const header = document.createElement('header')
   header.classList.add('header')
 
+  let totalItems = 0
+  const products = JSON.parse(localStorage.getItem('products')) || []
+
+  products.forEach((product) => {
+    totalItems += product.qty
+  })
+
   header.innerHTML = /* html */`
     <div class="container-fluid">
       <div class="overlay navbar-slide"></div>
-
-      <!-- <div class="header-search">
-              <input
-              type="search"
-              name="search"
-              placeholder="Buscar Producto..."
-        class="input-field"
-        />
-        
-        <button class="search-btn" aria-label="Search">
-        <ion-icon name="search-outline"></ion-icon>
-        </button>
-        </div> -->
-
       <!-- Navbar -->
       <nav class="navbar">
         <div class="navbar-top">
@@ -95,7 +87,7 @@ export const Header = () => {
 
           <p class="header-action-label">Carrito</p>
 
-          <div class="btn-badge green" aria-hidden="true">3</div>
+          <div class="btn-badge green" aria-hidden="true">${totalItems}</div>
         </button>
 
         <button class="header-action-btn">
@@ -103,7 +95,7 @@ export const Header = () => {
 
           <p class="header-action-label">Favoritos</p>
 
-          <div class="btn-badge" aria-hidden="true">2</div>
+          <div class="btn-badge" aria-hidden="true">0</div>
         </button>
       </div>
       <!-- end of header actions -->

@@ -42,10 +42,16 @@ export const paintShoppingBag = () => {
     `
   }
   if (productsFromLocalStorage.length > 0) {
+    let totalItems = 0
+
+    productsFromLocalStorage.forEach((product) => {
+      totalItems += product.qty
+    })
+
     renderShoppingBag = /* html */`
     <div class="shopping-bag-header">
       <div class="bag-title">
-        Bolsa <span>(${productsFromLocalStorage.length})</span>
+        Bolsa <span>(${totalItems})</span>
       </div>
       <button class="bag-close-btn" aria-label="Close Menu">
         <ion-icon

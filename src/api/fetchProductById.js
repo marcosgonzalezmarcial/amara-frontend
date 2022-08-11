@@ -5,9 +5,7 @@ export const fetchProductById = async (id) => {
 
   const productData = await response.json()
 
-  const {
-    data: { attributes: product }
-  } = productData
+  const { data: { attributes: product } } = productData
 
-  return product
+  return { ...product, id }
 }

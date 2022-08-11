@@ -3,13 +3,23 @@ import { showBag } from '../../..'
 import { fetchProductById } from '../../api/fetchProductById'
 import { addProductToLocalStorage } from '../localStorage/addProductToLocalStorage'
 import { updateLocalStorageTotal } from '../localStorage/updateLocalStorageTotal'
+import { updateBagTotal } from './updateBagTotal'
 
 export const addProductToCart = async (id) => {
   const product = await fetchProductById(id)
 
-  const shoppingBagContent = document.querySelector('.shopping-bag-body')
+  addProductToLocalStorage(product)
+  updateLocalStorageTotal(product)
 
-  const shoppingBagProduct = /* html */`
+  // gettign the qty from the last product to render the correct amount in the bag item
+  const productsFromLocalStorage = JSON.parse(localStorage.getItem('products'))
+
+  const shoppingBagBody = document.querySelector('.shopping-bag-body')
+
+  let shoppingBagProduct = ''
+
+  productsFromLocalStorage.forEach((product) => {
+    shoppingBagProduct += /* html */`
     <div class="shopping-bag-item">
       <figure class="shopping-bag-item-banner">
         <img src="${product.imgUrl}" alt="product 1" />
@@ -18,7 +28,7 @@ export const addProductToCart = async (id) => {
         <div class="item-description-top">
           <div class="item-description-top-right">
             <p>${product.name}</p>
-            <p>Cant: 1</p>
+            <p>Cant: ${product.qty}</p>
             <p>Talla: M</p>
             <p>Negro</p>
           </div>
@@ -32,23 +42,13 @@ export const addProductToCart = async (id) => {
       </div>
     </div>  
   `
+  })
 
-  const totalItems = JSON.parse(localStorage.getItem('products')) || []
+  // adding painted item to the bag
+  shoppingBagBody.innerHTML = shoppingBagProduct
 
-  addProductToLocalStorage(product)
-  updateLocalStorageTotal(product)
+  // updating the number of items in the bag title
+  updateBagTotal()
+  // show the bag when a products is added
   showBag()
-
-  function updateShoppingBag () {
-    const bagTitle = document.querySelector('.bag-title')
-    const bagSubtotal = document.querySelector('.shopping-bag-subtotal')
-    bagTitle.innerHTML = `Bolsa <span>(${totalItems.length + 1})</span>`
-
-    const newTotal = JSON.parse(localStorage.getItem('totalSum'))
-
-    bagSubtotal.textContent = `€${newTotal.toFixed(2)}`
-  }
-
-  updateShoppingBag()
-  shoppingBagContent.innerHTML += shoppingBagProduct
 }

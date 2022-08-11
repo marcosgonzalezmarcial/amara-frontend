@@ -1,3 +1,4 @@
+
 /* global localStorage */
 export const paintProductsLocalStorage = () => {
   const productsFromLocalStorage =
@@ -15,7 +16,7 @@ export const paintProductsLocalStorage = () => {
           <div class="item-description-top">
             <div class="item-description-top-right">
               <p>${product.name}</p>
-              <p>Cant: 1</p>
+              <p>Cant: ${product.qty}</p>
               <p>Talla: M</p>
               <p>Negro</p>
             </div>
@@ -30,5 +31,6 @@ export const paintProductsLocalStorage = () => {
       </div>  
     `
     ))
+
   return shoppingBagProductsFromLocalStorage
 }
