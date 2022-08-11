@@ -1,4 +1,5 @@
 import { App } from './src/App'
+import { deleteItem } from './src/ui/ui-utils/deleteItem'
 import { paintProducts } from './src/ui/ui-utils/paintProducts'
 
 if (!document.getElementById('root').innerHTML) {
@@ -74,4 +75,14 @@ categoryButtons.forEach((btn) => {
 shopBagCloseBtn.addEventListener('click', () => {
   hideBag()
   shopBagBtn.classList.toggle('active')
+})
+
+/*****************************************
+ ******** adding delete logic to bag items on first load************/
+const deleteBtns = document.querySelectorAll('.item-description-bottom-text')
+deleteBtns.forEach((btn) => {
+  btn.addEventListener('click', (event) => {
+    event.preventDefault()
+    deleteItem(event.target.dataset.id)
+  })
 })
