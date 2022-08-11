@@ -5,9 +5,9 @@ export const Header = () => {
   const header = document.createElement('header')
   header.classList.add('header')
 
+  // getting the total amount of items form localStorage
   let totalItems = 0
   const products = JSON.parse(localStorage.getItem('products')) || []
-
   products.forEach((product) => {
     totalItems += product.qty
   })
