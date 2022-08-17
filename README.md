@@ -69,8 +69,11 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+
 ![Amara-screenshot](https://user-images.githubusercontent.com/76491843/185199566-439f749d-347b-4670-889f-cd5a3270fe47.png)
+
+<br />
 
 In this project template I want to show my skills as a front-end developer. It is basically a fashion Ecommerce landing page fully responsive for all devices, built using HTML, CSS, and JavaScript. It consists in a template for a Jamstack project.
 
