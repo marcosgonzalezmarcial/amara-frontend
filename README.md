@@ -21,7 +21,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/marcosgonzalezmarcial/amara-frontend">
-    <img src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/brand-log-amara.png" alt="Logo" width="120" height="80">
+    <img src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/brand-log-amara.png" alt="Logo" width="280" height="80">
   </a>
 
   <h3 align="center">Amara Ecommerce</h3>
@@ -32,15 +32,11 @@
     <br />
     <!-- <br /> -->
     <a href="https://cq7plv.csb.app/">View Demo</a>
-    <!-- ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a> -->
   </p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
-<!-- <details>
+<details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
@@ -63,17 +59,14 @@
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
-</details> -->
+</details> 
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
-
 ![Amara-screenshot](https://user-images.githubusercontent.com/76491843/185199566-439f749d-347b-4670-889f-cd5a3270fe47.png)
 
-<br />
 
 In this project template I want to show my skills as a front-end developer. It is basically a fashion Ecommerce landing page fully responsive for all devices, built using HTML, CSS, and JavaScript. It consists in a template for a Jamstack project.
 
@@ -191,13 +184,9 @@ Distributed under the MIT License. See `MIT-LICENSE.txt` for more information.
 ## Contact
 
 <!-- Your Name - [@marcos_gonmarc](https://www.twitter.com/marcos_gonmarc) - email@example.com -->
-
-<!-- https://img.shields.io/github/url/?style=for-the-badge&logo=appveyor
-
-https://github.com/marcosgonzalezmarcial/amara-frontend/tree/csb-cq7plv -->
-
-Marcos González - ![Twitter URL](https://img.shields.io/twitter/url?style=social)
-Amara Ecommerce - ![Github URL](https://img.shields.io/github/url?style=for-the-badge&url=https%3A%2F%2Fgithub.com%2Fmarcosgonzalezmarcial%2Famara-frontend)
+marcos
+- [![Twitter URL](https://img.shields.io/twitter/url?label=@kodimarc&style=social&url=https%3A%2F%2Ftwitter.com%2Fkodimarc)](https://twitter.com/kodimarc)
+- [![Twitter URL](https://img.shields.io/twitter/url?label=LinkedIn&style=social&logo=LinkedIn&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmarcos-gonz%25C3%25A1lez-marcial-618b02115%2F)](https://www.linkedin.com/in/marcos-gonz%C3%A1lez-marcial-618b02115/)
 
 <!-- Project Link: [https://github.com/marcosgonzalezmarcial/amara-frontend](https://github.com/marcosgonzalezmarcial/amara-frontend)
 
