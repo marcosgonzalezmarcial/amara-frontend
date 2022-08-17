@@ -9,9 +9,10 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
+[![Stargazers][stars-shield]][stars-url] -->
+
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
@@ -19,8 +20,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/marcosgonzalezmarcial/amara-frontend">
+    <img src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/brand-log-amara.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Amara Ecommerce</h3>
@@ -30,7 +31,7 @@
     <br />
     <br />
     <!-- <br /> -->
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://cq7plv.csb.app/">View Demo</a>
     <!-- ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
     ·
@@ -97,7 +98,6 @@ List of tools and technologies used in this project:
 - [![Strapi][bootstrap.com]][bootstrap-url]
 - [![Git][bootstrap.com]][bootstrap-url]
 - [![Github][bootstrap.com]][bootstrap-url]
-<!-- - [![Codesandbox][bootstrap.com]][bootstrap-url] -->
 - [![Vscode][bootstrap.com]][bootstrap-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -157,22 +157,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ROADMAP -->
-
-<!-- ## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-  - [ ] Chinese
-  - [ ] Spanish -->
-
-<!-- See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues). -->
-
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
 <!-- CONTRIBUTING -->
 
 ## Contributing
@@ -202,9 +186,18 @@ Distributed under the MIT License. See `MIT-LICENSE.txt` for more information.
 
 ## Contact
 
-Your Name - [@marcos_gonmarc](https://www.twitter.com/marcos_gonmarc) - email@example.com
+<!-- Your Name - [@marcos_gonmarc](https://www.twitter.com/marcos_gonmarc) - email@example.com -->
 
-Project Link: [https://github.com/marcosgonzalezmarcial/amara-frontend](https://github.com/marcosgonzalezmarcial/amara-frontend)
+<!-- https://img.shields.io/github/url/?style=for-the-badge&logo=appveyor
+
+https://github.com/marcosgonzalezmarcial/amara-frontend/tree/csb-cq7plv -->
+
+Marcos González - ![Twitter URL](https://img.shields.io/twitter/url?style=social)
+Amara Ecommerce - ![Github URL](https://img.shields.io/github/url?style=for-the-badge&url=https%3A%2F%2Fgithub.com%2Fmarcosgonzalezmarcial%2Famara-frontend)
+
+<!-- Project Link: [https://github.com/marcosgonzalezmarcial/amara-frontend](https://github.com/marcosgonzalezmarcial/amara-frontend)
+
+Project Link: [https://github.com/marcosgonzalezmarcial/amara-frontend](https://github.com/marcosgonzalezmarcial/amara-frontend) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
