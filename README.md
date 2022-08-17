@@ -21,7 +21,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/marcosgonzalezmarcial/amara-frontend">
-    <img src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/brand-log-amara.png" alt="Logo" width="80" height="80">
+    <img src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/brand-log-amara.png" alt="Logo" width="120" height="80">
   </a>
 
   <h3 align="center">Amara Ecommerce</h3>
@@ -70,6 +70,7 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Amara-screenshot](https://user-images.githubusercontent.com/76491843/185199566-439f749d-347b-4670-889f-cd5a3270fe47.png)
 
 In this project template I want to show my skills as a front-end developer. It is basically a fashion Ecommerce landing page fully responsive for all devices, built using HTML, CSS, and JavaScript. It consists in a template for a Jamstack project.
 
