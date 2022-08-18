@@ -21,17 +21,16 @@
 <br />
 <div align="center">
   <a href="https://github.com/marcosgonzalezmarcial/amara-frontend">
-    <img src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/brand-log-amara.png" alt="Logo" width="280" height="80">
+    <img src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/brand-log-amara.png" alt="Logo" width="180" height="40">
   </a>
 
-  <h3 align="center">Amara Ecommerce</h3>
+  <h1 align="center">Amara Ecommerce</h1>
 
   <p align="center">
-    Landing page for Amara ecommerce website 
+    Amara ecommerce homepage
     <br />
-    <br />
-    <!-- <br /> -->
-    <a href="https://cq7plv.csb.app/">View Demo</a>
+    <a href="https://cq7plv.csb.app/"><strong>➥ Live Demo</strong></a>
+    
   </p>
 </div>
 
@@ -74,15 +73,17 @@
 ![Amara screenshot](https://user-images.githubusercontent.com/76491843/185199566-439f749d-347b-4670-889f-cd5a3270fe47.png){ width="90%" style="display: block; margin: 0 auto" }
 -->
 
-In this project template I want to show my skills as a front-end developer. It is basically a fashion Ecommerce landing page fully responsive for all devices, built using HTML, CSS, and JavaScript. It consists in a template for a Jamstack project.
+In this project template I want to show my skills as a front-end developer. It is basically a retail and fashion Ecommerce landing page fully responsive for all devices, built using HTML, CSS (Sass), and JavaScript. It consists in a template for a Jamstack project wich aims to show DOM manipulation skills and javascript proficient use.
 
-Core goals:
+You can see:
 
-- Layout and desing skills implementation.
-- Showing the implementation of the shopping bag functionality.
-- Plain HTML CSS and Javascript. No dependencies or libreries used.
+- Layout and desing patterns background.
+- Shopping bag functionality implementation built with taylored native Javascrips
+- Plain HTML, CSS(Sass) and Javascript. No dependencies or libreries used.
+- DOM Api's knowledge and proficient utilization
+- Data fetching from a taylored and owned products API made with headless CMS(Strapi)
 
-As a developer I believe that online stores give you the opportunity to show mastery of visual aspects of web development,such as design, layout and user experience, as well as control of intrinsic aspects of the business logic involved so that it is an excellent opportunity to display the skills and knowledge that you have on the subject.
+As a developer I believe that online stores give you the opportunity to show mastery of visual aspects of web development,such as design, layout and user experience awareness, as well as control of intrinsic aspects of the business logic involved so that it is an excellent opportunity to display the cognizance and knowledge that you have on the subject.
 I think that trying to create something with the native web technologies gives you a quiet good understandig of the core concepts that you need as a developer.
 Api data fetching incursions with the help of Strapi as a backend CMS.
 
