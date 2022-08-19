@@ -24,15 +24,25 @@
     <img src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/brand-log-amara.png" alt="Logo" width="180" height="40">
   </a>
 
-  <h1 align="center">Amara Ecommerce</h1>
+  <h1 align="center">Amara homepage</h1>
 
   <p align="center">
-    Amara ecommerce homepage
-    <br />
     <a href="https://cq7plv.csb.app/"><strong>➥ Live Demo</strong></a>
-    
   </p>
 </div>
+
+<p style="margin:0;" align=center>
+<img src="https://user-images.githubusercontent.com/76491843/185681008-897384cf-d13c-48ea-825c-c1b643c7b012.png" alt="Amara screenshot" height="500px"  />
+</p>
+
+<!-- 
+![Amara screenshot](https://user-images.githubusercontent.com/76491843/185199566-439f749d-347b-4670-889f-cd5a3270fe47.png){ width="90%" style="display: block; margin: 0 auto" }
+-->
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -60,19 +70,6 @@
   </ol>
 </details> 
 
-<!-- ABOUT THE PROJECT -->
-
-## About The Project
-
-
-<p align=center>
-<img src="https://user-images.githubusercontent.com/76491843/185681008-897384cf-d13c-48ea-825c-c1b643c7b012.png" alt="Amara screenshot" width="95%" style="display: block; margin: 0 auto" />
-</p>
-
-<!-- 
-![Amara screenshot](https://user-images.githubusercontent.com/76491843/185199566-439f749d-347b-4670-889f-cd5a3270fe47.png){ width="90%" style="display: block; margin: 0 auto" }
--->
-
 In this project template I want to show my skills as a front-end developer. It is basically a retail and fashion Ecommerce landing page fully responsive for all devices, built using HTML, CSS (Sass), and JavaScript. It consists in a template for a Jamstack project wich aims to show DOM manipulation skills and javascript proficient use.
 
 You can see:
@@ -93,9 +90,9 @@ Api data fetching incursions with the help of Strapi as a backend CMS.
 
 List of tools and technologies used in this project:
 
-- [![HTML][next.js]][next-url]
-- [![CSS][react.js]][react-url]
-- [![Javascript][vue.js]][vue-url]
+- ![HTML][html]
+- ![CSS][css3]
+- ![Javascript][javascript]
 - [![Sass][angular.io]][angular-url]
 - [![Parcel][svelte.dev]][svelte-url]
 - [![Eslint][laravel.com]][laravel-url]
@@ -191,7 +188,6 @@ Distributed under the MIT License. See `MIT-LICENSE.txt` for more information.
 ## Contact
 
 <!-- Your Name - [@marcos_gonmarc](https://www.twitter.com/marcos_gonmarc) - email@example.com -->
-marcos
 - [![Twitter URL](https://img.shields.io/twitter/url?label=@kodimarc&style=social&url=https%3A%2F%2Ftwitter.com%2Fkodimarc)](https://twitter.com/kodimarc)
 - [![Twitter URL](https://img.shields.io/twitter/url?label=LinkedIn&style=social&logo=LinkedIn&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmarcos-gonz%25C3%25A1lez-marcial-618b02115%2F)](https://www.linkedin.com/in/marcos-gonz%C3%A1lez-marcial-618b02115/)
 
@@ -233,21 +229,8 @@ Tools and resources that i found helpfull and i'd like to give credit to:
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[next-url]: https://nextjs.org/
-[react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[react-url]: https://reactjs.org/
-[vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[vue-url]: https://vuejs.org/
-[angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[angular-url]: https://angular.io/
-[svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[svelte-url]: https://svelte.dev/
-[laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[laravel-url]: https://laravel.com
-[bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[bootstrap-url]: https://getbootstrap.com
-[jquery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[jquery-url]: https://jquery.com
+
+
+[html]: https://img.shields.io/badge/html-de7b35?style=for-the-badge&logo=html5&logoColor=white
+[css3]: https://img.shields.io/badge/css3-2585e6?style=for-the-badge&logo=css3&logoColor=white
+[javascript]: https://img.shields.io/badge/javascript-f5e911?style=for-the-badge&logo=javascript&logoColor=white
