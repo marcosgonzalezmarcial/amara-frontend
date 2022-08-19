@@ -66,7 +66,7 @@
 
 
 <p align=center>
-<img src="https://user-images.githubusercontent.com/76491843/185199566-439f749d-347b-4670-889f-cd5a3270fe47.png" alt="Amara screenshot" width="95%" style="display: block; margin: 0 auto" />
+<img src="https://user-images.githubusercontent.com/76491843/185681008-897384cf-d13c-48ea-825c-c1b643c7b012.png" alt="Amara screenshot" width="95%" style="display: block; margin: 0 auto" />
 </p>
 
 <!-- 
