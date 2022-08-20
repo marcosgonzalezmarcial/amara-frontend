@@ -11,9 +11,11 @@
 
 <!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url] -->
-
+[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+-->
+
+
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -35,13 +37,9 @@
 <img src="https://user-images.githubusercontent.com/76491843/185681008-897384cf-d13c-48ea-825c-c1b643c7b012.png" alt="Amara screenshot" height="500px"  />
 </p>
 
-<!-- 
-![Amara screenshot](https://user-images.githubusercontent.com/76491843/185199566-439f749d-347b-4670-889f-cd5a3270fe47.png){ width="90%" style="display: block; margin: 0 auto" }
--->
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-
 
 
 <!-- TABLE OF CONTENTS -->
@@ -70,7 +68,7 @@
   </ol>
 </details> 
 
-In this project template I want to show my skills as a front-end developer. It is basically a retail and fashion Ecommerce landing page fully responsive for all devices, built using HTML, CSS (Sass), and JavaScript. It consists in a template for a Jamstack project wich aims to show DOM manipulation skills and javascript proficient use.
+This project is a fashion website  and its goal is to show my skills as a front-end developer. It is basically a retail and fashion Ecommerce home page fully responsive for all devices, built using HTML, CSS (Sass), and JavaScript. It aims to show the browser DOM apis manipulation skills trought javascript proficient use.
 
 You can see:
 
@@ -78,11 +76,11 @@ You can see:
 - Shopping bag functionality implementation built with taylored native Javascrips
 - Plain HTML, CSS(Sass) and Javascript. No dependencies or libreries used.
 - DOM Api's knowledge and proficient utilization
-- Data fetching from a taylored and owned products API made with headless CMS(Strapi)
+- Data fetching from a taylored and owned backend products API made with headless CMS(Strapi)
 
 As a developer I believe that online stores give you the opportunity to show mastery of visual aspects of web development,such as design, layout and user experience awareness, as well as control of intrinsic aspects of the business logic involved so that it is an excellent opportunity to display the cognizance and knowledge that you have on the subject.
 I think that trying to create something with the native web technologies gives you a quiet good understandig of the core concepts that you need as a developer.
-Api data fetching incursions with the help of Strapi as a backend CMS.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,16 +88,15 @@ Api data fetching incursions with the help of Strapi as a backend CMS.
 
 List of tools and technologies used in this project:
 
-- ![HTML][html]
-- ![CSS][css3]
-- ![Javascript][javascript]
-- [![Sass][angular.io]][angular-url]
-- [![Parcel][svelte.dev]][svelte-url]
-- [![Eslint][laravel.com]][laravel-url]
-- [![Strapi][bootstrap.com]][bootstrap-url]
-- [![Git][bootstrap.com]][bootstrap-url]
-- [![Github][bootstrap.com]][bootstrap-url]
-- [![Vscode][bootstrap.com]][bootstrap-url]
+- [![HTML][html]][html-wiki-url]
+- [![CSS][css3]][css-wiki-url]
+- [![Javascript][javascript]][javascript-wiki-url]
+- [![Sass][sass]][sass-url]
+- [![Parcel][parcel]][parcel-url]
+- [![Eslint][eslint]][eslint-url]
+- [![Strapi][strapi]][strapi-url]
+- [![Git][git]][git-url]
+- [![Vscode][vscode]][vscode-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,6 +178,8 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `MIT-LICENSE.txt` for more information.
 
+- [![MIT License][license-shield]][license-url]
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
@@ -188,6 +187,7 @@ Distributed under the MIT License. See `MIT-LICENSE.txt` for more information.
 ## Contact
 
 <!-- Your Name - [@marcos_gonmarc](https://www.twitter.com/marcos_gonmarc) - email@example.com -->
+Author: Marcos González
 - [![Twitter URL](https://img.shields.io/twitter/url?label=@kodimarc&style=social&url=https%3A%2F%2Ftwitter.com%2Fkodimarc)](https://twitter.com/kodimarc)
 - [![Twitter URL](https://img.shields.io/twitter/url?label=LinkedIn&style=social&logo=LinkedIn&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmarcos-gonz%25C3%25A1lez-marcial-618b02115%2F)](https://www.linkedin.com/in/marcos-gonz%C3%A1lez-marcial-618b02115/)
 
@@ -224,13 +224,32 @@ Tools and resources that i found helpfull and i'd like to give credit to:
 [forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[issues-shield]: https://img.shields.io/github/issues/marcosgonzalezmarcial/badge?style=for-the-badge
+<!-- [issues-shield]: https://img.shields.io/badge/MIT-LICENSE-green?style=for-the-badge -->
+[issues-url]: https://github.com/marcosgonzalezmarcial/amara-frontend/issues 
+[license-shield]: https://img.shields.io/badge/MIT-LICENSE-green?style=for-the-badge
+
+[license-url]: https://github.com/marcosgonzalezmarcial/amara-frontend/blob/main/MIT-LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/marcos-gonz%C3%A1lez-marcial-618b02115/
 
 
 [html]: https://img.shields.io/badge/html-de7b35?style=for-the-badge&logo=html5&logoColor=white
+[html-wiki-url]: https://en.wikipedia.org/wiki/HTML
 [css3]: https://img.shields.io/badge/css3-2585e6?style=for-the-badge&logo=css3&logoColor=white
-[javascript]: https://img.shields.io/badge/javascript-f5e911?style=for-the-badge&logo=javascript&logoColor=white
+[css-wiki-url]: https://en.wikipedia.org/wiki/CSS
+[javascript]: https://img.shields.io/badge/javascript-f5e911?style=for-the-badge&logo=javascript&logoColor=black
+[javascript-wiki-url]: https://en.wikipedia.org/wiki/Javascript
+[sass]: https://img.shields.io/badge/sass-CD6799?style=for-the-badge&logo=sass&logoColor=white
+[sass-url]: https://sass-lang.com/
+[parcel]: https://img.shields.io/badge/parcel-logo?logo=parcel&style=for-the-badge&color=d4934e
+[parcel-url]: https://parceljs.org/
+[eslint]: https://img.shields.io/badge/eslint-logo?logo=eslint&style=for-the-badge&color=4b1ac7
+[eslint-url]: https://eslint.org/
+[strapi]: https://img.shields.io/badge/strapi-logo?logo=strapi&style=for-the-badge&color=693ed6
+[strapi-url]: https://strapi.io/
+[git]: https://img.shields.io/badge/git-logo?logo=git&style=for-the-badge&color=3E2C00
+[git-url]: https://git-scm.com/
+[vscode]: https://img.shields.io/badge/vscode-logo?logo=visualstudiocode&style=for-the-badge&color=007ACC 
+[vscode-url]: https://code.visualstudio.com/
+
