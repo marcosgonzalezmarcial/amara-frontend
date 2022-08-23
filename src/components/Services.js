@@ -1,15 +1,15 @@
 export const Services = () => {
-  const services = document.createElement("section");
-  services.classList.add("section");
-  services.classList.add("service");
+  const services = document.createElement('section')
+  services.classList.add('section')
+  services.classList.add('service')
 
-  services.innerHTML = /*html*/ `
+  services.innerHTML = /* html */ `
     <div class="container">
       <ul class="service-list">
         <li class="service-item">
           <div class="service-item-icon">
             <img
-              src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/svg-logos/service-icon-1.svg"
+              src="https://res.cloudinary.com/dn9mr6kwc/image/upload/v1661264648/Amara-ecommerce/bike-delivery-icon_swqj89.svg"
               alt="Service icon"
             />
           </div>
@@ -24,7 +24,7 @@ export const Services = () => {
         <li class="service-item">
           <div class="service-item-icon">
             <img
-              src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/svg-logos/service-icon-2.svg"
+              src="https://res.cloudinary.com/dn9mr6kwc/image/upload/v1661266924/Amara-ecommerce/services-icons/return-box-icon_zzgqmr.svg"
               alt="Service icon"
             />
           </div>
@@ -39,7 +39,7 @@ export const Services = () => {
         <li class="service-item">
           <div class="service-item-icon">
             <img
-              src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/svg-logos/service-icon-3.svg"
+              src="https://res.cloudinary.com/dn9mr6kwc/image/upload/v1661267449/Amara-ecommerce/services-icons/payment-icon_x0p6nh.svg"
               alt="Service icon"
             />
           </div>
@@ -54,20 +54,18 @@ export const Services = () => {
         <li class="service-item">
           <div class="service-item-icon">
             <img
-              //src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/svg-logos/service-icon-4.svg"
-              src="../../assets/images/svg-logos/return-product-icon.svg"
+              src="https://res.cloudinary.com/dn9mr6kwc/image/upload/v1661267623/Amara-ecommerce/services-icons/headphone-icon_phnbrr.svg"
               alt="Service icon"
             />
           </div>
 
           <div class="service-content">
             <p class="service-item-title">Atención al cliente</p>
-
             <p class="service-item-text">24/7 soporte dedicado</p>
           </div>
         </li>
       </ul>
     </div>
-`;
-  return services;
-};
+`
+  return services
+}
