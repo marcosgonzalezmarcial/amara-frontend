@@ -23,7 +23,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/marcosgonzalezmarcial/amara-frontend">
-    <img src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/brand-log-amara.png" alt="Logo" width="180" height="40">
+    <img src="https://res.cloudinary.com/dn9mr6kwc/image/upload/c_scale,h_200,q_auto:good/v1661238538/Amara-ecommerce/logo/brand-log-amara_dniyo1.webp" alt="Logo" width="180" height="40">
   </a>
 
   <h1 align="center">Amara homepage</h1>
