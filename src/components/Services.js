@@ -1,7 +1,7 @@
 export const Services = () => {
-  const services = document.createElement('section')
-  services.classList.add('section')
-  services.classList.add('service')
+  const services = document.createElement("section")
+  services.classList.add("section")
+  services.classList.add("service")
 
   services.innerHTML = /* html */ `
     <div class="container">
@@ -9,7 +9,7 @@ export const Services = () => {
         <li class="service-item">
           <div class="service-item-icon">
             <img
-              src="https://res.cloudinary.com/dn9mr6kwc/image/upload/v1661264648/Amara-ecommerce/bike-delivery-icon_swqj89.svg"
+              src="https://res.cloudinary.com/dn9mr6kwc/image/upload/v1661334313/Amara-ecommerce/services-icons/bike-delivery-icon_swqj89_vueqgr.svg"
               alt="Service icon"
             />
           </div>
