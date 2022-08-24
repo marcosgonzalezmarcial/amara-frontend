@@ -1,12 +1,12 @@
 export const Newsletter = () => {
-  const newsletter = document.createElement('section')
-  newsletter.classList.add('section')
-  newsletter.classList.add('newsletter')
+  const newsletter = document.createElement("section")
+  newsletter.classList.add("section")
+  newsletter.classList.add("newsletter")
 
-  newsletter.innerHTML = `
-  <div class="container">
-    <div class="newsletter-card"
-        style="background-image: url('https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/newsletter-bg.png')">
+  newsletter.innerHTML = /*html*/ `
+    <div class="container">
+      <div class="newsletter-card"
+       
         <h2 class="card-title">Suscríbete al Newsletter</h2>
 
         <p class="card-text">

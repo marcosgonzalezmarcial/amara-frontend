@@ -1,6 +1,6 @@
 export const Footer = () => {
-  const footer = document.createElement("footer");
-  footer.classList.add("footer");
+  const footer = document.createElement("footer")
+  footer.classList.add("footer")
 
   footer.innerHTML = /*html*/ `
     <div class="footer-top">
@@ -162,14 +162,14 @@ export const Footer = () => {
           <p class="payment-title">Aceptamos</p>
 
           <img
-            src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/payment-img.png"
+            src="https://res.cloudinary.com/dn9mr6kwc/image/upload/v1661336074/Amara-ecommerce/payment-img_qr14gx.png"
             alt="Logos pagos online"
             class="payment-img"
           />
         </div>
       </div>
     </div>
-`;
+`
 
-  return footer;
-};
+  return footer
+}
