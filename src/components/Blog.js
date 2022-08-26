@@ -1,10 +1,11 @@
 export const Blog = () => {
-  const blog = document.createElement("section")
-  blog.classList.add("section")
-  blog.classList.add("blog")
+  const blog = document.createElement("section");
+  blog.classList.add("section");
+  blog.classList.add("blog");
+  blog.classList.add("container-fluid");
 
   blog.innerHTML = /* html */ `
-    <div class="container">
+    
       <h3 class="h2 section-title">Últimas noticias sobre moda</h3>
       <ul class="blog-list">
         <li>
@@ -115,7 +116,6 @@ export const Blog = () => {
           </div>
         </li>
       </ul>
-    </div>
-`
-  return blog
-}
+`;
+  return blog;
+};
