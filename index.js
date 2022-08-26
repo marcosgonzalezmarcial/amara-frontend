@@ -10,6 +10,7 @@ if (!document.getElementById("root").innerHTML) {
 const actionsButtons = [
   ...document.querySelectorAll("button.header-action-btn")
 ];
+
 const categoryButtons = [...document.querySelectorAll(".filter-btn")];
 const shoppingBagEl = document.querySelector(".shopping-bag-container");
 const shopBagBtn = document.querySelector(".shopping-bag-btn");
@@ -58,6 +59,9 @@ export function hideBag() {
 
 /* *************** fetching products by category in Products section ****
  * TODO -> this should be in the produts file ************************* */
+
+// paint products from api on first load category "Más vendidos"
+paintProducts("Más vendidos");
 
 categoryButtons.forEach((btn) => {
   btn.addEventListener("click", function () {

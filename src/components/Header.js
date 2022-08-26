@@ -83,6 +83,7 @@ export const Header = () => {
           <p class="header-action-label">Buscar</p>
         </button>
         <button class="header-action-btn shopping-bag-btn">
+       
           <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
 
           <p class="header-action-label">Carrito</p>
