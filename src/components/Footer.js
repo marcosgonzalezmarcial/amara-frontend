@@ -1,14 +1,14 @@
 export const Footer = () => {
-  const footer = document.createElement('footer')
-  footer.classList.add('footer')
+  const footer = document.createElement("footer")
+  footer.classList.add("footer")
 
-  footer.innerHTML = `
+  footer.innerHTML = /*html*/ `
     <div class="footer-top">
       <div class="container">
         <div class="footer-brand">
           <a href="#" class="logo">
             <img
-              src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/brand-log-amara.png"
+              src="https://res.cloudinary.com/dn9mr6kwc/image/upload/c_scale,h_200,q_auto:good/v1661238538/Amara-ecommerce/logo/brand-log-amara_dniyo1.webp"
               alt="Amara logo"
             />
           </a>
@@ -162,7 +162,7 @@ export const Footer = () => {
           <p class="payment-title">Aceptamos</p>
 
           <img
-            src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/payment-img.png"
+            src="https://res.cloudinary.com/dn9mr6kwc/image/upload/v1661336074/Amara-ecommerce/payment-img_qr14gx.png"
             alt="Logos pagos online"
             class="payment-img"
           />

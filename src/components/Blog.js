@@ -1,7 +1,7 @@
 export const Blog = () => {
-  const blog = document.createElement('section')
-  blog.classList.add('section')
-  blog.classList.add('blog')
+  const blog = document.createElement("section")
+  blog.classList.add("section")
+  blog.classList.add("blog")
 
   blog.innerHTML = /* html */ `
     <div class="container">
@@ -12,8 +12,8 @@ export const Blog = () => {
             <figure class="card-banner">
               <a href="#">
                 <img
-                  src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/cyber-monday-blog.jpg"
-                  alt="Cyber Monday Fashion en Amara"
+                  src="https://res.cloudinary.com/dn9mr6kwc/image/upload/c_scale,q_auto:eco,w_550/v1661336046/Amara-ecommerce/blog-section/cyber-monday-blog_dppc9k.webp"
+                  alt="Mujer comprando en Cyber Monday"
                   loading="lazy"
                 />
               </a>
@@ -48,8 +48,8 @@ export const Blog = () => {
             <figure class="card-banner">
               <a href="#">
                 <img
-                  src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/High-End-Furniture.jpg"
-                  alt="La decoración de tu casa de verando"
+                  src="https://res.cloudinary.com/dn9mr6kwc/image/upload/c_scale,q_auto:eco,w_550/v1661336046/Amara-ecommerce/blog-section/High-End-Furniture-blog_dh0iqk.webp"
+                  alt="Salón con decoración moderna"
                   loading="lazy"
                 />
               </a>
@@ -84,8 +84,8 @@ export const Blog = () => {
             <figure class="card-banner">
               <a href="#">
                 <img
-                  src="https://raw.githack.com/marcosgonzalezmarcial/e-commerce-mvp/main/src/assets/images/mujer-comprando-blog.jpg"
-                  alt="Ideas únicas de moda que para descubrir"
+                  src="https://res.cloudinary.com/dn9mr6kwc/image/upload/c_scale,q_auto:eco,w_540/v1661336046/Amara-ecommerce/blog-section/mujeres-comprando-blog_ojqo9f.webp"
+                  alt="Tres mujeres comprando con bolsas de colores"
                   loading="lazy"
                 />
               </a>

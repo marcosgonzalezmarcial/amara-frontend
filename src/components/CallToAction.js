@@ -1,9 +1,9 @@
 export const CallToAction = () => {
-  const CallToAction = document.createElement('section')
-  CallToAction.classList.add('section')
-  CallToAction.classList.add('call-to-action')
+  const CallToAction = document.createElement("section")
+  CallToAction.classList.add("section")
+  CallToAction.classList.add("call-to-action")
 
-  CallToAction.innerHTML = `
+  CallToAction.innerHTML = /*html*/ `
   <div class="container-fluid-cta">
     <div class="call-to-action-content">
       <h1 class="call-to-action-title h2 section-title">

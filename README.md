@@ -15,7 +15,6 @@
 [![Issues][issues-shield]][issues-url]
 -->
 
-
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -23,7 +22,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/marcosgonzalezmarcial/amara-frontend">
-    <img src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/brand-log-amara.png" alt="Logo" width="180" height="40">
+    <img src="https://res.cloudinary.com/dn9mr6kwc/image/upload/c_scale,h_200,q_auto:good/v1661238538/Amara-ecommerce/logo/brand-log-amara_dniyo1.webp" alt="Logo" width="180" height="40">
   </a>
 
   <h1 align="center">Amara homepage</h1>
@@ -34,13 +33,12 @@
 </div>
 
 <p style="margin:0;" align=center>
-<img src="https://user-images.githubusercontent.com/76491843/185681008-897384cf-d13c-48ea-825c-c1b643c7b012.png" alt="Amara screenshot" height="500px"  />
+<img src="https://user-images.githubusercontent.com/76491843/185681008-897384cf-d13c-48ea-825c-c1b643c7b012.png" alt="Amara screenshot" height="auto"  />
 </p>
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -66,9 +64,9 @@
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
-</details> 
+</details>
 
-This project is a fashion website  and its goal is to show my skills as a front-end developer. It is basically a retail and fashion Ecommerce home page fully responsive for all devices, built using HTML, CSS (Sass), and JavaScript. It aims to show the browser DOM apis manipulation skills trought javascript proficient use.
+This project is a fashion website and its goal is to show my skills as a front-end developer. It is basically a retail and fashion Ecommerce home page fully responsive for all devices, built using HTML, CSS (Sass), and JavaScript. It aims to show the browser DOM apis manipulation skills trought javascript proficient use.
 
 You can see:
 
@@ -80,7 +78,6 @@ You can see:
 
 As a developer I believe that online stores give you the opportunity to show mastery of visual aspects of web development,such as design, layout and user experience awareness, as well as control of intrinsic aspects of the business logic involved so that it is an excellent opportunity to display the cognizance and knowledge that you have on the subject.
 I think that trying to create something with the native web technologies gives you a quiet good understandig of the core concepts that you need as a developer.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -186,7 +183,9 @@ Distributed under the MIT License. See `MIT-LICENSE.txt` for more information.
 ## Contact
 
 <!-- Your Name - [@marcos_gonmarc](https://www.twitter.com/marcos_gonmarc) - email@example.com -->
+
 Author: Marcos González
+
 - [![Twitter URL](https://img.shields.io/twitter/url?label=@kodimarc&style=social&url=https%3A%2F%2Ftwitter.com%2Fkodimarc)](https://twitter.com/kodimarc)
 - [![Twitter URL](https://img.shields.io/twitter/url?label=LinkedIn&style=social&logo=LinkedIn&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmarcos-gonz%25C3%25A1lez-marcial-618b02115%2F)](https://www.linkedin.com/in/marcos-gonz%C3%A1lez-marcial-618b02115/)
 
@@ -224,15 +223,14 @@ Tools and resources that i found helpfull and i'd like to give credit to:
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
 [issues-shield]: https://img.shields.io/github/issues/marcosgonzalezmarcial/badge?style=for-the-badge
-<!-- [issues-shield]: https://img.shields.io/badge/MIT-LICENSE-green?style=for-the-badge -->
-[issues-url]: https://github.com/marcosgonzalezmarcial/amara-frontend/issues 
-[license-shield]: https://img.shields.io/badge/MIT-LICENSE-green?style=for-the-badge
 
+<!-- [issues-shield]: https://img.shields.io/badge/MIT-LICENSE-green?style=for-the-badge -->
+
+[issues-url]: https://github.com/marcosgonzalezmarcial/amara-frontend/issues
+[license-shield]: https://img.shields.io/badge/MIT-LICENSE-green?style=for-the-badge
 [license-url]: https://github.com/marcosgonzalezmarcial/amara-frontend/blob/main/MIT-LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/marcos-gonz%C3%A1lez-marcial-618b02115/
-
-
 [html]: https://img.shields.io/badge/html-de7b35?style=for-the-badge&logo=html5&logoColor=white
 [html-wiki-url]: https://en.wikipedia.org/wiki/HTML
 [css3]: https://img.shields.io/badge/css3-2585e6?style=for-the-badge&logo=css3&logoColor=white
@@ -249,6 +247,5 @@ Tools and resources that i found helpfull and i'd like to give credit to:
 [strapi-url]: https://strapi.io/
 [git]: https://img.shields.io/badge/git-logo?logo=git&style=for-the-badge&color=3E2C00
 [git-url]: https://git-scm.com/
-[vscode]: https://img.shields.io/badge/vscode-logo?logo=visualstudiocode&style=for-the-badge&color=007ACC 
+[vscode]: https://img.shields.io/badge/vscode-logo?logo=visualstudiocode&style=for-the-badge&color=007ACC
 [vscode-url]: https://code.visualstudio.com/
-

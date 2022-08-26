@@ -1,18 +1,18 @@
 /* global localStorage */
-import { ShoppingBag } from './shoppingBag/ShoppingBag'
+import { ShoppingBag } from "./shoppingBag/ShoppingBag";
 
 export const Header = () => {
-  const header = document.createElement('header')
-  header.classList.add('header')
+  const header = document.createElement("header");
+  header.classList.add("header");
 
   // getting the total amount of items form localStorage
-  let totalItems = 0
-  const products = JSON.parse(localStorage.getItem('products')) || []
+  let totalItems = 0;
+  const products = JSON.parse(localStorage.getItem("products")) || [];
   products.forEach((product) => {
-    totalItems += product.qty
-  })
+    totalItems += product.qty;
+  });
 
-  header.innerHTML = /* html */`
+  header.innerHTML = /* html */ `
     <div class="container-fluid">
       <div class="overlay navbar-slide"></div>
       <!-- Navbar -->
@@ -20,7 +20,7 @@ export const Header = () => {
         <div class="navbar-top">
           <a href="#" class="logo">
             <img
-              src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/brand-log-amara.png"
+              src="https://res.cloudinary.com/dn9mr6kwc/image/upload/c_scale,h_200,q_auto:good/v1661238538/Amara-ecommerce/logo/brand-log-amara_dniyo1.webp"
               alt="Amara logo"
               width="130"
               height="31"
@@ -63,7 +63,7 @@ export const Header = () => {
       <!-- logo img -->
       <a href="#" class="logo">
         <img
-          src="https://rawcdn.githack.com/marcosgonzalezmarcial/e-commerce-mvp/ab306b7ce30924bb2f7c0e079c28b07f562e9211/src/assets/images/brand-log-amara.png"
+          src="https://res.cloudinary.com/dn9mr6kwc/image/upload/c_scale,h_200,q_auto:good/v1661238538/Amara-ecommerce/logo/brand-log-amara_dniyo1.webp"
           alt="Amara logo"
         />
       </a>
@@ -83,6 +83,7 @@ export const Header = () => {
           <p class="header-action-label">Buscar</p>
         </button>
         <button class="header-action-btn shopping-bag-btn">
+       
           <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
 
           <p class="header-action-label">Carrito</p>
@@ -112,10 +113,10 @@ export const Header = () => {
       </button>
       <!-- end of hamburguer menu btn -->
     </div>
-  `
+  `;
 
-  header.appendChild(ShoppingBag())
+  header.appendChild(ShoppingBag());
   // header.appendChild(TriangleBorder());
   // document.querySelector("header").innerHTML = TriangleBorder();
-  return header
-}
+  return header;
+};
