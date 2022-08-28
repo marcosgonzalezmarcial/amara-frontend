@@ -24,11 +24,16 @@
       @content;
     }
   }
-  @if $breakpoint == xxl {
-    @media (min-width: 1400px) {
-      @content;
+  // @if $breakpoint == xxl {
+  //   @media (min-width: 1400px) {
+  //     @content;
+  //   }
+  // }
+    @if $breakpoint ==xxl {
+      @media (min-width: 1320px) {
+        @content;
+      }
     }
-  }
 }
 
 @mixin border-bottom {

@@ -22,16 +22,12 @@
   }
 
   @include responsive(md) {
-    // padding-block: 12px;
     box-shadow: none;
     border: none;
   }
 
   @include responsive(lg) {
-    // min-height: 54px;
-    // box-shadow: none;
     .container-fluid {
-      width: 95%;
       margin-inline: auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -39,7 +35,9 @@
   }
   @include responsive(xl) {
     min-height: 58px;
+    margin-inline: auto;
   }
+ 
 
   & .logo {
     place-self: center;

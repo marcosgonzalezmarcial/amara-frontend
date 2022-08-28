@@ -26,6 +26,8 @@ body {
   background: var(--white);
   height: -webkit-fill-available;
   height: -moz-available;
+  max-width: 1320px;;
+  margin-inline: auto;
 }
 
 li {
@@ -78,17 +80,13 @@ ion-icon {
   * #REUSED STYLE
   \*-----------------------------------*/
 
-// .container {
-//   padding-inline: 1rem;
-// }
-
 .container-fluid {
-  max-width: 90%;
+  max-width: 95%;
   margin-inline: auto;
-  @include responsive(xl) {
-    max-width: 95%;
-    margin-inline: auto;
-  }
+  @include responsive(xxl) {
+      max-width: 1320px;
+      margin-inline: auto;
+    }
 }
 a,
 button {

@@ -1,7 +1,7 @@
 export const Services = () => {
-  const services = document.createElement("section");
-  services.classList.add("section");
-  services.classList.add("service");
+  const services = document.createElement('section')
+  services.classList.add('section')
+  services.classList.add('service')
 
   services.innerHTML = /* html */ `
     <div class="container">
@@ -66,6 +66,6 @@ export const Services = () => {
         </li>
       </ul>
     </div>
-`;
-  return services;
-};
+`
+  return services
+}

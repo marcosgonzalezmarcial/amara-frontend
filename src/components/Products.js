@@ -1,7 +1,7 @@
 export const Products = () => {
-  const Products = document.createElement("section");
-  Products.classList.add("section");
-  Products.classList.add("product");
+  const Products = document.createElement('section')
+  Products.classList.add('section')
+  Products.classList.add('product')
 
   Products.innerHTML = /* html */ `
     <div class="container-fluid">
@@ -23,6 +23,6 @@ export const Products = () => {
       <ul class="product-list"></ul>
       <button class="btn btn-outline">Ver todos los productos</button>
     </div>
-        `;
-  return Products;
-};
+        `
+  return Products
+}
