@@ -12,10 +12,11 @@
   min-height: 50px;
   padding-block: 10px;
   z-index: 99;
+  margin-inline: auto;
+
   @include border-bottom;
 
   .container-fluid {
-    width: 95%;
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
@@ -27,16 +28,18 @@
   }
 
   @include responsive(lg) {
+    min-height: 62px;
     .container-fluid {
       margin-inline: auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  @include responsive(xl) {
-    min-height: 58px;
-    margin-inline: auto;
-  }
+  // @include responsive(xl) {
+  //   margin-inline: auto;
+  //   // max-width: 100%;
+  // }
+
  
 
   & .logo {

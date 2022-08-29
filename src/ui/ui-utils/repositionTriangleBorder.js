@@ -11,6 +11,6 @@ export const repositionTriangleBorder = () => {
 
   root.style.setProperty(
     "--triangle-border-left",
-    `${Math.round(badgeRefPos - 6.8)}px`
+    `${Math.round(badgeRefPos - 8.8)}px`
   );
 };

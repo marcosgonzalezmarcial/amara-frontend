@@ -38,7 +38,7 @@ export function toggleBag() {
   document.querySelector(".arrow").classList.toggle("arrow-up");
   shoppingBagEl.classList.toggle("show-bag");
   // avoid page scrolling on the back when the bag is open
-  document.body.classList.toggle("stop-scroll");
+  document.body.classList.toggle("scroll-control");
 }
 
 export function showBag() {
@@ -46,7 +46,7 @@ export function showBag() {
   document.querySelector(".arrow").classList.toggle("arrow-up");
   shoppingBagEl.classList.toggle("show-bag");
   // avoid page scrolling on the back when the bag is open
-  document.body.classList.toggle("stop-scroll");
+  document.body.classList.toggle("scroll-control");
 }
 
 export function hideBag() {
@@ -54,7 +54,7 @@ export function hideBag() {
   shoppingBagEl.classList.remove("show-bag");
 
   // avoid page scrolling on the back when the bag is open
-  document.body.classList.remove("stop-scroll");
+  document.body.classList.remove("scroll-control");
 }
 
 /* *************** fetching products by category in Products section ****

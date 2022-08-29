@@ -2,8 +2,8 @@
 
 // mobile first approach
 
-//to avoid scrolling when the shopping-bag is opened
-.stop-scroll {
+//to avoid scrolling when the shopping-bag is opened on small screens
+.scroll-control {
   overflow: hidden;
   // overscroll-behavior: none;
   @include responsive(sm) {

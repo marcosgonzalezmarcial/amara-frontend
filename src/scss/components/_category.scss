@@ -1,11 +1,6 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.category {
-  .container-fluid {
-    max-width: 100%;
-  }
-}
 
 .category-list {
   display: flex;
