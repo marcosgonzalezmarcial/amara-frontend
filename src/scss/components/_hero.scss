@@ -73,7 +73,7 @@
 }
 
 .hero-title-right {
-  // max-width: 5ch;
+
   justify-self: right;
   align-self: center;
   padding-block-end: 3.5rem;
@@ -83,6 +83,11 @@
   color: var(--white);
   text-shadow: 1.5px 1.5px hsl(0, 0%, 0%);
   text-align: right;
+  @media (max-height: 500px) {
+    font-size: var(--step-4);
+    max-width: none;
+    padding-block-end: 1rem;
+  }
 
   @include responsive(md) {
     display: none;
@@ -97,6 +102,11 @@
   font-size: var(--step-5);
   color: var(--white);
   text-shadow: 1.5px 1.5px hsl(0, 0%, 0%);
+  @media (max-height: 500px) {
+    font-size: var(--step-4);
+    max-width: none;
+    padding-block-start: 1rem;
+  }
 
   @include responsive(md) {
     display: none;
