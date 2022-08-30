@@ -83,7 +83,9 @@ shopBagCloseBtn.addEventListener("click", () => {
 
 /*****************************************
  ******** adding delete logic to bag items on first load************/
-const deleteBtns = document.querySelectorAll(".item-description-bottom-text");
+const deleteBtns = document.querySelectorAll(
+  ".item-description-bottom-text-right"
+);
 deleteBtns.forEach((btn) => {
   btn.addEventListener("click", (event) => {
     event.preventDefault();

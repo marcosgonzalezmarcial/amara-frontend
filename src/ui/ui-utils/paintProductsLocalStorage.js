@@ -1,13 +1,13 @@
-
 /* global localStorage */
 export const paintProductsLocalStorage = () => {
   const productsFromLocalStorage =
-    JSON.parse(localStorage.getItem('products')) || []
+    JSON.parse(localStorage.getItem("products")) || [];
 
-  let shoppingBagProductsFromLocalStorage = ''
+  let shoppingBagProductsFromLocalStorage = "";
 
-  productsFromLocalStorage.map((product) =>
-    (shoppingBagProductsFromLocalStorage += /* html */`
+  productsFromLocalStorage.map(
+    (product) =>
+      (shoppingBagProductsFromLocalStorage += /* html */ `
       <div class="shopping-bag-item">
         <figure class="shopping-bag-item-banner">
           <img src="${product.imgUrl}" alt="product 1" />
@@ -25,13 +25,15 @@ export const paintProductsLocalStorage = () => {
             </div>
           </div>
           <div class="item-description-bottom">
-            <button data-id=${product.id} class="item-description-bottom-text">eliminar
+            <button data-id=${product.id} class="item-description-bottom-text-left">Añadir a favoritos
+            </button>         
+            <button data-id=${product.id} class="item-description-bottom-text-right">Eliminar
             </button>         
           </div>
         </div>
       </div>  
-    `
-    ))
+    `)
+  );
 
-  return shoppingBagProductsFromLocalStorage
-}
+  return shoppingBagProductsFromLocalStorage;
+};

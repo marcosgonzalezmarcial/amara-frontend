@@ -38,8 +38,10 @@ export const addProductToCart = async (id) => {
           </div>
         </div>
         <div class="item-description-bottom">
-          <button data-id=${product.id} class="item-description-bottom-text">eliminar
-          </button>
+          <button data-id=${product.id} class="item-description-bottom-text-left">Añadir a favoritos
+          </button>         
+          <button data-id=${product.id} class="item-description-bottom-text-right">Eliminar
+          </button> 
         </div>
       </div>
     </div>  
@@ -60,7 +62,9 @@ export const addProductToCart = async (id) => {
     .classList.toggle("active");
 
   // adding deletion functionality to delete btns in each item
-  const deleteBtns = document.querySelectorAll(".item-description-bottom-text");
+  const deleteBtns = document.querySelectorAll(
+    ".item-description-bottom-text-right"
+  );
 
   deleteBtns.forEach((btn) => {
     btn.addEventListener("click", (event) => {
