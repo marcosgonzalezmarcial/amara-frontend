@@ -4,6 +4,7 @@
 
 //to avoid scrolling when the shopping-bag is opened on small screens
 .scroll-control {
+  position: relative;
   overflow: hidden;
   // overscroll-behavior: none;
   @include responsive(sm) {
@@ -15,7 +16,6 @@
 .shopping-bag-container {
   // max-height on desktop 568px
   --height: 568px;
-
   position: fixed;
   top: var(--header-height, 50px);
   right: 0rem;
@@ -34,6 +34,12 @@
   scroll-behavior: smooth;
   overscroll-behavior: none;
   border-top: none;
+  // fix rendering on ios devices
+    /* CSS specific to iOS devices */
+  @supports (-webkit-touch-callout: none) {
+    overscroll-behavior: none;
+    max-height: calc(100% - var(--header-height));
+  }
 
   @include responsive(sm) {
     max-width: 60%;

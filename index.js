@@ -40,6 +40,7 @@ export function toggleBag () {
   shoppingBagEl.classList.toggle('show-bag')
   // avoid page scrolling on the back when the bag is open
   document.body.classList.toggle('scroll-control')
+  document.documentElement.classList.toggle('scroll-control')
 }
 
 export function showBag () {
@@ -48,6 +49,7 @@ export function showBag () {
   shoppingBagEl.classList.toggle('show-bag')
   // avoid page scrolling on the back when the bag is open
   document.body.classList.toggle('scroll-control')
+  document.documentElement.classList.toggle('scroll-control')
 }
 
 export function hideBag () {
@@ -56,6 +58,7 @@ export function hideBag () {
 
   // avoid page scrolling on the back when the bag is open
   document.body.classList.remove('scroll-control')
+  document.documentElement.classList.toggle('scroll-control')
 }
 
 /* *************** fetching products by category in Products section ****

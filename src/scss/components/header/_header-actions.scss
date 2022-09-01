@@ -1,8 +1,8 @@
 @use "../../abstracts/mixins" as *;
 
 .header-actions {
-  background: var(--cultured);
   position: fixed;
+  background: var(--cultured);
   bottom: 0;
   left: 0;
   width: 100%;
@@ -14,6 +14,16 @@
   z-index: 1;
   border-top: 1px solid lightgray;
   overscroll-behavior: none;
+
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    // fix element flickering on iphone by force GPU acceleration and change positioning of the element
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+    top: calc(100vh - var(--header-actions-height));
+    background: var(--cultured);
+    height: 66px;
+  }
 
   @include responsive(md) {
     padding-block: 15px;
