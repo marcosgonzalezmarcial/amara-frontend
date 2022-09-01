@@ -2,6 +2,8 @@ import { App } from './src/App'
 import { deleteItem } from './src/ui/ui-utils/deleteItem'
 import launchLoader from './src/ui/ui-utils/launchLoader'
 import { paintProducts } from './src/ui/ui-utils/paintProducts'
+import showBagActionBtn from './src/ui/ui-utils/showBagActionBtn'
+import showProductsByCategory from './src/ui/ui-utils/showProductsByCategory'
 
 if (!document.getElementById('root').innerHTML) {
   document.querySelector('body').appendChild(App())
@@ -11,7 +13,8 @@ if (!document.getElementById('root').innerHTML) {
 const actionsButtons = [
   ...document.querySelectorAll('button.header-action-btn')
 ]
-
+const headerActions = document.querySelector('.header-actions')
+const filterList = document.querySelector('.filter-list')
 const categoryButtons = [...document.querySelectorAll('.filter-btn')]
 const shoppingBagEl = document.querySelector('.shopping-bag-container')
 const shopBagBtn = document.querySelector('.shopping-bag-btn')
@@ -20,20 +23,7 @@ const shopBagCloseBtn = document.querySelector('.bag-close-btn')
 /*****************************************
  ******** shopping-bag display logic ************/
 
-actionsButtons.forEach((btn) => {
-  btn.addEventListener('click', function () {
-    // removing active class from all the buttons except the clicked one
-    actionsButtons.forEach(
-      (btn) => this !== btn && btn.classList.remove('active')
-    )
-    this.classList.toggle('active')
-  })
-
-  // show and hide bag when the action buttons are clikced
-  btn.children[1].innerText === 'Carrito'
-    ? btn.addEventListener('click', toggleBag)
-    : btn.addEventListener('click', hideBag)
-})
+showBagActionBtn(shopBagBtn, headerActions, actionsButtons)
 
 export function toggleBag () {
   document.querySelector('.arrow').classList.toggle('arrow-up')
@@ -67,16 +57,7 @@ export function hideBag () {
 // paint products from api on first load category "Más vendidos"
 paintProducts('Más vendidos')
 
-categoryButtons.forEach((btn) => {
-  btn.addEventListener('click', function () {
-    // removing active class from all the buttons except the clicked one
-    categoryButtons.forEach(
-      (btn) => this !== btn && btn.classList.remove('active')
-    )
-    this.classList.toggle('active')
-    paintProducts(btn.firstChild.data)
-  })
-})
+showProductsByCategory(filterList, categoryButtons)
 
 /*****************************************
  ******** closing bag logic ************/
