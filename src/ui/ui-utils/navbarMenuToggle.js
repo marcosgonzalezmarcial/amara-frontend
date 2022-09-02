@@ -8,7 +8,7 @@ export const navbarMenuToggle = () => {
       navbar.classList.toggle('active')
       overlay.classList.toggle('active')
       document.body.classList.toggle('scroll-control')
-      document.documentElement.classList.toggle('scroll-control')
+      // document.documentElement.classList.toggle('scroll-control')
     })
   })
 }

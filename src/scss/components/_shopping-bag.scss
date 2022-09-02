@@ -112,11 +112,9 @@
   gap: 1rem;
 
   scrollbar-width: thin;
-  // scrollbar-color: #f5f5f5;
 
   &::-webkit-scrollbar {
     width: 8px;
-    background-color: #c43434;
   }
 
   &::-webkit-scrollbar-thumb {

@@ -1,34 +1,34 @@
 // components
-import { Main } from "./components/layouts/Main";
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
-import { TriangleBorder } from "./components/TriangleBorder";
+import { Main } from './components/layouts/Main'
+import { Header } from './components/Header'
+import { Footer } from './components/Footer'
+import { TriangleBorder } from './components/TriangleBorder'
 // utils
-import { addBorderScroll } from "./ui/ui-utils/addBorderScroll";
-import { navbarMenuToggle } from "./ui/ui-utils/navbarMenuToggle";
-import { repositionTriangleBorder } from "./ui/ui-utils/repositionTriangleBorder";
+import { addBorderScroll } from './ui/ui-utils/addBorderScroll'
+import { navbarMenuToggle } from './ui/ui-utils/navbarMenuToggle'
+import { repositionTriangleBorder } from './ui/ui-utils/repositionTriangleBorder'
 // import { paintProducts } from "./ui/ui-utils/paintProducts";
 
 export const App = () => {
-  const root = document.getElementById("root");
+  const root = document.getElementById('root')
 
-  root.appendChild(Header());
-  root.appendChild(Main());
-  root.appendChild(Footer());
+  root.appendChild(Header())
+  root.appendChild(Main())
+  root.appendChild(Footer())
 
   // paint products from api on first load category "Más vendidos"
   // paintProducts("Más vendidos");
 
   // Inserting triangle border to the Header once the App is mounted
-  document.querySelector("header").appendChild(TriangleBorder());
+  document.querySelector('header').appendChild(TriangleBorder())
 
   // dynamically adding border to the header on scroll
-  window.addEventListener("scroll", addBorderScroll);
+  window.addEventListener('scroll', addBorderScroll)
 
   // repositioning the element according to window width size
-  window.addEventListener("resize", repositionTriangleBorder);
+  window.addEventListener('resize', repositionTriangleBorder)
   // adding side-navbar menu toggle functionallity
-  navbarMenuToggle();
+  navbarMenuToggle()
 
-  return root;
-};
+  return root
+}

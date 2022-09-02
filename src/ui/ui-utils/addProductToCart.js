@@ -1,23 +1,22 @@
-/* global localStorage */
-import { showBag } from "../../..";
-import { fetchProductById } from "../../api/fetchProductById";
-import { addProductToLocalStorage } from "../localStorage/addProductToLocalStorage";
-import { updateLocalStorageTotal } from "../localStorage/updateLocalStorageTotal";
-import { deleteItem } from "./deleteItem";
-import { updateBagTotal } from "./updateBagTotal";
+import { showBag } from '../../..'
+import { fetchProductById } from '../../api/fetchProductById'
+import { addProductToLocalStorage } from '../localStorage/addProductToLocalStorage'
+import { updateLocalStorageTotal } from '../localStorage/updateLocalStorageTotal'
+import { deleteItem } from './deleteItem'
+import { updateBagTotal } from './updateBagTotal'
 
 export const addProductToCart = async (id) => {
-  const product = await fetchProductById(id);
+  const product = await fetchProductById(id)
 
-  addProductToLocalStorage(product);
-  updateLocalStorageTotal(product);
+  addProductToLocalStorage(product)
+  updateLocalStorageTotal(product)
 
-  // gettign the qty from the last product to render the correct amount in the bag item
-  const productsFromLocalStorage = JSON.parse(localStorage.getItem("products"));
+  // getting the qty from the last product to render the correct amount in the bag item
+  const productsFromLocalStorage = JSON.parse(localStorage.getItem('products'))
 
-  const shoppingBagBody = document.querySelector(".shopping-bag-body");
+  const shoppingBagBody = document.querySelector('.shopping-bag-body')
 
-  let shoppingBagProduct = "";
+  let shoppingBagProduct = ''
 
   productsFromLocalStorage.forEach((product) => {
     shoppingBagProduct += /* html */ `
@@ -45,30 +44,24 @@ export const addProductToCart = async (id) => {
         </div>
       </div>
     </div>  
-  `;
-  });
+  `
+  })
 
   // adding painted item to the bag
-  shoppingBagBody.innerHTML = shoppingBagProduct;
+  shoppingBagBody.innerHTML = shoppingBagProduct
 
   // updating the number of items in the bag title
-  updateBagTotal();
+  updateBagTotal()
   // show the bag when a products is added
-  showBag();
-
-  // adding active styles to shopping-bag-btn
-  document
-    .querySelector(".header-action-btn.shopping-bag-btn")
-    .classList.toggle("active");
+  showBag()
 
   // adding deletion functionality to delete btns in each item
   const deleteBtns = document.querySelectorAll(
-    ".item-description-bottom-text-right"
-  );
-
+    '.item-description-bottom-text-right'
+  )
   deleteBtns.forEach((btn) => {
-    btn.addEventListener("click", (event) => {
-      deleteItem(event.target.dataset.id);
-    });
-  });
-};
+    btn.addEventListener('click', (event) => {
+      deleteItem(event.target.dataset.id)
+    })
+  })
+}
