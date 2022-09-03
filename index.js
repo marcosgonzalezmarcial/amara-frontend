@@ -1,7 +1,7 @@
 import { App } from './src/App'
+import addHeaderBorderOnScroll from './src/ui/ui-utils/addHeaderBorderOnScroll'
 import { deleteItem } from './src/ui/ui-utils/deleteItem'
 import launchLoader from './src/ui/ui-utils/launchLoader'
-import { paintProducts } from './src/ui/ui-utils/paintProducts'
 import showBagActionBtn from './src/ui/ui-utils/showBagActionBtn'
 import showProductsByCategory from './src/ui/ui-utils/showProductsByCategory'
 
@@ -55,9 +55,6 @@ export function hideBag() {
 /* *************** fetching products by category in Products section ****
  * TODO -> this should be in the produts file ************************* */
 
-// paint products from api on first load category "Más vendidos"
-paintProducts('Más vendidos')
-
 showProductsByCategory(filterList, categoryButtons)
 
 /*****************************************
@@ -81,3 +78,6 @@ deleteBtns.forEach((btn) => {
 
 // start loader when page finishes loading resources
 launchLoader()
+
+// dynamically adding border to the header when hero section is not intersecting the viewport
+addHeaderBorderOnScroll()
