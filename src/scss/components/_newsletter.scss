@@ -25,7 +25,6 @@
   background-size: cover;
   .card-title {
     color: var(--eerie-black);
-    // font-size: var(--fs-3);
     font-size: var(--step-1);
     font-weight: var(--fw-500);
     line-height: 1.2;
@@ -58,6 +57,7 @@
   }
 
   .btn {
+    @include btn;
     gap: 10px;
     margin-inline: auto;
     width: 15ch;
@@ -71,6 +71,9 @@
       width: max-content;
       padding-inline: 2rem;
       border-radius: 0 6px 6px 0;
+    }
+    &-primary {
+      @include btn-primary;
     }
   }
 }

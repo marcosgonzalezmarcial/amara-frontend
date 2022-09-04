@@ -7,4 +7,6 @@
 ---
 
 03.09
--- intersection Observer impleneted for the header border bottom
+1.commit -- intersection Observer impleneted for the header border bottom
+
+2. commit:

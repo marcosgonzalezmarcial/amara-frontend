@@ -161,3 +161,7 @@
   }
   @include square-button;
 }
+
+.btn {
+  @include btn;
+}

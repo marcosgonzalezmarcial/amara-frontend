@@ -1,7 +1,7 @@
 export const Newsletter = () => {
-  const newsletter = document.createElement("section")
-  newsletter.classList.add("section")
-  newsletter.classList.add("newsletter")
+  const newsletter = document.createElement('section')
+  newsletter.classList.add('section')
+  newsletter.classList.add('newsletter')
 
   newsletter.innerHTML = /*html*/ `
     <div class="container">
@@ -27,7 +27,7 @@ export const Newsletter = () => {
             />
           </div>
 
-          <button type="submit" class="btn btn-primary w-100">
+          <button type="submit" class="btn btn-primary">
             <span>Suscríbete</span>
             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
           </button>

@@ -48,9 +48,15 @@
   }
 }
 
-// centering bottom button in Porducts section
-.product .btn {
-  margin-inline: auto;
+// centering bottom button in Products section
+.product {
+  .btn {
+    @include btn;
+    margin-inline: auto;
+  }
+  .btn-outline {
+    @include btn-outline;
+  }
 }
 
 .filter-list {

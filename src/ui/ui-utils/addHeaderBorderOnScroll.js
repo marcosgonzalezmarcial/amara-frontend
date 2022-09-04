@@ -8,7 +8,10 @@ export default function () {
       $header.classList.remove('scroll-border')
     }
   }
-  const observer = new IntersectionObserver(cb, [])
+  let options = {
+    rootMargin: '-80px'
+  }
+  const observer = new IntersectionObserver(cb, options)
 
   observer.observe($heroSection)
 }

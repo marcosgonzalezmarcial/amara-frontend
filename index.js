@@ -20,8 +20,9 @@ const shoppingBagEl = document.querySelector('.shopping-bag-container')
 const shopBagBtn = document.querySelector('.shopping-bag-btn')
 const shopBagCloseBtn = document.querySelector('.bag-close-btn')
 
-/*****************************************
- ******** shopping-bag display logic ************/
+/*-----------------------------------*\
+  * shopping-bag display logic
+\*-----------------------------------*/
 
 showBagActionBtn(shopBagBtn, headerActions, actionsButtons)
 
@@ -52,20 +53,26 @@ export function hideBag() {
   // document.documentElement.classList.toggle('scroll-control')
 }
 
-/* *************** fetching products by category in Products section ****
- * TODO -> this should be in the produts file ************************* */
+/*-----------------------------------*\
+  * fetching products by category in Products section
+  - TODO -> this should be in the produts file 
+\*-----------------------------------*/
 
 showProductsByCategory(filterList, categoryButtons)
 
-/*****************************************
- ******** closing bag logic ************/
+/*-----------------------------------*\
+  * closing bag logic
+\*-----------------------------------*/
+
 shopBagCloseBtn.addEventListener('click', () => {
   hideBag()
   shopBagBtn.classList.toggle('active')
 })
 
-/*****************************************
- ******** adding delete logic to bag items on first load************/
+/*-----------------------------------*\
+  * adding delete logic to bag items on first load
+\*-----------------------------------*/
+
 const deleteBtns = document.querySelectorAll(
   '.item-description-bottom-text-right'
 )

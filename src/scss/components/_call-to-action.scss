@@ -30,6 +30,7 @@ section.call-to-action {
   .call-to-action-btn {
     @include square-button;
     margin-inline: auto;
+    padding-block: 0.5rem;
     @include responsive(lg) {
       margin: 2.1rem auto;
     }
