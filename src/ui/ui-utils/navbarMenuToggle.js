@@ -1,5 +1,5 @@
 export const navbarMenuToggle = () => {
-  const navElemArr = document.querySelectorAll('.navbar-slide')
+  const navElemArr = document.querySelectorAll('[data-navbar-open-btn]')
   const navbar = document.querySelector('nav.navbar')
   const overlay = document.querySelector('.overlay')
 
