@@ -38,18 +38,17 @@
     margin-block-start: 5px;
   }
 
-  .header-action-btn {
+  .header-action__btn {
     position: relative;
     text-align: center;
     overscroll-behavior: none;
 
-    .header-action-label {
+    .header-action__label {
       pointer-events: none;
       color: var(--sonic-silver);
       color: black;
       letter-spacing: 0.25px;
       font-size: var(--step--3);
-      // transition: var(--transition-1);
     }
 
     &.active {
@@ -65,7 +64,7 @@
       font-size: 1.1rem;
     }
 
-    .btn-badge {
+    .header-action__btn-badge {
       position: absolute;
       top: -5px;
       right: 2px;
@@ -78,13 +77,13 @@
       color: var(--white);
       border-radius: 50%;
       pointer-events: none;
-      &.green {
+      &--green {
         --background: var(--middle-blue-green);
       }
     }
   }
 }
 
-ion-icon[name="heart-outline"] + .header-action-label + .btn-badge {
+ion-icon[name="heart-outline"] + .header-action__label + .header-action__btn-badge {
   right: 10px;
 }

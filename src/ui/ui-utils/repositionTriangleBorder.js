@@ -1,7 +1,7 @@
 export const repositionTriangleBorder = () => {
   const root = document.querySelector(":root");
 
-  const badgeRef = document.querySelector(".btn-badge");
+  const badgeRef = document.querySelector(".header-action__btn-badge");
 
   //this block of code fixes a temporary bug when rendering the DOM
   let badgeRefPos;

@@ -12,13 +12,13 @@ if (!document.getElementById("root").innerHTML) {
 
 /* DOM Elements variables */
 const actionsButtons = [
-  ...document.querySelectorAll("button.header-action-btn")
+  ...document.querySelectorAll("button.header-action__btn")
 ];
 const headerActions = document.querySelector(".header-actions");
 const filterList = document.querySelector(".filter-list");
 const categoryButtons = [...document.querySelectorAll(".filter-btn")];
 const shoppingBagEl = document.querySelector(".shopping-bag-container");
-const shopBagBtn = document.querySelector(".shopping-bag-btn");
+const shopBagBtn = document.querySelector("[data-bag-btn]");
 const shopBagCloseBtn = document.querySelector(".bag-close-btn");
 
 /*-----------------------------------*\

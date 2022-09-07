@@ -15,23 +15,23 @@
     }
   }
 
-  .card-badge {
-    background: var(--eerie-black);
-    color: var(--white);
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: var(--step--2);
-    font-weight: var(--fw-500);
-    padding: 3px 10px;
+  // .card-badge {
+  //   background: var(--eerie-black);
+  //   color: var(--white);
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   font-size: var(--step--2);
+  //   font-weight: var(--fw-500);
+  //   padding: 3px 10px;
 
-    &.red {
-      background: var(--candy-pink);
-    }
-    &.green {
-      background: var(--ocean-green);
-    }
-  }
+  //   &.red {
+  //     // background: var(--candy-pink);
+  //   }
+  //   &.header-action__label__btn-badge--green {
+  //     // background: var(--ocean-green);
+  //   }
+  // }
 
   .card-action-btn {
     display: flex;

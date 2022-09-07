@@ -14,7 +14,7 @@ export const Header = () => {
 
   header.innerHTML = /* html */ `
     <div class="container-fluid">
-      <div class="overlay" data-navbar-open-btn></div>
+      <div class="overlay" data-navbar-btn></div>
       <!-- Navbar -->
       <nav class="navbar">
         <div class="navbar__top">
@@ -22,14 +22,12 @@ export const Header = () => {
             <img
               src="https://res.cloudinary.com/dn9mr6kwc/image/upload/c_scale,h_200,q_auto:good/v1661238538/Amara-ecommerce/logo/brand-log-amara_dniyo1.webp"
               alt="Amara logo"
-              width="130"
-              height="31"
             />
           </a>
 
           <button
             class="navbar__close-btn"
-            data-navbar-open-btn
+            data-navbar-btn
             aria-label="Cerrar Menu"
           >
             <ion-icon name="close-outline"></ion-icon>
@@ -60,43 +58,43 @@ export const Header = () => {
       </nav>
       <!-- enf of Navbar -->
 
-      <!-- logo img -->
-      <a href="#" class="navbar__logo">
+      <!-- header logo img -->
+      <a href="#" class="header__logo">
         <img
           src="https://res.cloudinary.com/dn9mr6kwc/image/upload/c_scale,h_200,q_auto:good/v1661238538/Amara-ecommerce/logo/brand-log-amara_dniyo1.webp"
           alt="Amara logo"
         />
       </a>
-      <!-- enf of logo img -->
+      <!-- enf of header logo img -->
 
       <!-- header actions -->
       <div class="header-actions">
-        <button class="header-action-btn">
+        <button class="header-action__btn">
           <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-          <p class="header-action-label">Iniciar sesión</p>
+          <p class="header-action__label">Iniciar sesión</p>
         </button>
 
-        <button class="header-action-btn">
+        <button class="header-action__btn">
           <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
 
-          <p class="header-action-label">Buscar</p>
+          <p class="header-action__label">Buscar</p>
         </button>
-        <button class="header-action-btn shopping-bag-btn">
+        <button class="header-action__btn" data-bag-btn>
        
           <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
 
-          <p class="header-action-label">Carrito</p>
+          <p class="header-action__label">Carrito</p>
 
-          <div class="btn-badge green" aria-hidden="true">${totalItems}</div>
+          <div class="header-action__btn-badge header-action__btn-badge--green" aria-hidden="true">${totalItems}</div>
         </button>
 
-        <button class="header-action-btn">
+        <button class="header-action__btn">
           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
 
-          <p class="header-action-label">Favoritos</p>
+          <p class="header-action__label">Favoritos</p>
 
-          <div class="btn-badge" aria-hidden="true">0</div>
+          <div class="header-action__btn-badge" aria-hidden="true">0</div>
         </button>
       </div>
       <!-- end of header actions -->
@@ -104,7 +102,7 @@ export const Header = () => {
       <!-- hamburguer menu btn -->
       <button
         class="nav-open-btn"
-        data-navbar-open-btn
+        data-navbar-btn
         aria-label="Open Menu"
       >
         <span></span>

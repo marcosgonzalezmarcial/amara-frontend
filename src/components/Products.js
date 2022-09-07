@@ -5,7 +5,7 @@ export const Products = () => {
   Products.setAttribute("id", "productos");
 
   Products.innerHTML = /* html */ `
-    <div idclass="container-fluid">
+    <div class="container-fluid">
       <h2 id="productos" class="h2 section-title">Productos de la semana</h2>
       <ul class="filter-list">
         <li>

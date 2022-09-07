@@ -1,12 +1,18 @@
 @use "../abstracts/mixins" as *;
 
 .section.product {
+  scroll-margin-block-start: 70px;
+  scroll-behavior: smooth;
   padding-block-end: 2.5rem;
-  .container {
-    @include responsive(xxl) {
-      max-width: 90%;
-    }
-  }
+  // .container {
+  //   @include responsive(xxl) {
+  //     max-width: 90%;
+  //   }
+  // }
+  .container-fluid{
+    scroll-behavior: smooth;
+  };
+
 }
 
 .filter-btn {
