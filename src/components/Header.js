@@ -72,7 +72,6 @@ export const Header = () => {
       <div class="header-actions">
         <button class="header-action__btn">
           <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
           <p class="header-action__label">Iniciar sesión</p>
         </button>
 
@@ -82,7 +81,7 @@ export const Header = () => {
           <p class="header-action__label">Buscar</p>
         </button>
         <button class="header-action__btn" data-bag-btn>
-       
+
           <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
 
           <p class="header-action__label">Carrito</p>
@@ -110,7 +109,7 @@ export const Header = () => {
         <span></span>
         <span></span>
       </button>
-      <!-- end of hamburguer menu btn -->
+      <!-- end of hamburger menu btn -->
     </div>
   `
 
