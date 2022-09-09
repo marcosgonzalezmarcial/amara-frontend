@@ -1,16 +1,17 @@
 /* global localStorage */
-import { ShoppingBag } from "./shoppingBag/ShoppingBag";
+import { ShoppingBag } from './shoppingBag/ShoppingBag'
+// import { TriangleBorder } from './TriangleBorder'
 
 export const Header = () => {
-  const header = document.createElement("header");
-  header.classList.add("header");
+  const header = document.createElement('header')
+  header.classList.add('header')
 
   // getting the total amount of items form localStorage
-  let totalItems = 0;
-  const products = JSON.parse(localStorage.getItem("products")) || [];
+  let totalItems = 0
+  const products = JSON.parse(localStorage.getItem('products')) || []
   products.forEach((product) => {
-    totalItems += product.qty;
-  });
+    totalItems += product.qty
+  })
 
   header.innerHTML = /* html */ `
     <div class="container-fluid">
@@ -101,9 +102,9 @@ export const Header = () => {
 
       <!-- hamburguer menu btn -->
       <button
-        class="nav-open-btn"
+        class="header__hamburger-btn"
         data-navbar-btn
-        aria-label="Open Menu"
+        aria-label="Abrir Menu"
       >
         <span></span>
         <span></span>
@@ -111,11 +112,12 @@ export const Header = () => {
       </button>
       <!-- end of hamburguer menu btn -->
     </div>
-  `;
+  `
 
-  header.appendChild(ShoppingBag());
+  header.appendChild(ShoppingBag())
+  // header.appendChild(TriangleBorder())
 
   // header.appendChild(TriangleBorder());
   // document.querySelector("header").innerHTML = TriangleBorder();
-  return header;
-};
+  return header
+}
