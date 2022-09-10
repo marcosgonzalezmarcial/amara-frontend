@@ -1,14 +1,9 @@
 @use "../abstracts/mixins" as *;
 
-.section.product {
+.section.products {
   scroll-margin-block-start: 70px;
   scroll-behavior: smooth;
   padding-block-end: 2.5rem;
-  // .container {
-  //   @include responsive(xxl) {
-  //     max-width: 90%;
-  //   }
-  // }
   .container-fluid{
     scroll-behavior: smooth;
   };
@@ -55,7 +50,7 @@
 }
 
 // centering bottom button in Products section
-.product {
+.products {
   .btn {
     @include btn;
     margin-inline: auto;
@@ -72,4 +67,11 @@
   align-items: center;
   gap: 10px 20px;
   margin-bottom: 50px;
+}
+  
+  .card-banner {
+      transition: var(--transition-1);
+      &:hover {
+        transform: scale(1.05);
+    }
 }
