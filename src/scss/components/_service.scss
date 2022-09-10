@@ -1,4 +1,4 @@
-.service-list {
+.service__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -6,7 +6,7 @@
   gap: 40px;
 }
 
-.service-item {
+.service__item {
   max-width: 235px;
   width: 100%;
   display: flex;
@@ -15,20 +15,16 @@
   gap: 20px;
 }
 
-.service-item-icon {
+.service__icon {
   width: 45px;
 }
 
-.service-item-icon img {
-  margin-inline: auto;
-}
-
-.service-item-title {
+.service__title {
   color: var(--eerie-black);
   font-size: var(--step--1);
   font-weight: var(--fw-600);
 }
 
-.service-item-text {
+.service__subtitle {
   font-size: var(--step--2);
 }
