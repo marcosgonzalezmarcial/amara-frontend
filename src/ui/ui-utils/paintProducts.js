@@ -9,7 +9,7 @@ export const paintProducts = async (category) => {
     return /* html */ `
     <li>
       <div class="product-card">
-        <figure class="card-banner">
+        <figure class="product-card__banner">
           <a href="#">
             <img
               src="${product.attributes.imgUrl}"
@@ -17,7 +17,7 @@ export const paintProducts = async (category) => {
               loading="lazy"
             />
           </a>
-          <div class="card-actions">
+          <div class="product-card__actions">
             <button data-id="${product.id}" class="card-action-btn">
               <p>Añadir</p>
             </button>
@@ -51,7 +51,7 @@ export const paintProducts = async (category) => {
     `
   })
 
-  const ulProducts = document.querySelector('.product-list')
+  const ulProducts = document.querySelector('.products__list')
   // temporary fixing a render error
   if (ulProducts) ulProducts.innerHTML = addedProducts.join(' ')
 

@@ -16,8 +16,10 @@ const actionsButtons = [
   ...document.querySelectorAll('button.header-action__btn')
 ]
 const headerActions = document.querySelector('.header-actions')
-const filterList = document.querySelector('.filter-list')
-const categoryButtons = [...document.querySelectorAll('.filter-btn')]
+const $productsFilter = document.querySelector('.products__filter')
+const $productsFilterBtns = [
+  ...document.querySelectorAll('.products__filter-btn')
+]
 const shoppingBagEl = document.querySelector('.shopping-bag-container')
 const shopBagBtn = document.querySelector('[data-bag-btn]')
 const shopBagCloseBtn = document.querySelector('.bag-close-btn')
@@ -28,7 +30,7 @@ const shopBagCloseBtn = document.querySelector('.bag-close-btn')
 
 showBagActionBtn(shopBagBtn, headerActions, actionsButtons)
 
-export function toggleBag () {
+export function toggleBag() {
   document.querySelector('.arrow').classList.toggle('arrow-up')
   shoppingBagEl.classList.toggle('show-bag')
   // avoid page scrolling on the back when the bag is open
@@ -36,7 +38,7 @@ export function toggleBag () {
   // document.documentElement.classList.toggle('scroll-control')
 }
 
-export function showBag () {
+export function showBag() {
   if (shoppingBagEl.classList.contains('show-bag')) return
   document.querySelector('.arrow').classList.toggle('arrow-up')
   shoppingBagEl.classList.toggle('show-bag')
@@ -46,7 +48,7 @@ export function showBag () {
   shopBagBtn.classList.toggle('active')
 }
 
-export function hideBag () {
+export function hideBag() {
   document.querySelector('.arrow').classList.remove('arrow-up')
   shoppingBagEl.classList.remove('show-bag')
 
@@ -60,7 +62,7 @@ export function hideBag () {
   - TODO -> this should be in the products file
 \*----------------------------------- */
 
-showProductsByCategory(filterList, categoryButtons)
+showProductsByCategory($productsFilter, $productsFilterBtns)
 
 /* -----------------------------------*\
   * closing bag logic

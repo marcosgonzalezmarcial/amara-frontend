@@ -1,5 +1,5 @@
 export const addFavourites = () => {
-  const productList = document.querySelector('.product-list')
+  const productList = document.querySelector('.products__list')
   if (productList) {
     productList.addEventListener('click', (e) => {
       e.stopPropagation()

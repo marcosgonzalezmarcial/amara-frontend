@@ -41,7 +41,7 @@ export const Header = () => {
           </li>
 
           <li>
-            <a href="#productos" data-nav-link-products class="navbar__link">Productos</a>
+            <a href="#products-section" data-nav-link-products class="navbar__link">Productos</a>
           </li>
 
           <li>

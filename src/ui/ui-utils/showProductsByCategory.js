@@ -1,6 +1,6 @@
 import { paintProducts } from './paintProducts'
-export default function (filterList, categoryButtons) {
-  filterList.addEventListener('click', function (e) {
+export default function ($productsFilter, categoryButtons) {
+  $productsFilter.addEventListener('click', function (e) {
     e.stopPropagation()
     if (e.target.tagName === 'BUTTON') {
       // removing active class from all the buttons except the clicked one

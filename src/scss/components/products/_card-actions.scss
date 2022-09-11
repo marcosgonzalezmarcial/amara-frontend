@@ -1,12 +1,12 @@
 @use "../../abstracts/mixins" as *;
 
-.card-actions {
+.product-card__actions {
   display: flex;
   height: 45px;
 }
 
 @include responsive(lg) {
-  .product-card .card-actions {
+  .product-card .product-card__actions {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -16,7 +16,7 @@
     transition: var(--transition-1);
   }
 
-  .product-card .card-banner:hover .card-actions {
+  .product-card .product-card__banner:hover .product-card__actions {
     visibility: visible;
     transform: translateY(0);
   }

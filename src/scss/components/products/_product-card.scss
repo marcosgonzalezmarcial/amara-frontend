@@ -1,7 +1,7 @@
 @use "../../abstracts/mixins" as *;
 
 .product-card {
-  .card-banner {
+  .product-card__banner {
     position: relative;
     img {
       width: 100%;

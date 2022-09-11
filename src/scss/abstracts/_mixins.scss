@@ -107,3 +107,30 @@
 }
 
 
+@mixin header {
+  color: var(--eerie-black);
+  font-weight: var(--fw-700);
+}
+
+@mixin heading-1 {
+  @include header();
+  font-size: var(--step-3);
+  font-weight: var(--fw-700);
+  line-height: 1;
+}
+@mixin heading-2 {
+  @include header();
+  font-size: var(--step-2);
+  color: var(--eerie-black);
+  font-weight: var(--fw-600);
+}
+
+@mixin heading-3 {
+  @include header();
+  font-size: var(--step--1);
+}
+
+@mixin section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
