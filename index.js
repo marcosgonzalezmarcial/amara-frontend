@@ -2,8 +2,6 @@ import { App } from './src/App'
 import addHeaderBorderOnScroll from './src/ui/ui-utils/addHeaderBorderOnScroll'
 import { deleteItem } from './src/ui/ui-utils/deleteItem'
 import launchLoader from './src/ui/ui-utils/launchLoader'
-// import launchLoader from './src/ui/ui-utils/launchLoader'
-// import scrollElementIntoView from "./src/ui/ui-utils/scrollElementIntoViewport";
 import showBagActionBtn from './src/ui/ui-utils/showBagActionBtn'
 import showProductsByCategory from './src/ui/ui-utils/showProductsByCategory'
 

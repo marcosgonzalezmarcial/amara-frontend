@@ -18,13 +18,13 @@ export const paintProducts = async (category) => {
             />
           </a>
           <div class="product-card__actions">
-            <button data-id="${product.id}" class="card-action-btn">
+            <button data-id="${product.id}" class="product-card__btn">
               <p>Añadir</p>
             </button>
           </div>
         </figure>
-        <div class="card-content">
-          <div class="card-price">
+        <div class="product-card__content">
+          <div class="product-card__price">
             <data value="${product.attributes.price}">
               &euro;${product.attributes.price}
             </data>
@@ -32,16 +32,16 @@ export const paintProducts = async (category) => {
               &euro;${product.attributes.price}
             </data>
           </div>
-          <div class="card-title">
+          <div class="product-card__title">
             <p href="#">${product.attributes.name}</p>
           </div>
-          <div class="heart-icon-wrapper">
+          <div class="product-card__heart-icon-wrapper">
             <img
-              class="heart-icon"
+              class="product-card__heart-icon"
               src="https://img.icons8.com/material-outlined/48/000000/like--v1.png"
             />
             <img
-              class="heart-icon-filled"
+              class="product-card__heart-icon-filled"
               src="https://img.icons8.com/material/48/000000/like--v1.png"
             />
           </div>
@@ -60,7 +60,7 @@ export const paintProducts = async (category) => {
 
   // adding product to cart functionality
   const addToShoppingBagButtons = [
-    ...document.querySelectorAll('.card-action-btn')
+    ...document.querySelectorAll('.product-card__btn')
   ]
   addToShoppingBagButtons.forEach((btn) => {
     btn.addEventListener('click', (e) => {
