@@ -34,7 +34,6 @@
   scroll-behavior: smooth;
   overscroll-behavior: none;
   border-top: none;
-  // fix rendering on ios devices
     /* CSS specific to iOS devices */
   @supports (-webkit-touch-callout: none) {
     overscroll-behavior: none;

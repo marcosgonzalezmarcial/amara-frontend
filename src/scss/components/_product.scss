@@ -43,9 +43,7 @@
 }
 
 .products__btn {
-  @include btn;
   @include btn-outline;
-  margin-inline: auto;
 }
 
 .products__filter {

@@ -37,40 +37,33 @@
 
 @mixin square-button {
   display: block;
-  height: auto;
-  color: var(--white);
   justify-self: center;
   align-self: center;
-  border-radius: 0;
   font-size: var(--step--2);
   font-weight: var(--fw-500);
+  color: var(--eerie-black);
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid var(--border-color, var(--eerie-black));
   letter-spacing: 0.01rem;
   padding-inline: 1em;
-  color: black;
   padding-block: 0.75em;
-  background-color: rgba(255, 255, 255, 0.85);
-  border: 1px solid var(--border-color, var(--eerie-black));
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
-    background-color: rgba(255, 255, 255, 0.68);
+    background-color: rgba(255, 255, 255, 0.99);
   }
 }
 
 @mixin btn {
   background: var(--background, var(--eerie-black));
   color: var(--color, var(--white));
+  font-size: var(--step--2);
   font-weight: var(--fw-600);
-  height: var(--height, 60px);
-  border: 1px solid var(--eerie-black);
+  height: var(--btn-height);
   border: 1px solid var(--border-color, var(--eerie-black));
-  border-radius: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@mixin btn-primary {
   &:is(:hover, :focus) {
     --background: var(--white);
     --color: var(--eerie-black);
@@ -78,9 +71,9 @@
   }
 }
 
+
 @mixin btn-secondary {
-  font-size: var(--step--2);
-  --height: 50px;
+  @include btn;
   --background: var(--white);
   --color: var(--eerie-black);
   --border-color: var(--white);
@@ -93,40 +86,33 @@
 
 
 @mixin btn-outline {
-  --height: 50px;
-  --background: var(--white);
-  --color: var(--eerie-black);
+  @include btn-secondary();
   --border-color: var(--eerie-black);
-  font-size: var(--step--2);
+  margin-inline: auto;
   padding-inline: 40px;
-  &:is(:hover, :focus) {
-    --background: var(--eerie-black);
-    --color: var(--white);
-    --border-color: var(--eerie-black);
-  }
 }
 
 
-@mixin header {
+@mixin heading {
   color: var(--eerie-black);
   font-weight: var(--fw-700);
 }
 
 @mixin heading-1 {
-  @include header();
+  @include heading();
   font-size: var(--step-3);
   font-weight: var(--fw-700);
   line-height: 1;
 }
 @mixin heading-2 {
-  @include header();
+  @include heading();
   font-size: var(--step-2);
   color: var(--eerie-black);
   font-weight: var(--fw-600);
 }
 
 @mixin heading-3 {
-  @include header();
+  @include heading();
   font-size: var(--step--1);
 }
 
