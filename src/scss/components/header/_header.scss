@@ -12,36 +12,37 @@
   min-height: 50px;
   padding-block: 10px;
   z-index: 99;
+  margin-inline: auto;
+
   @include border-bottom;
 
   .container-fluid {
-    width: 95%;
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
   }
 
   @include responsive(md) {
-    // padding-block: 12px;
     box-shadow: none;
     border: none;
   }
 
   @include responsive(lg) {
-    // min-height: 54px;
-    // box-shadow: none;
+    min-height: 62px;
     .container-fluid {
-      width: 95%;
       margin-inline: auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  @include responsive(xl) {
-    min-height: 58px;
-  }
+  // @include responsive(xl) {
+  //   margin-inline: auto;
+  //   // max-width: 100%;
+  // }
 
-  & .logo {
+ 
+
+  .header__logo, .navbar__logo {
     place-self: center;
     img {
       height: 26px;

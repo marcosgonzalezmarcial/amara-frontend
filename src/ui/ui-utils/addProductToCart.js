@@ -1,4 +1,3 @@
-/* global localStorage */
 import { showBag } from '../../..'
 import { fetchProductById } from '../../api/fetchProductById'
 import { addProductToLocalStorage } from '../localStorage/addProductToLocalStorage'
@@ -12,7 +11,7 @@ export const addProductToCart = async (id) => {
   addProductToLocalStorage(product)
   updateLocalStorageTotal(product)
 
-  // gettign the qty from the last product to render the correct amount in the bag item
+  // getting the qty from the last product to render the correct amount in the bag item
   const productsFromLocalStorage = JSON.parse(localStorage.getItem('products'))
 
   const shoppingBagBody = document.querySelector('.shopping-bag-body')
@@ -20,7 +19,7 @@ export const addProductToCart = async (id) => {
   let shoppingBagProduct = ''
 
   productsFromLocalStorage.forEach((product) => {
-    shoppingBagProduct += /* html */`
+    shoppingBagProduct += /* html */ `
     <div class="shopping-bag-item">
       <figure class="shopping-bag-item-banner">
         <img src="${product.imgUrl}" alt="product 1" />
@@ -38,8 +37,10 @@ export const addProductToCart = async (id) => {
           </div>
         </div>
         <div class="item-description-bottom">
-          <button data-id=${product.id} class="item-description-bottom-text">eliminar
-          </button>
+          <button data-id=${product.id} class="item-description-bottom-text-left">Añadir a favoritos
+          </button>         
+          <button data-id=${product.id} class="item-description-bottom-text-right">Eliminar
+          </button> 
         </div>
       </div>
     </div>  
@@ -54,8 +55,10 @@ export const addProductToCart = async (id) => {
   // show the bag when a products is added
   showBag()
 
-  const deleteBtns = document.querySelectorAll('.item-description-bottom-text')
-
+  // adding deletion functionality to delete btns in each item
+  const deleteBtns = document.querySelectorAll(
+    '.item-description-bottom-text-right'
+  )
   deleteBtns.forEach((btn) => {
     btn.addEventListener('click', (event) => {
       deleteItem(event.target.dataset.id)

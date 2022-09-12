@@ -1,63 +1,61 @@
 @use "../abstracts/mixins" as *;
 
-.section.product {
+.section.products {
+  scroll-margin-block-start: 70px;
+  scroll-behavior: smooth;
   padding-block-end: 2.5rem;
-  .container {
-    @include responsive(xxl) {
-      max-width: 90%;
-    }
-  }
+  .container-fluid{
+    scroll-behavior: smooth;
+  };
 }
 
-.filter-btn {
+.products__filter-btn {
   color: inherit;
   font-size: var(--step--1);
   font-weight: var(--fw-500);
-
   &.active {
     color: var(--eerie-black);
   }
 }
 
-.product-list {
+.products__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px 25px;
   margin-bottom: 45px;
-}
-
-@include responsive(xs) {
-  .product-list > li {
-    width: calc(50% - 12.5px);
+  
+  @include responsive(xs) {
+     li {
+      width: calc(50% - 12.5px);
+    }
+  }
+  @include responsive(lg) {
+    li {
+      width: calc(33.33% - 16.66px);
+    }
+  }
+  @include responsive(xl) {
+    li {
+      width: calc(25% - 18.75px);
+    }
   }
 }
 
-@include responsive(lg) {
-  .product-list > li {
-    width: calc(33.33% - 16.66px);
-  }
-
-  .product-card .card-banner {
-    overflow: hidden;
-  }
-}
-@include responsive(xl) {
-  .product-list > li {
-    width: calc(25% - 18.75px);
-  }
+.products__btn {
+  @include btn-outline;
 }
 
-// centering bottom button in Porducts section
-.product .btn {
-  margin-inline: auto;
-}
-
-.filter-list {
+.products__filter {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 10px 20px;
   margin-bottom: 50px;
+}
+
+.products__title {
+  @include heading-1;
+  @include section-title;
 }

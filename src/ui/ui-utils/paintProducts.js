@@ -1,15 +1,15 @@
-import { fetchProductsByCategory } from "../../api/fetchProductsByCategory";
-import { addFavourites } from "./addFavourites";
-import { addProductToCart } from "./addProductToCart";
+import { fetchProductsByCategory } from '../../api/fetchProductsByCategory'
+import { addFavourites } from './addFavourites'
+import { addProductToCart } from './addProductToCart'
 
 export const paintProducts = async (category) => {
-  const productsData = await fetchProductsByCategory(category);
+  const productsData = await fetchProductsByCategory(category)
 
   const addedProducts = productsData.map((product) => {
     return /* html */ `
     <li>
       <div class="product-card">
-        <figure class="card-banner">
+        <figure class="product-card__banner">
           <a href="#">
             <img
               src="${product.attributes.imgUrl}"
@@ -17,14 +17,14 @@ export const paintProducts = async (category) => {
               loading="lazy"
             />
           </a>
-          <div class="card-actions">
-            <button data-id="${product.id}" class="card-action-btn">
+          <div class="product-card__actions">
+            <button data-id="${product.id}" class="product-card__btn">
               <p>Añadir</p>
             </button>
           </div>
         </figure>
-        <div class="card-content">
-          <div class="card-price">
+        <div class="product-card__content">
+          <div class="product-card__price">
             <data value="${product.attributes.price}">
               &euro;${product.attributes.price}
             </data>
@@ -32,41 +32,41 @@ export const paintProducts = async (category) => {
               &euro;${product.attributes.price}
             </data>
           </div>
-          <div class="card-title">
+          <div class="product-card__title">
             <p href="#">${product.attributes.name}</p>
           </div>
-          <div class="heart-icon-wrapper">
+          <div class="product-card__heart-icon-wrapper">
             <img
-              class="heart-icon"
+              class="product-card__heart-icon"
               src="https://img.icons8.com/material-outlined/48/000000/like--v1.png"
             />
             <img
-              class="heart-icon-filled"
+              class="product-card__heart-icon-filled"
               src="https://img.icons8.com/material/48/000000/like--v1.png"
             />
           </div>
         </div>
       </div>
     </li>
-    `;
-  });
+    `
+  })
 
-  const ulProducts = document.querySelector(".product-list");
+  const ulProducts = document.querySelector('.products__list')
   // temporary fixing a render error
-  if (ulProducts) ulProducts.innerHTML = addedProducts.join(" ");
+  if (ulProducts) ulProducts.innerHTML = addedProducts.join(' ')
 
   // add product to favorites logic, this could be in another file...
-  addFavourites();
+  addFavourites()
 
-  // adding product to cart fuctionality
+  // adding product to cart functionality
   const addToShoppingBagButtons = [
-    ...document.querySelectorAll(".card-action-btn")
-  ];
+    ...document.querySelectorAll('.product-card__btn')
+  ]
   addToShoppingBagButtons.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      addProductToCart(e.target.dataset.id);
-    });
-  });
+    btn.addEventListener('click', (e) => {
+      addProductToCart(e.target.dataset.id)
+    })
+  })
 
-  return productsData;
-};
+  return productsData
+}

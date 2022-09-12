@@ -1,8 +1,8 @@
 export const Footer = () => {
-  const footer = document.createElement("footer")
-  footer.classList.add("footer")
+  const footer = document.createElement('footer')
+  footer.classList.add('footer')
 
-  footer.innerHTML = /*html*/ `
+  footer.innerHTML = /* html */ `
     <div class="footer-top">
       <div class="container">
         <div class="footer-brand">

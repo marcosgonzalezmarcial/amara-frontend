@@ -1,7 +1,7 @@
 @use "../abstracts/mixins" as *;
 
 /*-----------------------------------*\
- * #HERO
+* #HERO
 \*-----------------------------------*/
 
 .hero {
@@ -9,8 +9,14 @@
   height: calc(100vh - var(--header-actions-height));
   position: relative;
   margin-block-end: 25px;
+  @include responsive(md) {
+    background-image: none;
+  }  
+  @include responsive(lg) {
+    height: 100vh;
+  }
 
-  .hero-content {
+  .hero__content {
     background-image: url("https://res.cloudinary.com/dn9mr6kwc/image/upload/v1661184902/Amara-ecommerce/hero-images/Amara-ecommerce_hero-images_hero-bg-urban-woman_dl2xet-c_scale_w_1200_webp_ivnr2e.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,136 +24,118 @@
     position: absolute;
     top: var(--header-height);
     display: grid;
+    width: 100%;
     height: 100%;
     max-height: calc(
       100vh - calc(var(--header-height) + var(--header-actions-height))
     );
-    width: 100%;
 
     @include responsive(md) {
       background-image: none;
-      .hero-title,
-      .hero-subtitle,
-      .btn.btn-primary {
-        display: none;
-      }
-
-      max-height: calc(
-        100% - calc(var(--header-height) + var(--header-actions-height))
-      );
-      max-height: calc(100% - var(--header-height));
       display: grid;
       grid-template-rows: 1fr;
       grid-template-columns: 0.65fr 0.35fr;
+      max-height: calc(100% - var(--header-height));
       gap: 0.5rem;
+    }
 
-      .hero-left {
-        background-color: var(--white);
-        background-image: url("https://res.cloudinary.com/dn9mr6kwc/image/upload/v1661184902/Amara-ecommerce/hero-images/Amara-ecommerce_hero-images_hero-bg-urban-woman_dl2xet-c_scale_w_1200_webp_ivnr2e.webp");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-x: 50%;
-        background-position-y: 10%;
+    &--left {
+      display: none;
+      @include responsive(md) {
+        display: grid;
+        height: 100%;
       }
-      .hero-right {
-        background-color: var(--white);
-        background-image: url("https://res.cloudinary.com/dn9mr6kwc/image/upload/c_scale,h_700,q_auto:eco/v1661234312/Amara-ecommerce/hero-images/hero-bg-seatead-man_uykbpk.webp");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% 10%;
+      background-color: var(--white);
+      background-image: url("https://res.cloudinary.com/dn9mr6kwc/image/upload/v1661184902/Amara-ecommerce/hero-images/Amara-ecommerce_hero-images_hero-bg-urban-woman_dl2xet-c_scale_w_1200_webp_ivnr2e.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: 50%;
+      background-position-y: 10%;
+    }
+
+    &--right {
+      display: none;
+      @include responsive(md) {
+        display: grid;
+        height: 100%;
       }
+      background-color: var(--white);
+      background-image: url("https://res.cloudinary.com/dn9mr6kwc/image/upload/c_scale,h_700,q_auto:eco/v1661234312/Amara-ecommerce/hero-images/hero-bg-seatead-man_uykbpk.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 10%;
     }
   }
+}
 
-  .container {
-    width: 100%;
+.hero__title {
+  font-size: var(--step-3);
+  font-weight: var(--fw-700);
+  line-height: 1;
+  &--right { 
+    justify-self: right;
+    align-self: center;
+    padding-block-end: 3.5rem;
+    margin-inline-end: 1rem;
+    max-width: 5.5ch;
+    font-size: var(--step-5);
+    color: var(--white);
+    text-shadow: 1.5px 1.5px hsl(0, 0%, 0%);
+    text-align: right;
+    @media (max-height: 500px) {
+      font-size: var(--step-4);
+      max-width: none;
+      padding-block-end: 1rem;
+    }
+    @include responsive(md) {
+      display: none;
+    }
   }
-
-  @include responsive(md) {
-    background-image: none;
-  }
-
-  @include responsive(lg) {
-    height: 100vh;
+  &--left {
+    max-width: 5.5ch;
+    justify-self: start;
+    align-self: center;
+    padding-inline-start: 1rem;
+    padding-block-start: 3rem;
+    font-size: var(--step-5);
+    color: var(--white);
+    text-shadow: 1.5px 1.5px hsl(0, 0%, 0%);
+    @media (max-height: 500px) {
+      font-size: var(--step-4);
+      max-width: none;
+      padding-block-start: 1rem;
+    }
+    @include responsive(md) {
+      display: none;
+    }
   }
 }
 
-.hero-title-right {
-  // max-width: 5ch;
-  justify-self: right;
-  align-self: center;
-  padding-block-end: 3.5rem;
-  margin-inline-end: 1rem;
-  max-width: 5.5ch;
-  font-size: var(--step-5);
-  color: var(--white);
-  text-shadow: 1.5px 1.5px hsl(0, 0%, 0%);
-  text-align: right;
-
-  @include responsive(md) {
-    display: none;
-  }
-}
-.hero-title-left {
-  max-width: 5.5ch;
-  justify-self: start;
-  align-self: center;
-  padding-inline-start: 1rem;
-  padding-block-start: 3rem;
-  font-size: var(--step-5);
-  color: var(--white);
-  text-shadow: 1.5px 1.5px hsl(0, 0%, 0%);
-
-  @include responsive(md) {
-    display: none;
-  }
-}
-
-.hero-left {
+.hero__btn {
+  // @include btn;
+  @include square-button;
   display: none;
-
-  @include responsive(md) {
-    display: grid;
-    height: 100%;
-  }
-}
-.hero-right {
-  display: none;
-
-  @include responsive(md) {
-    display: grid;
-    height: 100%;
-  }
-}
-
-.btn.btn-secondary-bg-xxl {
-  display: none;
-
   @include responsive(md) {
     display: block;
-    height: auto;
-    color: var(--white);
-    justify-self: center;
-    align-self: center;
-    border-radius: 0;
-    font-size: var(--step--2);
-    font-weight: var(--fw-500);
-    letter-spacing: 0.01rem;
-    padding-inline: 1em;
-    color: black;
+    color: var(--eerie-black);
     padding-block: 0.5em;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.80);
   }
-
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
-    background-color: rgba(255, 255, 255, 0.68);
+    background-color: rgba(255, 255, 255, 0.95);
   }
 }
 
-.btn-mobile {
+.hero__btn-mobile {
   @include responsive(md) {
     display: none;
   }
   @include square-button;
+  font-size: var(--step--1);
+  font-weight: var(--fw-500);
+  letter-spacing: 0.01rem;
+  padding-inline: 0.75em;
+  padding-block: 0.5em;
 }
+

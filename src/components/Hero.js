@@ -3,19 +3,19 @@ export const Hero = () => {
   hero.classList.add('hero')
   hero.setAttribute('id', 'home')
 
-  hero.innerHTML = /* html */`
-  <div class="hero-content">
-    <h1 class="h1 hero-title-left">Amara style </h1>
-      <button class="btn-mobile">Descúbrenos</button>
-    <h1 class="h1 hero-title-right">Fashion house</h1>
-    
-    <div class="hero-left">
-      <button class="btn btn-secondary-bg-xxl">MODA MUJER</button>
+  hero.innerHTML = /* html */ `
+    <div class="hero__content">
+      <h1 class="hero__title hero__title--left">Amara style</h1>
+        <button class="hero__btn-mobile">Descúbrenos</button>
+      <h2 class="hero__title hero__title--right">Fashion house</h2>
+      
+      <div class="hero__content--left">
+        <button class="hero__btn">MODA MUJER</button>
+      </div>
+      <div class="hero__content--right">
+        <button class="hero__btn">MODA HOMBRE</button>
+      </div>
     </div>
-    <div class="hero-right">
-      <button class="btn btn-secondary-bg-xxl">MODA HOMBRE</button>
-    </div>
-  </div>
-`
+  `
   return hero
 }

@@ -1,14 +1,17 @@
 export const addFavourites = () => {
-  const heartIconWrappers = [
-    ...document.querySelectorAll('.heart-icon-wrapper')
-  ]
-
-  heartIconWrappers.forEach((el) => {
-    el.addEventListener('click', (e) => {
-      if (e.target.children[0].classList.contains('heart-icon')) {
-        e.target.children[0].classList.toggle('heart-icon-hide')
-        e.target.children[1].classList.toggle('heart-icon-filled-show')
+  const productList = document.querySelector('.products__list')
+  if (productList) {
+    productList.addEventListener('click', (e) => {
+      e.stopPropagation()
+      if (
+        e.target.tagName === 'DIV' &&
+        e.target.classList.contains('product-card__heart-icon-wrapper')
+      ) {
+        e.target.children[0].classList.toggle('product-card__heart-icon-hide')
+        e.target.children[1].classList.toggle(
+          'product-card__heart-icon-filled-show'
+        )
       }
     })
-  })
+  }
 }

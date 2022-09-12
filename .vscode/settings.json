@@ -1,0 +1,8 @@
+{
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.useTabs": true,
+  "editor.linkedEditing": true,
+}

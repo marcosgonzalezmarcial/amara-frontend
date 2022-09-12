@@ -74,7 +74,8 @@ You can see:
 - Shopping bag functionality implementation built with taylored native Javascrips
 - Plain HTML, CSS(Sass) and Javascript. No dependencies or libreries used.
 - DOM Api's knowledge and proficient utilization
-- Data fetching from a taylored and owned backend products API made with headless CMS(Strapi)
+- Data fetching from a taylored and owned backend products API made with headless CMS(Strapi) deployed with Heroku.
+- Image proccessing, optimization and hosting trough Cloudinary.
 
 As a developer I believe that online stores give you the opportunity to show mastery of visual aspects of web development,such as design, layout and user experience awareness, as well as control of intrinsic aspects of the business logic involved so that it is an excellent opportunity to display the cognizance and knowledge that you have on the subject.
 I think that trying to create something with the native web technologies gives you a quiet good understandig of the core concepts that you need as a developer.
@@ -94,6 +95,8 @@ List of tools and technologies used in this project:
 - [![Strapi][strapi]][strapi-url]
 - [![Git][git]][git-url]
 - [![Vscode][vscode]][vscode-url]
+- [![Heroku][heroku]][heroku-url]
+- [![Cloudinary][cloudinary]][cloudinary-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -249,3 +252,7 @@ Tools and resources that i found helpfull and i'd like to give credit to:
 [git-url]: https://git-scm.com/
 [vscode]: https://img.shields.io/badge/vscode-logo?logo=visualstudiocode&style=for-the-badge&color=007ACC
 [vscode-url]: https://code.visualstudio.com/
+[heroku]: https://img.shields.io/badge/heroku-logo?logo=heroku&style=for-the-badge&color=6762A6
+[heroku-url]: https://www.heroku.com/
+[cloudinary]: https://img.shields.io/badge/cloudinary-logo?logo=cloudinary&style=for-the-badge&color=3448c5
+[cloudinary-url]: https://cloudinary.com/

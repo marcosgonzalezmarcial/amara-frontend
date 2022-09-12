@@ -1,56 +1,49 @@
-@use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.category {
-  .container-fluid {
-    max-width: 100%;
-  }
-}
 
-.category-list {
+.category__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
 
-  .category-item {
+  .category__item {
     flex-basis: 100%;
     flex-grow: 1;
     flex-shrink: 1;
     position: relative;
-
     @include responsive(xs) {
       flex-basis: calc(50% - 15px);
     }
     @include responsive(lg) {
       flex-basis: calc(33% - 20px);
     }
+    &-btn {
+      @include btn;
+      @include btn-secondary;
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: max-content;
+      padding-inline: 30px;
+    }
   }
 }
 
-.category-banner {
+.category__card {
   background: var(--cultured);
   aspect-ratio: 2 / 2.35;
   overflow: hidden;
-}
-
-.category-banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: var(--transition-2);
-}
-
-.category-item:hover .category-banner img {
-  transform: scale(1.05);
-}
-
-.category-item .btn {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: max-content;
-  padding-inline: 30px;
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    transition: var(--transition-2);
+  }
 }

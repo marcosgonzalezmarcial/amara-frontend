@@ -27,26 +27,21 @@
 }
 
 // displaying side-bar menu > items on top
-.navbar-top {
+.navbar__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3.75rem;
 
-  .nav-close-btn ion-icon {
+  .navbar__close-btn ion-icon {
     font-size: 1.5rem;
   }
 }
 
-.navbar-list {
-  .navbar-link {
+.navbar__list {
+  .navbar__link {
     padding-block: 0.6rem;
     color: var(--eerie-black);
-
-    // &:is(:hover, :focus, :active) {
-    //   transform: scale(1.1);
-    //   // font-size: var(--fs-6);
-    // }
 
     // view on large screens (above 992px)
     @include responsive(lg) {
@@ -101,7 +96,7 @@
   }
 }
 
-.nav-open-btn {
+.header__hamburger-btn {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -115,25 +110,25 @@
   }
 }
 
-// .nav-open-btn span {
+// .header__hamburger-btn span {
 //   width: 20px;
 //   height: 2px;
 //   background: var(--black);
 //   transition: var(--transition-1);
 // }
 
-.nav-open-btn span:nth-child(2) {
+.header__hamburger-btn span:nth-child(2) {
   transform: scaleX(0.5);
   transform-origin: right;
 }
 
-.nav-open-btn:is(:hover, :focus) span:nth-child(2) {
+.header__hamburger-btn:is(:hover, :focus) span:nth-child(2) {
   transform: scaleX(1);
 }
 
 @media (min-width: 992px) {
-  .nav-open-btn,
-  .navbar-top,
+  .header__hamburger-btn,
+  .navbar__top,
   .overlay {
     display: none;
   }

@@ -1,8 +1,8 @@
 @use "../../abstracts/mixins" as *;
 
 .header-actions {
-  background: var(--cultured);
   position: fixed;
+  background: var(--cultured);
   bottom: 0;
   left: 0;
   width: 100%;
@@ -14,6 +14,16 @@
   z-index: 1;
   border-top: 1px solid lightgray;
   overscroll-behavior: none;
+
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    // fix element flickering on iphone by force GPU acceleration and change positioning of the element
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+    top: calc(100vh - var(--header-actions-height));
+    background: var(--cultured);
+    height: 66px;
+  }
 
   @include responsive(md) {
     padding-block: 15px;
@@ -28,18 +38,17 @@
     margin-block-start: 5px;
   }
 
-  .header-action-btn {
+  .header-action__btn {
     position: relative;
     text-align: center;
     overscroll-behavior: none;
 
-    .header-action-label {
+    .header-action__label {
       pointer-events: none;
       color: var(--sonic-silver);
       color: black;
       letter-spacing: 0.25px;
       font-size: var(--step--3);
-      // transition: var(--transition-1);
     }
 
     &.active {
@@ -53,15 +62,9 @@
     ion-icon {
       margin-inline: auto;
       font-size: 1.1rem;
-      // font-size: var(--step--1);
-
-      // pointer-events: none;
-      // p {
-      //   pointer-events: none;
-      // }
     }
 
-    .btn-badge {
+    .header-action__btn-badge {
       position: absolute;
       top: -5px;
       right: 2px;
@@ -74,13 +77,13 @@
       color: var(--white);
       border-radius: 50%;
       pointer-events: none;
-      &.green {
+      &--green {
         --background: var(--middle-blue-green);
       }
     }
   }
 }
 
-ion-icon[name="heart-outline"] + .header-action-label + .btn-badge {
+ion-icon[name="heart-outline"] + .header-action__label + .header-action__btn-badge {
   right: 10px;
 }
