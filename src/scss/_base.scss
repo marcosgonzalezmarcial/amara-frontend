@@ -103,7 +103,7 @@ h3 > a {
 .h2,
 .h3 {
   color: var(--eerie-black);
-  font-weight: var(--fw-700);
+  font-weight: var(--fw-600);
 }
 
 .h1 {
@@ -114,8 +114,6 @@ h3 > a {
 
 .h2 {
   font-size: var(--step-2);
-  color: var(--eerie-black);
-  font-weight: var(--fw-600);
 }
 
 .h3 {
@@ -125,9 +123,5 @@ h3 > a {
 
 .section {
   padding-block: var(--section-padding);
-  &-title {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
 }
 
