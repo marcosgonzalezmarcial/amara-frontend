@@ -1,16 +1,15 @@
 export const Blog = () => {
-  const blog = document.createElement("section");
-  blog.classList.add("section");
-  blog.classList.add("blog");
-  blog.classList.add("container-fluid");
+  const blog = document.createElement('section')
+  blog.classList.add('section')
+  blog.classList.add('blog')
 
   blog.innerHTML = /* html */ `
-    
-      <h3 class="h2 section-title">Últimas noticias sobre moda</h3>
-      <ul class="blog-list">
+    <div class="container-fluid">
+      <h3 class="blog__title">Últimas noticias sobre moda</h3>
+      <ul class="blog__list">
         <li>
           <div class="blog-card">
-            <figure class="card-banner">
+            <figure class="blog__card__banner">
               <a href="#">
                 <img
                   src="https://res.cloudinary.com/dn9mr6kwc/image/upload/c_scale,q_auto:eco,w_550/v1661336046/Amara-ecommerce/blog-section/cyber-monday-blog_dppc9k.webp"
@@ -20,8 +19,8 @@ export const Blog = () => {
               </a>
             </figure>
 
-            <div class="card-content-blog">
-              <ul class="card-meta-list">
+            <div class="blog__card__content">
+              <ul class="blog__card__content__list">
                 <li class="card-meta-item">
                   <ion-icon name="folder-open-outline"></ion-icon>
 
@@ -37,7 +36,7 @@ export const Blog = () => {
                 </li>
               </ul>
 
-              <h3 class="h3 card-title">
+              <h3 class="blog__card__title">
                 <a href="#">Cyber Monday Fashion en Amara</a>
               </h3>
             </div>
@@ -46,7 +45,7 @@ export const Blog = () => {
 
         <li>
           <div class="blog-card">
-            <figure class="card-banner">
+            <figure class="blog__card__banner">
               <a href="#">
                 <img
                   src="https://res.cloudinary.com/dn9mr6kwc/image/upload/c_scale,q_auto:eco,w_550/v1661336046/Amara-ecommerce/blog-section/High-End-Furniture-blog_dh0iqk.webp"
@@ -56,8 +55,8 @@ export const Blog = () => {
               </a>
             </figure>
 
-            <div class="card-content-blog">
-              <ul class="card-meta-list">
+            <div class="blog__card__content">
+              <ul class="blog__card__content__list">
                 <li class="card-meta-item">
                   <ion-icon name="folder-open-outline"></ion-icon>
 
@@ -73,8 +72,8 @@ export const Blog = () => {
                 </li>
               </ul>
 
-              <h3 class="h3 card-title">
-                <a href="#">La decoración de tu casa de verando</a>
+              <h3 class="blog__card__title">
+                <a href="#">La decoración de tu casa de esperando</a>
               </h3>
             </div>
           </div>
@@ -82,7 +81,7 @@ export const Blog = () => {
 
         <li>
           <div class="blog-card">
-            <figure class="card-banner">
+            <figure class="blog__card__banner">
               <a href="#">
                 <img
                   src="https://res.cloudinary.com/dn9mr6kwc/image/upload/c_scale,q_auto:eco,w_540/v1661336046/Amara-ecommerce/blog-section/mujeres-comprando-blog_ojqo9f.webp"
@@ -92,8 +91,8 @@ export const Blog = () => {
               </a>
             </figure>
 
-            <div class="card-content-blog">
-              <ul class="card-meta-list">
+            <div class="blog__card__content">
+              <ul class="blog__card__content__list">
                 <li class="card-meta-item">
                   <ion-icon name="folder-open-outline"></ion-icon>
 
@@ -109,13 +108,14 @@ export const Blog = () => {
                 </li>
               </ul>
 
-              <h3 class="h3 card-title">
+              <h3 class="blog__card__title">
                 <a href="#">Ideas únicas sobre moda que te encantarán</a>
               </h3>
             </div>
           </div>
         </li>
       </ul>
-`;
-  return blog;
-};
+    </div>
+`
+  return blog
+}

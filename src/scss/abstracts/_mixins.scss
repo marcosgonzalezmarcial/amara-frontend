@@ -105,7 +105,7 @@
 @mixin heading-1 {
   @include heading();
   font-size: var(--step-3);
-  font-weight: var(--fw-700);
+  font-weight: var(--fw-600);
   line-height: 1;
 }
 @mixin heading-2 {
