@@ -5,14 +5,13 @@
     @include heading-1;
     margin-block: 3rem;
   }
-
   &__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
     gap: 30px;
   }
   &-card {
-    &-banner {
+    &__banner {
       background: var(--cultured);
       overflow: hidden;
       margin-bottom: 25px;
@@ -29,20 +28,17 @@
         }
       }
     }
-  
     &__content {
       padding-inline: 20px;
-      &__list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-        margin-bottom: 10px;
-      }
     }
-  
-  
-    .card-meta-item {
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 10px;
+    }
+    &__item {
       display: flex;
       align-items: center;
       gap: 10px;
@@ -52,8 +48,7 @@
         --ionicon-stroke-width: 30px;
       }
     }
-  
-    .card-meta-link {
+    &__link {
       width: max-content;
       color: inherit;
       font-size: var(--step--2);
@@ -64,14 +59,13 @@
         color: var(--eerie-black);
       }
     }
-
     &__title {
       @include heading-3;
-    line-height: 1.4;
-    text-align: center;
-    a {
-      color: inherit;
-    }
+      line-height: 1.4;
+      text-align: center;
+      a {
+        color: inherit;
+      }
     }
   }
 }
