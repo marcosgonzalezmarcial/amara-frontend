@@ -3,11 +3,11 @@ export const Newsletter = () => {
   newsletter.classList.add('section')
   newsletter.classList.add('newsletter')
 
-  newsletter.innerHTML = /*html*/ `
+  newsletter.innerHTML = /* html */ `
     <div class="newsletter-card">
       <h2 class="newsletter-card__title">Suscríbete al Newsletter</h2>
       <p class="newsletter-card__text">
-        Ingresa tu email para ser el primero en concer nuestras nuevas
+        Ingresa tu email para ser el primero en conocer nuestras nuevas
         colecciones y productos.
       </p>
 
@@ -16,7 +16,7 @@ export const Newsletter = () => {
           <ion-icon name="mail-outline"></ion-icon>
           <input
             type="email"
-            name="emal"
+            name="email"
             placeholder="Ingresa tu email"
             required
             class="newsletter-card__input-field"
