@@ -19,27 +19,23 @@
 }
 
 .products__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;;
+  gap: 15px;
   margin-bottom: 25px;
-  
-  @include responsive(xs) {
-     li {
-      width: calc(50% - 12.5px);
-    }
+  @include responsive(sm){
+    // gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  @include responsive(lg) {
-    li {
-      width: calc(33.33% - 16.66px);
-    }
+  @include responsive(md){
+    // gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-  @include responsive(xl) {
-    li {
-      width: calc(25% - 18.75px);
-    }
+  @include responsive(lg){
+    // gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+
 }
 
 .products__btn {
