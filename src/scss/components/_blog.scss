@@ -6,16 +6,29 @@
     margin-block: 3rem;
   }
   &__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
-    gap: 30px;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    // gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+    & > li {
+      @include responsive(md) {
+        width: calc(50% - 15px);
+      }
+      @include responsive(lg) {
+        width: calc(33.33% - 20px);
+      }
+    }
   }
   &-card {
     &__banner {
       background: var(--cultured);
       overflow: hidden;
       margin-bottom: 25px;
-      max-width: 500px;
+      max-width: 450px;
       margin-inline: auto;
       img {
         aspect-ratio: 5 / 3;
