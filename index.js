@@ -43,7 +43,11 @@ export function showBag () {
   shoppingBagEl.classList.toggle('show-bag')
   // avoid page scrolling on the back when the bag is open
   document.body.classList.toggle('scroll-control')
-  // document.documentElement.classList.toggle('scroll-control')
+
+  // removing active on all the action buttons
+  actionsButtons.forEach(
+    (btn) => { btn.classList.remove('active') }
+  )
   shopBagBtn.classList.toggle('active')
 }
 
