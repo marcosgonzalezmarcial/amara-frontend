@@ -8,7 +8,8 @@
     img {
       width: 100%;
       aspect-ratio: 3 / 3.75;
-      transition: var(--transition-3)
+      transition: var(--transition-3);
+      object-fit: cover;
     }
     @include responsive(lg) {
       &:hover {
