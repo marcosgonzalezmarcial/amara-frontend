@@ -5,6 +5,7 @@ import { deleteItem } from './src/ui/ui-utils/deleteItem'
 import launchLoader from './src/ui/ui-utils/launchLoader'
 import showBagActionBtn from './src/ui/ui-utils/showBagActionBtn'
 import showProductsByCategory from './src/ui/ui-utils/showProductsByCategory'
+import closeNavbarFunctionality from './src/ui/ui-utils/closeNavbarFunctionality'
 
 if (!document.getElementById('root').innerHTML) {
   document.querySelector('body').appendChild(App())
@@ -96,5 +97,8 @@ launchLoader()
 // dynamically adding border to the header when hero section is not intersecting the viewport
 addHeaderBorderOnScroll()
 
-// add product to favorites logic, this could be in another file...
+// add product to favorites logic
 addFavourites()
+
+// add close functionality to the navbar when clicking in a section link
+closeNavbarFunctionality()
