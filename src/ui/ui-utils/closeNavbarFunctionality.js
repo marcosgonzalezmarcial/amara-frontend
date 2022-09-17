@@ -4,5 +4,6 @@ export default function () {
   $navbar.addEventListener('click', () => {
     $navbar.classList.toggle('active')
     $overlay.classList.toggle('active')
+    document.body.classList.toggle('scroll-control')
   })
 }
