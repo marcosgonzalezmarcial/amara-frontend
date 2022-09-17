@@ -7,7 +7,11 @@ export default function ($productsFilter, categoryButtons) {
       categoryButtons.forEach(
         (btn) => e.target !== btn && btn.classList.remove('active')
       )
-      e.target.classList.toggle('active')
+      if (e.target.classList.contains('active')) {
+        return
+      } else {
+        e.target.classList.toggle('active')
+      }
       paintProducts(e.target.firstChild.data)
     }
   })

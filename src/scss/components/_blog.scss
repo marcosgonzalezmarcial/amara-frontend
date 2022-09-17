@@ -1,97 +1,155 @@
 @use "../abstracts/mixins" as *;
-.section.blog {
-  .container {
-    padding-inline: 1rem;
+.blog {
+  &__title {
+    @include section-title;
+    @include heading-1;
+    margin-block: 3rem;
   }
-}
-
-.blog .section-title {
-  margin-block-start: 2rem;
-  margin-block-end: 2.5rem;
-}
-
-.blog-list {
+  &__list {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    // gap: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
-
-  & > li {
-    @include responsive(md) {
-      width: calc(50% - 15px);
-    }
-    @include responsive(lg) {
-      width: calc(33.33% - 20px);
-    }
-  }
-  // fixing the height on the last blog figure img
-  &:last-child {
-    img {
-      max-height: 377px;
-    }
-  }
-}
-
-.blog-card {
-  .card-banner {
-    background: var(--cultured);
-    overflow: hidden;
-    margin-bottom: 25px;
-
-    img {
-      aspect-ratio: 5 / 3;
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      transition: var(--transition-2);
-      &:hover {
-        transform: scale(1.05);
+    & > li {
+      @include responsive(md) {
+        width: calc(50% - 15px);
+      }
+      @include responsive(lg) {
+        width: calc(33.33% - 20px);
       }
     }
   }
-
-  .card-content-blog {
-    padding-inline: 20px;
-  }
-
-  .card-meta-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    margin-bottom: 10px;
-  }
-
-  .card-meta-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    ion-icon {
-      font-size: 17px;
-      --ionicon-stroke-width: 30px;
+  &-card {
+    &__banner {
+      background: var(--cultured);
+      overflow: hidden;
+      margin-bottom: 25px;
+      max-width: 450px;
+      margin-inline: auto;
+      img {
+        aspect-ratio: 5 / 3;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: var(--transition-2);
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+    &__content {
+      padding-inline: 20px;
+    }
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 10px;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  
+      ion-icon {
+        font-size: 17px;
+        --ionicon-stroke-width: 30px;
+      }
+    }
+    &__link {
+      width: max-content;
+      color: inherit;
+      font-size: var(--step--2);
+      font-weight: var(--fw-500);
+      text-transform: uppercase;
+  
+      &:is(:hover, :focus) {
+        color: var(--eerie-black);
+      }
+    }
+    &__title {
+      @include heading-3;
+      line-height: 1.4;
+      text-align: center;
+      a {
+        color: inherit;
+      }
     }
   }
-
-  .card-meta-link {
-    width: max-content;
-    color: inherit;
-    font-size: var(--step--2);
-    font-weight: var(--fw-500);
-    text-transform: uppercase;
-
-    &:is(:hover, :focus) {
-      color: var(--eerie-black);
-    }
-  }
 }
 
-.blog-card .card-meta-link:is(:hover, :focus) {
-  color: var(--eerie-black);
-}
 
-.blog-card .card-title {
-  line-height: 1.4;
-  text-align: center;
-}
+
+
+// .blog__card {
+//   .card-banner {
+//     background: var(--cultured);
+//     overflow: hidden;
+//     margin-bottom: 25px;
+//     max-width: 500px;
+//     margin-inline: auto;
+//     img {
+//       aspect-ratio: 5 / 3;
+//       width: 100%;
+//       height: auto;
+//       object-fit: cover;
+//       transition: var(--transition-2);
+//       &:hover {
+//         transform: scale(1.05);
+//       }
+//     }
+//   }
+
+//   .card-content-blog {
+//     padding-inline: 20px;
+//   }
+
+//   .card-meta-list {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 25px;
+//     margin-bottom: 10px;
+//   }
+
+//   .card-meta-item {
+//     display: flex;
+//     align-items: center;
+//     gap: 10px;
+
+//     ion-icon {
+//       font-size: 17px;
+//       --ionicon-stroke-width: 30px;
+//     }
+//   }
+
+//   .card-meta-link {
+//     width: max-content;
+//     color: inherit;
+//     font-size: var(--step--2);
+//     font-weight: var(--fw-500);
+//     text-transform: uppercase;
+
+//     &:is(:hover, :focus) {
+//       color: var(--eerie-black);
+//     }
+//   }
+// }
+
+// .blog__card .card-meta-link:is(:hover, :focus) {
+//   color: var(--eerie-black);
+// }
+
+// .blog__card__title {
+//   @include heading-3;
+//   line-height: 1.4;
+//   text-align: center;
+//   a {
+//     color: inherit;
+//   }
+// }

@@ -12,7 +12,7 @@ export const addProductToCart = async (id) => {
   updateLocalStorageTotal(product)
 
   // getting the qty from the last product to render the correct amount in the bag item
-  const productsFromLocalStorage = JSON.parse(localStorage.getItem('products'))
+  const productsFromLocalStorage = JSON.parse(window.localStorage.getItem('products'))
 
   const shoppingBagBody = document.querySelector('.shopping-bag-body')
 

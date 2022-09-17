@@ -1,5 +1,4 @@
 import { fetchProductsByCategory } from '../../api/fetchProductsByCategory'
-import { addFavourites } from './addFavourites'
 import { addProductToCart } from './addProductToCart'
 
 export const paintProducts = async (category) => {
@@ -54,9 +53,6 @@ export const paintProducts = async (category) => {
   const ulProducts = document.querySelector('.products__list')
   // temporary fixing a render error
   if (ulProducts) ulProducts.innerHTML = addedProducts.join(' ')
-
-  // add product to favorites logic, this could be in another file...
-  addFavourites()
 
   // adding product to cart functionality
   const addToShoppingBagButtons = [

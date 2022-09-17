@@ -5,4 +5,8 @@
   "prettier.semi": false,
   "prettier.useTabs": true,
   "editor.linkedEditing": true,
+  "cSpell.words": [
+    "datetime",
+    "ionicon"
+  ],
 }

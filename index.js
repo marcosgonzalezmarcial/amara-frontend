@@ -1,4 +1,5 @@
 import { App } from './src/App'
+import { addFavourites } from './src/ui/ui-utils/addFavourites'
 import addHeaderBorderOnScroll from './src/ui/ui-utils/addHeaderBorderOnScroll'
 import { deleteItem } from './src/ui/ui-utils/deleteItem'
 import launchLoader from './src/ui/ui-utils/launchLoader'
@@ -28,7 +29,7 @@ const shopBagCloseBtn = document.querySelector('.bag-close-btn')
 
 showBagActionBtn(shopBagBtn, headerActions, actionsButtons)
 
-export function toggleBag() {
+export function toggleBag () {
   document.querySelector('.arrow').classList.toggle('arrow-up')
   shoppingBagEl.classList.toggle('show-bag')
   // avoid page scrolling on the back when the bag is open
@@ -36,17 +37,21 @@ export function toggleBag() {
   // document.documentElement.classList.toggle('scroll-control')
 }
 
-export function showBag() {
+export function showBag () {
   if (shoppingBagEl.classList.contains('show-bag')) return
   document.querySelector('.arrow').classList.toggle('arrow-up')
   shoppingBagEl.classList.toggle('show-bag')
   // avoid page scrolling on the back when the bag is open
   document.body.classList.toggle('scroll-control')
-  // document.documentElement.classList.toggle('scroll-control')
+
+  // removing active on all the action buttons
+  actionsButtons.forEach(
+    (btn) => { btn.classList.remove('active') }
+  )
   shopBagBtn.classList.toggle('active')
 }
 
-export function hideBag() {
+export function hideBag () {
   document.querySelector('.arrow').classList.remove('arrow-up')
   shoppingBagEl.classList.remove('show-bag')
 
@@ -90,3 +95,6 @@ launchLoader()
 
 // dynamically adding border to the header when hero section is not intersecting the viewport
 addHeaderBorderOnScroll()
+
+// add product to favorites logic, this could be in another file...
+addFavourites()

@@ -36,17 +36,18 @@
 }
 
 @mixin square-button {
-  display: block;
+  display: flex;
   justify-self: center;
   align-self: center;
   font-size: var(--step--2);
   font-weight: var(--fw-500);
-  color: var(--eerie-black);
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.80);
   border: 1px solid var(--border-color, var(--eerie-black));
   letter-spacing: 0.01rem;
   padding-inline: 1em;
   padding-block: 0.75em;
+  margin-inline: auto;
+  text-align: center;
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
@@ -62,6 +63,8 @@
   height: var(--btn-height);
   border: 1px solid var(--border-color, var(--eerie-black));
   display: flex;
+  justify-self: center;
+  align-self: center;
   justify-content: center;
   align-items: center;
   &:is(:hover, :focus) {
@@ -95,25 +98,28 @@
 
 @mixin heading {
   color: var(--eerie-black);
-  font-weight: var(--fw-700);
+  font-weight: var(--fw-600);
+  text-align: center;
 }
 
 @mixin heading-1 {
-  @include heading();
+  @include heading;
   font-size: var(--step-3);
-  font-weight: var(--fw-700);
+  font-weight: var(--fw-600);
   line-height: 1;
 }
 @mixin heading-2 {
-  @include heading();
+  @include heading;
   font-size: var(--step-2);
-  color: var(--eerie-black);
-  font-weight: var(--fw-600);
 }
 
 @mixin heading-3 {
-  @include heading();
+  @include heading;
   font-size: var(--step--1);
+}
+@mixin heading-4 {
+  @include heading;
+  font-size: var(--step-0);
 }
 
 @mixin section-title {

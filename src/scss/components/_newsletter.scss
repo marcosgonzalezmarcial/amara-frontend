@@ -4,37 +4,34 @@
 .newsletter-card {
   background-color: var(--cultured);
   background-repeat: no-repeat;
+  background-image: url(https://res.cloudinary.com/dn9mr6kwc/image/upload/v1661336074/Amara-ecommerce/newsletter-bg_kt8tq5.png);
+  padding: 2.5rem 0.9375rem;
   background-size: cover;
-  background-position: left;
-  padding: 40px 15px;
-  text-align: center;
 
-  .card-form {
+  &__form {
+    position: relative;
     margin-inline: auto;
+    max-width: 600px;
     @include responsive(md) {
       position: relative;
-    }
-    @include responsive(lg) {
       max-width: 650px;
     }
+    @include responsive(lg) {
+    }
   }
-}
-
-.newsletter-card {
-  background-image: url(https://res.cloudinary.com/dn9mr6kwc/image/upload/v1661336074/Amara-ecommerce/newsletter-bg_kt8tq5.png);
-  background-size: cover;
-  .card-title {
-    color: var(--eerie-black);
+  &__title {
+    @include heading-2;
     font-size: var(--step-1);
     font-weight: var(--fw-500);
     line-height: 1.2;
     margin-bottom: 2rem;
   }
-  .card-text {
+  &__text {
     font-size: var(--step--2);
     margin-bottom: 2rem;
+    text-align: center;
   }
-  .input-wrapper {
+  &__input-wrapper {
     position: relative;
     margin-bottom: 20px;
     @include responsive(md) {
@@ -48,29 +45,33 @@
       transform: translateY(-50%);
     }
   }
-  .input-field {
-    background: var(--white);
-    height: 60px;
-    padding-inline: 50px 20px;
-    border-radius: 6px;
-    font-size: var(--step--2);
-  }
-
-  .btn {
+  &__btn {
     @include btn;
     gap: 10px;
     margin-inline: auto;
-    width: 15ch;
-
+    padding-inline: 2rem;
     @include responsive(md) {
       font-size: var(--step--2);
+      height: 100%;
       position: absolute;
       top: 0;
       right: 0;
-      bottom: 0;
       width: max-content;
       padding-inline: 2rem;
       border-radius: 0 6px 6px 0;
     }
   }
+  &__input-field {
+    background: var(--white);
+    height: 60px;
+    padding-inline: 50px 20px;
+    border-radius: 6px;
+    font-size: var(--step--2);
+
+    &:is(:focus-visible, :focus-visible) {
+      outline: 2px solid var(--middle-blue-green);
+      border: none;
+    }
+  }
 }
+
