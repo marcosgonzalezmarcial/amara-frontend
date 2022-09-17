@@ -4,7 +4,8 @@ export const navbarMenuToggle = () => {
   const overlay = document.querySelector('.overlay')
 
   navElemArr.forEach((el) => {
-    el.addEventListener('click', () => {
+    el.addEventListener('click', (e) => {
+      e.stopPropagation()
       navbar.classList.toggle('active')
       overlay.classList.toggle('active')
       document.body.classList.toggle('scroll-control')
