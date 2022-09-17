@@ -1,5 +1,5 @@
 {
-	"name": "e-commerce-mvp",
+	"name": "Amara ecommerce",
 	"browserslist": "> 0.5%, last 2 versions, not dead",
 	"scripts": {
 		"start": "parcel index.html --open",
