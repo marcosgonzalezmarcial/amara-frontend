@@ -41,8 +41,9 @@
   align-self: center;
   font-size: var(--step--2);
   font-weight: var(--fw-500);
-  background-color: rgba(255, 255, 255, 0.80);
+  background-color: rgba(255, 255, 255, 0.99);
   border: 1px solid var(--border-color, var(--eerie-black));
+  color: var(--eerie-black);
   letter-spacing: 0.01rem;
   padding-inline: 1em;
   padding-block: 0.75em;
@@ -51,7 +52,7 @@
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
-    background-color: rgba(255, 255, 255, 0.99);
+    background-color: rgba(255, 255, 255, 0.80);
   }
 }
 

@@ -2,6 +2,7 @@ export const Blog = () => {
   const blog = document.createElement('section')
   blog.classList.add('section')
   blog.classList.add('blog')
+  blog.setAttribute('id', 'blog-section')
 
   blog.innerHTML = /* html */ `
     <div class="container-fluid">

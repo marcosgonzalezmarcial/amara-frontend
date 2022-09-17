@@ -2,11 +2,11 @@
 
 .section.products {
   scroll-margin-block-start: 70px;
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
   padding-block-end: 2.5rem;
-  .container-fluid{
-    scroll-behavior: smooth;
-  };
+  // .container-fluid{
+  //   scroll-behavior: smooth;
+  // };
 }
 
 .products__filter-btn {

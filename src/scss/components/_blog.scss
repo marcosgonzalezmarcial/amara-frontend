@@ -1,14 +1,12 @@
 @use "../abstracts/mixins" as *;
 .blog {
+  scroll-margin-block-start: 30px;
   &__title {
     @include section-title;
     @include heading-1;
     margin-block: 3rem;
   }
   &__list {
-    // display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    // gap: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
