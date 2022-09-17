@@ -49,7 +49,7 @@ export const Header = () => {
           </li>
 
           <li>
-            <a href="#blog" class="navbar__link">Blog</a>
+            <a href="#blog-section" class="navbar__link">Blog</a>
           </li>
 
           <li>

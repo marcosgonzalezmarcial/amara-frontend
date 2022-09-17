@@ -117,14 +117,9 @@
   display: none;
   @include responsive(md) {
     display: block;
-    color: var(--eerie-black);
     padding-block: 0.5em;
-    background-color: rgba(255, 255, 255, 0.80);
   }
-  &:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
-    background-color: rgba(255, 255, 255, 0.95);
-  }
+  
 }
 
 .hero__btn-mobile {
